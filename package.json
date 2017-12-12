@@ -1,13 +1,13 @@
 {
-  "name": "fastshell",
-  "title": "Fiercely quick and opinionated front-ends",
-  "author": "Hossein Karami",
-  "url": "https://HosseinKarami.github.io/fastshell",
-  "version": "1.0.5",
-  "license": "MIT",
+  "name": "simmer",
+  "title": "Signature creative & technical work.",
+  "author": "David Simmer",
+  "url": "https://simmer.ooo",
+  "version": "5.0.0",
+  "license": "CC BY-NC-ND",
   "repository": {
     "type": "git",
-    "url": "http://github.com/HosseinKarami/fastshell.git"
+    "url": "https://bitbucket.org/simmer_/simmer-fastshell.git"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
