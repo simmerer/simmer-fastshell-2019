@@ -15,4 +15,5 @@ $font-size-large: 4.5vw;
 $serif: "freight-display-pro";
 $sans: "freight-sans-pro";
 
-$transition-default: all 0.15s;
+$transition-default: all 350ms ease;
+$transition-slow: all 500ms ease-out;

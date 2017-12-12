@@ -31,20 +31,33 @@ body {
         background-size: 100% auto;
         display: block;
         height: 26vw;
-        opacity: 0.1;
+        opacity: 0.07;
         text-indent: -999em;
+        transition: $transition-slow;
         width: 40vw;
+
+        &:hover,
+        &:focus {
+            opacity: 0.1;
+
+            & + .tagline {
+                opacity: 0.75;
+            }
+        }
+    }
+
+    .tagline {
+        color: $white;
+        font-size: $font-size-large;
+        font-weight: 600;
+        margin-bottom: 10vw;
+        margin-top: -5.75vw;
+        padding-left: $font-size-large;
+        opacity: .2;
+        transition: $transition-default;
     }
 }
-.tagline {
-    color: $grey-mid;
-    font-size: $font-size-large;
-    font-weight: 600;
-    margin-bottom: 10vw;
-    margin-top: -5.75vw;
-    padding-left: $font-size-large;
-    opacity: .5;
-}
+
 
 
 ul.clients {
@@ -53,7 +66,7 @@ ul.clients {
         display: inline-block;
         font-size: $font-size-large;
         margin: 1vw 0;
-        opacity: 0.9;
+        opacity: 0.6;
         padding-left: $font-size-large;
         position: relative;
 
@@ -92,7 +105,7 @@ footer {
         font-size: $font-size-large;
 
         a {
-            opacity: 0.25;
+            opacity: 0.2;
 
             &:hover,
             &:focus {

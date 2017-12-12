@@ -1,47 +1,59 @@
 @mixin image-2x($image, $width, $height) {
-  @media (min--moz-device-pixel-ratio: 1.3),
-         (-o-min-device-pixel-ratio: 2.6/2),
-         (-webkit-min-device-pixel-ratio: 1.3),
-         (min-device-pixel-ratio: 1.3),
-         (min-resolution: 1.3dppx) {
-    /* on retina, use image that's scaled by 2 */
-    background-image: url($image);
-    background-size: $width $height;
-  }
+    @media (min--moz-device-pixel-ratio: 1.3),
+           (-o-min-device-pixel-ratio: 2.6/2),
+           (-webkit-min-device-pixel-ratio: 1.3),
+           (min-device-pixel-ratio: 1.3),
+           (min-resolution: 1.3dppx) {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url($image);
+        background-size: $width $height;
+    }
 }
 
 @mixin font-size($sizeValue: 12 ){
-  font-size: $sizeValue + px; //fallback for old browsers
-  font-size: (0.1 * $sizeValue) + rem;
+    font-size: $sizeValue + px; //fallback for old browsers
+    font-size: (0.1 * $sizeValue) + rem;
 }
 
 
 @mixin vertical-center($position: relative) {
-  position: $position;
-  top: 50%;
-  transform: translateY(-50%);
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+@mixin nthChildDelay($item, $count) {
+    $t-delay: 0.1s;
+
+    @for $i from 1 through $count {
+        #{$item}:nth-child(#{$i}) {
+            transition-delay: $i * $t-delay;
+        }
+        // @debug $i;
+    }
 }
 
 
 /*@mixin sprite-icons($x, $y) {
-    $xpos: $x + px;
-    $ypos: $y + px;
-    background: url('../images/icons-sprite.png') no-repeat $xpos $ypos transparent;
+        $xpos: $x + px;
+        $ypos: $y + px;
+        background: url('../images/icons-sprite.png') no-repeat $xpos $ypos transparent;
 }
 
 @mixin sprite-icons-2x {
-    background-image: url('../images/icons-sprite@2x.png');
-    background-size: 145px 329px;
+        background-image: url('../images/icons-sprite@2x.png');
+        background-size: 145px 329px;
 }
 
 @mixin sprite-logo($x, $y) {
-    $xpos: $x + px;
-    $ypos: $y + px;
-    background: url('../images/logo_sprite.png') no-repeat $xpos $ypos transparent;
+        $xpos: $x + px;
+        $ypos: $y + px;
+        background: url('../images/logo_sprite.png') no-repeat $xpos $ypos transparent;
 }
 
 @mixin sprite-logo-2x {
-    background-image: url('../images/logo_sprite@2x.png');
-    background-size: 822px 137px;
+        background-image: url('../images/logo_sprite@2x.png');
+        background-size: 822px 137px;
 }
 */
