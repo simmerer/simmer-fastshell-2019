@@ -76,6 +76,7 @@ ul.clients {
             bottom: 0;
             content: '';
             left: 0;
+            opacity: 0.3;
             position: absolute;
             right: 1vw;
             top: 0;
@@ -90,6 +91,7 @@ ul.clients {
             opacity: 1;
 
             &:before {
+                opacity: 1;
                 transform: translateX(0);
             }
         }

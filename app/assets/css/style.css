@@ -80,6 +80,7 @@ ul.clients a {
     bottom: 0;
     content: '';
     left: 0;
+    opacity: 0.3;
     position: absolute;
     right: 1vw;
     top: 0;
@@ -91,6 +92,7 @@ ul.clients a {
   ul.clients a:hover, ul.clients a:focus {
     opacity: 1; }
     ul.clients a:hover:before, ul.clients a:focus:before {
+      opacity: 1;
       -ms-transform: translateX(0);
           transform: translateX(0); }
 
