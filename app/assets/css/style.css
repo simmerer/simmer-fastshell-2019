@@ -53,7 +53,8 @@ body {
   transition: all 500ms ease-out;
   width: 40vw; }
   .brand a:hover, .brand a:focus {
-    opacity: 0.1; }
+    opacity: 0.1;
+    outline: 0; }
     .brand a:hover + .tagline, .brand a:focus + .tagline {
       opacity: 0.75; }
 
@@ -90,11 +91,14 @@ ul.clients a {
     will-change: transform;
     z-index: -1; }
   ul.clients a:hover, ul.clients a:focus {
-    opacity: 1; }
+    opacity: 1;
+    outline: 0; }
     ul.clients a:hover:before, ul.clients a:focus:before {
       opacity: 1;
       -ms-transform: translateX(0);
           transform: translateX(0); }
+  ul.clients a:focus:before {
+    background-color: rgba(112, 214, 61, 0.5); }
 
 footer {
   margin-top: 10vw;
@@ -104,7 +108,8 @@ footer {
     footer .contact a {
       opacity: 0.2; }
       footer .contact a:hover, footer .contact a:focus {
-        opacity: 0.5; }
+        opacity: 0.5;
+        outline: 0; }
 
 .article,
 .tagline,

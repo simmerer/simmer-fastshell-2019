@@ -39,6 +39,7 @@ body {
         &:hover,
         &:focus {
             opacity: 0.1;
+            outline: 0;
 
             & + .tagline {
                 opacity: 0.75;
@@ -89,10 +90,16 @@ ul.clients {
         &:hover,
         &:focus {
             opacity: 1;
+            outline: 0;
 
             &:before {
                 opacity: 1;
                 transform: translateX(0);
+            }
+        }
+        &:focus {
+            &:before {
+                background-color: rgba($green, 0.5);
             }
         }
     }
@@ -112,6 +119,7 @@ footer {
             &:hover,
             &:focus {
                 opacity: 0.5;
+                outline: 0;
             }
         }
     }
