@@ -1,10 +1,10 @@
 /*!
- * fastshell
- * Fiercely quick and opinionated front-ends
- * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
- * @version 1.0.5
- * Copyright 2017. MIT licensed.
+ * simmer
+ * Signature creative & technical work.
+ * https://simmer.ooo
+ * @author David Simmer
+ * @version 5.0.0
+ * Copyright 2017. CC BY-NC-ND licensed.
  */
 /* jshint ignore:start */
 
@@ -396,12 +396,12 @@
 /* jshint ignore:end */
 
 /*!
- * fastshell
- * Fiercely quick and opinionated front-ends
- * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
- * @version 1.0.5
- * Copyright 2017. MIT licensed.
+ * simmer
+ * Signature creative & technical work.
+ * https://simmer.ooo
+ * @author David Simmer
+ * @version 5.0.0
+ * Copyright 2017. CC BY-NC-ND licensed.
  */
 (function ($, window, document, undefined) {
 
