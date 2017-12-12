@@ -1,0 +1,123 @@
+.tabs {
+     ul.tabs {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        &:after {
+            border-right: 1px solid $divider;
+            bottom: -3rem;
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        li {
+            display: block;
+            margin: 0;
+            padding: 0;
+
+            &.active {
+                a {
+                    @extend .m-regular;
+                    border-bottom: 1px solid $divider;
+                    color: $base;
+                }
+            }
+        }
+        a {
+            @extend .m-light;
+            border-bottom: 1px solid transparent;
+            color: $nav;
+            cursor: pointer;
+            display: block;
+            margin: 0;
+            padding: 1.5rem 1.5rem 1.5rem 0;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover,
+            &:focus {
+                color: $raven-accent;
+            }
+
+            [class*="icon-"] {
+                @include font-size(12);
+            }
+        }
+    }
+
+    .tabs-pane {
+        // margin-bottom: 3rem;
+
+        p:first-of-type {
+            @include font-size(20);
+            margin-top: .9rem;
+        }
+    }
+}
+
+
+
+
+.js-tabby {
+    ul.tabs {
+        display: block;
+    }
+    .tabs-pane {
+        display: none;
+        opacity: 0;
+        padding-left: 3rem;
+        visibility: hidden;
+
+        transition: $transition-base;
+
+        h2.tab-header {
+            display: none;
+        }
+    }
+}
+
+html:not(.js-tabby) {
+    .tab-columns {
+        margin-left: 0;
+        width: 100%;
+
+        h2.tab-header {
+            @extend .m-light;
+            @include font-size(16);
+
+            color: $pale;
+            display: inline-block;
+            letter-spacing: 0;
+            padding: 4rem 1.5rem 0 0;
+            position: relative;
+            text-transform: uppercase;
+
+            &:before {
+                background-color: $divider;
+                content: '';
+                display: block;
+                height: 1px;
+                left: -9999em;
+                position: absolute;
+                right: 1rem;
+                top: 2rem;
+            }
+        }
+    }
+    .tabs-pane:not(:last-child) {
+        padding-bottom: 6rem;
+    }
+}
+
+/*  Show tab content when active class is added.
+ *  This class is added via javascript. */
+.tabs-pane.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}

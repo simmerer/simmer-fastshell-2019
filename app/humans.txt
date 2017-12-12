@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Simmer -- Designer/Developer -- @simmerdesigns
+
+
+# TECHNOLOGY COLOPHON
+
+HTML5, CSS3, jQuery
+Gulp, Sass, Uglify, JSHint
+
+FastShell -- https://github.com/HosseinKarami/fastshell
+Google Web Starter Kit -- https://github.com/google/web-starter-kit

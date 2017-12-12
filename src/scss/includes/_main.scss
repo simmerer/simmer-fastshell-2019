@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: $white;
+    text-decoration: none;
+    transition: $transition-default;
+}
+
+
+body {
+    background: $bg;
+    color: $text-default;
+    font-family: $serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.amp {
+    font-style: italic;
+}
+
+.brand {
+    a {
+        background: url('../img/brand.svg') no-repeat 0 0 transparent;
+        background-size: 100% auto;
+        display: block;
+        height: 26vw;
+        opacity: 0.1;
+        text-indent: -999em;
+        width: 40vw;
+    }
+}
+.tagline {
+    color: $grey-mid;
+    font-size: $font-size-large;
+    font-weight: 600;
+    margin-bottom: 10vw;
+    margin-top: -5.75vw;
+    padding-left: $font-size-large;
+    opacity: .5;
+}
+
+
+ul.clients {
+    a {
+        color: $white;
+        display: inline-block;
+        font-size: $font-size-large;
+        margin: 1vw 0;
+        opacity: 0.9;
+        padding-left: $font-size-large;
+        position: relative;
+
+
+        &:before {
+            background-color: rgba($black, 0.2);
+            bottom: 0;
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 1vw;
+            top: 0;
+            transform: translateX(-100%);
+            transition: all 500ms ease-out;
+            will-change: transform;
+            z-index: -1;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+
+            &:before {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+
+footer {
+    margin-top: 10vw;
+    padding: 0 $font-size-large $font-size-large;
+
+    .contact {
+        font-size: $font-size-large;
+
+        a {
+            opacity: 0.25;
+
+            &:hover,
+            &:focus {
+                opacity: 0.5;
+            }
+        }
+    }
+}
