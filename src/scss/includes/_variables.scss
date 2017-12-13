@@ -1,5 +1,5 @@
 $black: #000;
-$grey-darkest: #252525;
+$grey-darkest: #111;
 $grey-darker: #494E55;
 $grey-mid: #9CA09F;
 $grey-light: #9CA09F;
@@ -7,8 +7,8 @@ $white: #FFF;
 
 $green: #70D63D;
 
-$bg: $black;
-// $bg: $grey-darkest;
+// $bg: $black;
+$bg: $grey-darkest;
 $text-default: $grey-mid;
 
 $font-size-large-static: 30px;

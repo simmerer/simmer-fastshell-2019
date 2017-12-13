@@ -34,14 +34,14 @@ a {
   transition: all 350ms ease; }
 
 body {
-  background-color: #000;
+  background-color: #111;
   color: #9CA09F;
   font-family: "freight-display-pro";
   font-weight: 700;
   letter-spacing: -0.04em; }
 
 .bg {
-  background: url("../img/s2.jpg") no-repeat center center #000;
+  background: url("../img/s2.jpg") no-repeat center center #111;
   background-size: cover;
   bottom: 0;
   left: 0;
@@ -112,7 +112,7 @@ ul.clients a {
   padding-top: 5px;
   position: relative; }
   ul.clients a:before {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     bottom: 0;
     content: '';
     left: 0;
