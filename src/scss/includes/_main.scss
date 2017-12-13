@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 ul {
     list-style: none;
@@ -14,11 +14,28 @@ a {
 
 
 body {
-    background: $bg;
+    background-color: $bg;
     color: $text-default;
     font-family: $serif;
     font-weight: 700;
     letter-spacing: -0.04em;
+}
+
+.bg {
+    background: url('../img/s2.jpg') no-repeat center center $bg;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.fg {
+    position: relative;
+    z-index: 2;
 }
 
 .amp {
@@ -26,36 +43,58 @@ body {
 }
 
 .brand {
+    margin-bottom: 10vw;
+    position: relative;
+
     a {
-        background: url('../img/brand.svg') no-repeat 0 0 transparent;
-        background-size: 100% auto;
+        background-color: rgba($white, 0.1);
+        // background-size: 100% auto;
         display: block;
-        height: 26vw;
-        opacity: 0.07;
+        height: 160px;
+        mask-image: url('../img/brand.svg');
+        mask-position: 0 0;
+        mask-repeat: no-repeat;
+        mask-size: 100% auto;
+        // opacity: 0.07;
         text-indent: -999em;
         transition: $transition-slow;
-        width: 40vw;
+        width: 250px;
 
         &:hover,
         &:focus {
-            opacity: 0.1;
+            background-color: rgba($white, 0.2);
+            // opacity: 0.1;
             outline: 0;
 
-            & + .tagline {
+            & + .tagline-container .tagline {
                 opacity: 0.75;
             }
         }
+        &:focus {
+            background-color: rgba($green, 0.7);
+        }
     }
 
+    .tagline-container {
+        bottom: 50px;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        transition: transform 1800ms ease-out, opacity 1800ms ease-out;
+        transition-delay: 700ms;
+    }
     .tagline {
         color: $white;
-        font-size: $font-size-large;
+        font-size: $font-size-large-static;
         font-weight: 600;
-        margin-bottom: 10vw;
-        margin-top: -5.75vw;
-        padding-left: $font-size-large;
-        opacity: .2;
+        line-height: 0.9;
+        padding-left: $font-size-large-static;
+        opacity: .5;
         transition: $transition-default;
+
+        .amp {
+            margin-left: -0.4em;
+        }
     }
 }
 
@@ -65,12 +104,13 @@ ul.clients {
     a {
         color: $white;
         display: inline-block;
-        font-size: $font-size-large;
-        margin: 1vw 0;
+        font-size: $font-size-large-static;
+        margin: 5px 0;
         opacity: 0.6;
-        padding-left: $font-size-large;
+        padding-bottom: 5px;
+        padding-left: $font-size-large-static;
+        padding-top: 5px;
         position: relative;
-
 
         &:before {
             background-color: rgba($black, 0.2);
@@ -108,10 +148,10 @@ ul.clients {
 
 footer {
     margin-top: 10vw;
-    padding: 0 $font-size-large $font-size-large;
+    padding: 0 $font-size-large-static $font-size-large-static;
 
     .contact {
-        font-size: $font-size-large;
+        font-size: $font-size-large-static;
 
         a {
             opacity: 0.2;
@@ -121,6 +161,43 @@ footer {
                 opacity: 0.5;
                 outline: 0;
             }
+        }
+    }
+}
+
+
+@media screen and (min-width: $medium-min) {
+    .brand {
+        a {
+            height: 26vw;
+            width: 40vw;
+        }
+        .tagline-container {
+            bottom: auto;
+            left: 22vw;
+            top: 5vw;
+        }
+        .tagline {
+            color: $white;
+            font-size: $font-size-large;
+            opacity: .4;
+            padding-left: $font-size-large;
+        }
+    }
+    ul.clients {
+        a {
+            font-size: $font-size-large;
+            margin: 1vw 0;
+            padding-bottom: 0;
+            padding-left: $font-size-large;
+            padding-top: 0;
+        }
+    }
+    footer {
+        padding: 0 $font-size-large $font-size-large;
+
+        .contact {
+            font-size: $font-size-large;
         }
     }
 }

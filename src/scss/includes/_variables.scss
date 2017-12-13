@@ -7,13 +7,18 @@ $white: #FFF;
 
 $green: #70D63D;
 
-$bg: $grey-darkest;
+$bg: $black;
+// $bg: $grey-darkest;
 $text-default: $grey-mid;
 
-$font-size-large: 4.5vw;
+$font-size-large-static: 30px;
+$font-size-large: 4vw;
 
 $serif: "freight-display-pro";
 $sans: "freight-sans-pro";
 
 $transition-default: all 350ms ease;
 $transition-slow: all 500ms ease-out;
+
+$small-max: 699px;
+$medium-min: 700px;

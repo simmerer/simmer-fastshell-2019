@@ -1,5 +1,5 @@
 .article,
-.tagline,
+.tagline-container,
 li,
 p {
     opacity: 1;
@@ -12,7 +12,7 @@ ul {
 
 .wf-loading {
     .article,
-    .tagline,
+    .tagline-container,
     li,
     p {
         opacity: 0;

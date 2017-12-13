@@ -403,14 +403,4 @@
  * @version 5.0.0
  * Copyright 2017. CC BY-NC-ND licensed.
  */
-(function ($, window, document, undefined) {
-
-  'use strict';
-
-  $(function () {
-
-
-
-  });
-
-})(jQuery, window, document);
+'use strict';
