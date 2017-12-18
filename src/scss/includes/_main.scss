@@ -51,12 +51,14 @@ body {
         // background-size: 100% auto;
         display: block;
         height: 160px;
+        left: -2vw;
         mask-image: url('../img/brand.svg');
         mask-position: 0 0;
         mask-repeat: no-repeat;
         mask-size: 100% auto;
-        // opacity: 0.07;
+        position: relative;
         text-indent: -999em;
+        top: -2vw;
         transition: $transition-slow;
         width: 250px;
 

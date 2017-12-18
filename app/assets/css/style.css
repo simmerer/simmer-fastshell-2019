@@ -65,6 +65,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     display: block;
     height: 160px;
+    left: -2vw;
     -webkit-mask-image: url("../img/brand.svg");
             mask-image: url("../img/brand.svg");
     -webkit-mask-position: 0 0;
@@ -73,7 +74,9 @@ body {
             mask-repeat: no-repeat;
     -webkit-mask-size: 100% auto;
             mask-size: 100% auto;
+    position: relative;
     text-indent: -999em;
+    top: -2vw;
     transition: all 500ms ease-out;
     width: 250px; }
     .brand a:hover, .brand a:focus {
@@ -169,6 +172,84 @@ footer {
     padding: 0 4vw 4vw; }
     footer .contact {
       font-size: 4vw; } }
+
+ul.clients .ie a:before {
+  background-color: rgba(185, 203, 65, 0.95); }
+
+ul.clients .gk a:before {
+  background-color: rgba(131, 169, 106, 0.95); }
+
+ul.clients .batc a:before {
+  background-color: rgba(234, 232, 226, 0.95); }
+
+ul.clients .raven a:before {
+  background-color: rgba(118, 202, 193, 0.95); }
+
+ul.clients .nb a:before {
+  background-color: rgba(231, 163, 68, 0.95); }
+
+ul.clients .bfmn a:before {
+  background-color: rgba(93, 138, 70, 0.95); }
+
+ul.clients .vork a:before {
+  background-color: rgba(221, 66, 51, 0.95); }
+
+ul.clients .sb a:before {
+  background-color: rgba(60, 125, 227, 0.95); }
+
+ul.clients .vital a:before {
+  background-color: rgba(245, 245, 245, 0.95); }
+
+ul.clients .rt a:before {
+  background-color: rgba(132, 66, 144, 0.95); }
+
+ul.clients .oa a:before {
+  background-color: rgba(182, 38, 48, 0.95); }
+
+ul.clients .jb a:before {
+  background-color: rgba(98, 166, 172, 0.95); }
+
+ul.clients .keva a:before {
+  background-color: rgba(16, 50, 85, 0.95); }
+
+.client-ie {
+  background-color: #B9CB41; }
+
+.client-gk {
+  background-color: #83A96A; }
+
+.client-batc {
+  background-color: #EAE8E2; }
+
+.client-raven {
+  background-color: #76CAC1; }
+
+.client-nb {
+  background-color: #E7A344; }
+
+.client-bfmn {
+  background-color: #5D8A46; }
+
+.client-vork {
+  background-color: #DD4233; }
+
+.client-sb {
+  background-color: #3C7DE3; }
+
+.client-vital {
+  background-color: #F5F5F5; }
+
+.client-rt {
+  background-color: #844290; }
+
+.client-oa {
+  background-color: #B62630; }
+
+.client-jb {
+  background-color: #62A6AC; }
+
+.client-keva {
+  background-color: #103255; }
 
 .article,
 .tagline-container,

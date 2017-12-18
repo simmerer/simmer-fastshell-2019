@@ -1,0 +1,95 @@
+ul.clients {
+    .ie a:before {
+        background-color: rgba($bg-client-ie, $client-list-hover-opacity);
+    }
+    .gk a:before {
+        background-color: rgba($bg-client-gk, $client-list-hover-opacity);
+    }
+    .batc a:before {
+        background-color: rgba($bg-client-batc, $client-list-hover-opacity);
+    }
+    .raven a:before {
+        background-color: rgba($bg-client-raven, $client-list-hover-opacity);
+    }
+    .nb a:before {
+        background-color: rgba($bg-client-nb, $client-list-hover-opacity);
+    }
+    .bfmn a:before {
+        background-color: rgba($bg-client-bfmn, $client-list-hover-opacity);
+    }
+    .vork a:before {
+        background-color: rgba($bg-client-vork, $client-list-hover-opacity);
+    }
+    .sb a:before {
+        background-color: rgba($bg-client-sb, $client-list-hover-opacity);
+    }
+    .vital a:before {
+        background-color: rgba($bg-client-vital, $client-list-hover-opacity);
+    }
+    .rt a:before {
+        background-color: rgba($bg-client-rt, $client-list-hover-opacity);
+    }
+    .oa a:before {
+        background-color: rgba($bg-client-oa, $client-list-hover-opacity);
+    }
+    .jb a:before {
+        background-color: rgba($bg-client-jb, $client-list-hover-opacity);
+    }
+    .keva a:before {
+        background-color: rgba($bg-client-keva, $client-list-hover-opacity);
+    }
+}
+
+
+
+.client-ie {
+    background-color: $bg-client-ie;
+}
+
+.client-gk {
+    background-color: $bg-client-gk;
+}
+
+.client-batc {
+    background-color: $bg-client-batc;
+}
+
+.client-raven {
+    background-color: $bg-client-raven;
+}
+
+.client-nb {
+    background-color: $bg-client-nb;
+}
+
+.client-bfmn {
+    background-color: $bg-client-bfmn;
+}
+
+.client-vork {
+    background-color: $bg-client-vork;
+}
+
+.client-sb {
+    background-color: $bg-client-sb;
+}
+
+.client-vital {
+    background-color: $bg-client-vital;
+}
+
+.client-rt {
+    background-color: $bg-client-rt;
+}
+
+.client-oa {
+    background-color: $bg-client-oa;
+}
+
+.client-jb {
+    background-color: $bg-client-jb;
+}
+
+.client-keva {
+    background-color: $bg-client-keva;
+}
