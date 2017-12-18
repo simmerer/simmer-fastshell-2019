@@ -43,7 +43,6 @@ body {
 }
 
 .brand {
-    margin-bottom: 10vw;
     position: relative;
 
     a {
@@ -103,6 +102,8 @@ body {
 
 
 ul.clients {
+    margin-top: 10vw;
+
     a {
         color: $white;
         display: inline-block;

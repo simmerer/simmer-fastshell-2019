@@ -59,7 +59,6 @@ body {
   font-style: italic; }
 
 .brand {
-  margin-bottom: 10vw;
   position: relative; }
   .brand a {
     background-color: rgba(255, 255, 255, 0.1);
@@ -104,39 +103,41 @@ body {
     .brand .tagline .amp {
       margin-left: -0.4em; }
 
-ul.clients a {
-  color: #FFF;
-  display: inline-block;
-  font-size: 30px;
-  margin: 5px 0;
-  opacity: 0.6;
-  padding-bottom: 5px;
-  padding-left: 30px;
-  padding-top: 5px;
-  position: relative; }
-  ul.clients a:before {
-    background-color: rgba(0, 0, 0, 0.5);
-    bottom: 0;
-    content: '';
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    right: 1vw;
-    top: 0;
-    -ms-transform: translateX(-100%);
-        transform: translateX(-100%);
-    transition: all 500ms ease-out;
-    will-change: transform;
-    z-index: -1; }
-  ul.clients a:hover, ul.clients a:focus {
-    opacity: 1;
-    outline: 0; }
-    ul.clients a:hover:before, ul.clients a:focus:before {
+ul.clients {
+  margin-top: 10vw; }
+  ul.clients a {
+    color: #FFF;
+    display: inline-block;
+    font-size: 30px;
+    margin: 5px 0;
+    opacity: 0.6;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 5px;
+    position: relative; }
+    ul.clients a:before {
+      background-color: rgba(0, 0, 0, 0.5);
+      bottom: 0;
+      content: '';
+      left: 0;
+      opacity: 0.3;
+      position: absolute;
+      right: 1vw;
+      top: 0;
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+      transition: all 500ms ease-out;
+      will-change: transform;
+      z-index: -1; }
+    ul.clients a:hover, ul.clients a:focus {
       opacity: 1;
-      -ms-transform: translateX(0);
-          transform: translateX(0); }
-  ul.clients a:focus:before {
-    background-color: rgba(112, 214, 61, 0.5); }
+      outline: 0; }
+      ul.clients a:hover:before, ul.clients a:focus:before {
+        opacity: 1;
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
+    ul.clients a:focus:before {
+      background-color: rgba(112, 214, 61, 0.5); }
 
 footer {
   margin-top: 10vw;
@@ -212,6 +213,25 @@ ul.clients .jb a:before {
 ul.clients .keva a:before {
   background-color: rgba(16, 50, 85, 0.95); }
 
+.client header h1 {
+  color: #FFF;
+  font-size: 60px;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  padding: 0 4vw; }
+  .client header h1 span {
+    display: block; }
+    .client header h1 span.interstitial {
+      font-size: 50%;
+      font-style: italic;
+      letter-spacing: 0;
+      line-height: 1.333;
+      opacity: 0.5; }
+
+@media screen and (min-width: 700px) {
+  .client header h1 {
+    font-size: 8vw; } }
+
 .client-ie {
   background-color: #B9CB41; }
 
@@ -220,6 +240,8 @@ ul.clients .keva a:before {
 
 .client-batc {
   background-color: #EAE8E2; }
+  .client-batc header h1 {
+    color: #000; }
 
 .client-raven {
   background-color: #76CAC1; }
@@ -238,6 +260,8 @@ ul.clients .keva a:before {
 
 .client-vital {
   background-color: #F5F5F5; }
+  .client-vital header h1 {
+    color: #000; }
 
 .client-rt {
   background-color: #844290; }

@@ -42,6 +42,42 @@ ul.clients {
 
 
 
+.client {
+    header {
+        h1 {
+            color: $white;
+            font-size: $font-size-large-static*2;
+            letter-spacing: -0.04em;
+            line-height: 0.9;
+            padding: 0 4vw;
+
+            span {
+                display: block;
+
+                &.interstitial {
+                    font-size: 50%;
+                    font-style: italic;
+                    letter-spacing: 0;
+                    line-height: 1.333;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $medium-min) {
+    .client {
+        header {
+            h1 {
+                font-size: $font-size-large*2;
+            }
+        }
+    }
+}
+
+
+
 .client-ie {
     background-color: $bg-client-ie;
 }
@@ -52,6 +88,12 @@ ul.clients {
 
 .client-batc {
     background-color: $bg-client-batc;
+
+    header {
+        h1 {
+            color: $black;
+        }
+    }
 }
 
 .client-raven {
@@ -76,6 +118,12 @@ ul.clients {
 
 .client-vital {
     background-color: $bg-client-vital;
+
+    header {
+        h1 {
+            color: $black;
+        }
+    }
 }
 
 .client-rt {
@@ -93,3 +141,6 @@ ul.clients {
 .client-keva {
     background-color: $bg-client-keva;
 }
+
+
+
