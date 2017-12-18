@@ -19,10 +19,11 @@ body {
     font-family: $serif;
     font-weight: 700;
     letter-spacing: -0.04em;
+    transition: background-color 1s;
 }
 
 .bg {
-    background: url('../img/s2.jpg') no-repeat center center $bg;
+    // background: url('../img/s2.jpg') no-repeat center center $bg;
     background-size: cover;
     bottom: 0;
     left: 0;
@@ -72,7 +73,7 @@ body {
             }
         }
         &:focus {
-            background-color: rgba($green, 0.7);
+            background-color: rgba($white, 0.9);
         }
     }
 

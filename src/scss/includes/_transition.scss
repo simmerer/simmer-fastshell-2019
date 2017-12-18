@@ -1,0 +1,36 @@
+// in
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+
+// out
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 0.25s ease-in 1 forwards;
+}
+
+
+// pause
+.is-paused {
+    animation-play-state: paused;
+}
+
+
+// hide
+.hide {
+    display: none !important;
+}

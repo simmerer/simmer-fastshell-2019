@@ -21,30 +21,30 @@ function run() {
     },
 
     fadeOut: function fadeOut() {
-      // return $(this.oldContainer).animate({
-      //   opacity: 0,
-      // }, 1000).promise();
+      var deferred = Barba.Utils.deferred();
+      this.oldContainer.classList.add('fade-out');
+      deferred.resolve();
+      console.info(deferred);
+      return deferred.promise;
     },
 
     fadeIn: function fadeIn() {
       var _this = this;
-      // let $el = $(this.newContainer);
+      var el = this.newContainer;
 
       var body = document.querySelector('body');
       body.classList = newBodyClasses;
 
-      // $(this.oldContainer).hide();
+      this.oldContainer.classList.add('hide');
 
-      // $el.css({
-      //   visibility: 'visible',
-      //   opacity: 0,
-      // });
+      el.classList.add('is-paused');
+      el.classList.add('fade-in');
+      setTimeout(function() {
+        el.classList.remove('is-paused');
+      }, 250);
 
-      // $el.animate({
-      //   opacity: 1,
-      // }, 1000, function() {
-      //   _this.done();
-      // });
+
+      this.done();
     }
   });
 
@@ -61,17 +61,17 @@ function run() {
 
 // in case the document is already rendered
 if (document.readyState !== 'loading') {
-  // run();
+  run();
 }
 // modern browsers
 else if (document.addEventListener) {
-  // document.addEventListener('DOMContentLoaded', run);
+  document.addEventListener('DOMContentLoaded', run);
 }
 // IE <= 8
 else {
   document.attachEvent('onreadystatechange', function () {
     if (document.readyState === 'complete') {
-      // run();
+      run();
     }
   });
 }

@@ -43,15 +43,37 @@ ul.clients {
 
 
 .client {
+    .brand {
+        .tagline {
+            opacity: 0 !important;
+        }
+        a {
+            background-color: rgba($black, 0.3);
+            height: 64px;
+            width: 100px;
+
+            &:hover,
+            &:focus {
+                background-color: rgba($black, 0.75);
+            }
+        }
+    }
     header {
+        color: $white;
+        font-size: $font-size-large-static*2;
+        letter-spacing: -0.04em;
+        line-height: 0.9;
+
         h1 {
-            color: $white;
-            font-size: $font-size-large-static*2;
-            letter-spacing: -0.04em;
-            line-height: 0.9;
+            font-size: inherit;
             padding: 0 4vw;
 
-            span {
+            .amp {
+                left: -0.1em;
+                position: relative;
+            }
+
+            &>span {
                 display: block;
 
                 &.interstitial {
@@ -63,14 +85,41 @@ ul.clients {
                 }
             }
         }
+
+        a.project {
+            color: inherit;
+            display: block;
+            font-size: 50%;
+            letter-spacing: -0.04em;
+            opacity: 0.25;
+            padding-left: 4vw;
+
+            &:hover,
+            &:focus {
+                opacity: 0.75;
+                outline: 0;
+            }
+        }
     }
 }
 
 @media screen and (min-width: $medium-min) {
     .client {
+        .brand {
+            margin-bottom: 10vw;
+
+            a {
+                height: 7.68vw;
+                left: -0.6vw;
+                top: -0.6vw;
+                width: 12vw;
+            }
+        }
         header {
+            font-size: $font-size-large*2;
+
             h1 {
-                font-size: $font-size-large*2;
+
             }
         }
     }
@@ -89,10 +138,14 @@ ul.clients {
 .client-batc {
     background-color: $bg-client-batc;
 
-    header {
-        h1 {
-            color: $black;
+    .brand {
+        a {
+            background-color: rgba($black, 0.3);
         }
+    }
+
+    header {
+        color: $black;
     }
 }
 
@@ -119,10 +172,14 @@ ul.clients {
 .client-vital {
     background-color: $bg-client-vital;
 
-    header {
-        h1 {
-            color: $black;
+    .brand {
+        a {
+            background-color: rgba($black, 0.3);
         }
+    }
+
+    header {
+        color: $black;
     }
 }
 
