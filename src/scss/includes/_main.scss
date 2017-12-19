@@ -49,10 +49,10 @@ body {
     transition: $transition-slow;
 
     a {
-        background: url('../img/sig.svg') no-repeat 2vw 2vw transparent;
+        background: url('../img/sig.svg') no-repeat 2vw 4vw transparent;
         background-size: 100% auto;
         display: block;
-        height: 200px;
+        height: 210px;
         opacity: 0.15;
         position: relative;
         text-indent: -999em;
@@ -178,7 +178,7 @@ footer {
 @media screen and (min-width: $medium-min) {
     .brand {
         a {
-            height: 25vw;
+            height: 27vw;
             width: 30vw;
         }
         .tagline-container {

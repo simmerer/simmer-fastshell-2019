@@ -43,10 +43,14 @@ ul.clients {
 
 
 .client {
+    // &.complete {
+    //     .bg {
+    //         position: absolute;
+    //     }
+    // }
     .bg {
         background-position: -0.6vw -0.6vw;
         background-size: 100px auto;
-        position: absolute;
         opacity: 0.25;
         transition: all 850ms cubic-bezier(.47,.07,.53,.99);
     }
