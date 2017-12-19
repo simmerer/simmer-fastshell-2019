@@ -43,11 +43,16 @@ ul.clients {
 
 
 .client {
-    // &.complete {
-    //     .bg {
-    //         position: absolute;
-    //     }
-    // }
+    nav {
+        letter-spacing: -0.02em;
+
+        span {
+            opacity: 0.5;
+        }
+        &.upper {
+            display: none;
+        }
+    }
     .bg {
         background-position: -0.6vw -0.6vw;
         background-size: 100px auto;
@@ -138,6 +143,14 @@ ul.clients {
 
 @media screen and (min-width: $large-min) {
     .client {
+        nav {
+            &.upper {
+                display: block;
+                position: absolute;
+                right: 4vw;
+                top: -24vw;
+            }
+        }
         header {
             float: left;
         }

@@ -254,6 +254,13 @@ ul.clients .jb a:before {
 ul.clients .keva a:before {
   background-color: rgba(16, 50, 85, 0.95); }
 
+.client nav {
+  letter-spacing: -0.02em; }
+  .client nav span {
+    opacity: 0.5; }
+  .client nav.upper {
+    display: none; }
+
 .client .bg {
   background-position: -0.6vw -0.6vw;
   background-size: 100px auto;
@@ -312,6 +319,11 @@ ul.clients .keva a:before {
     font-size: 8vw; } }
 
 @media screen and (min-width: 1000px) {
+  .client nav.upper {
+    display: block;
+    position: absolute;
+    right: 4vw;
+    top: -24vw; }
   .client header {
     float: left; }
   .client .see {
