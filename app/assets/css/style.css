@@ -50,7 +50,7 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  transition: all 1350ms cubic-bezier(0.41, 0.03, 0.37, 1);
+  transition: all 650ms cubic-bezier(0.41, 0.03, 0.37, 1);
   z-index: 1; }
 
 .fg {
@@ -64,10 +64,18 @@ body {
   position: relative;
   transition: all 500ms ease-out; }
   .brand a {
-    background: url("../img/sig.svg") no-repeat 2vw 4vw transparent;
+    background-color: #FFF;
     background-size: 100% auto;
     display: block;
     height: 210px;
+    -webkit-mask-image: url("../img/brand.svg");
+            mask-image: url("../img/brand.svg");
+    -webkit-mask-position: -1.7vw -2vw;
+            mask-position: -1.7vw -2vw;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-size: 100% auto;
+            mask-size: 100% auto;
     opacity: 0.15;
     position: relative;
     text-indent: -999em;
@@ -83,7 +91,7 @@ body {
     transition-delay: 700ms; }
   .brand .tagline {
     color: #FFF;
-    font-size: 30px;
+    font-size: 22.5px;
     font-weight: 600;
     line-height: 0.9;
     padding-left: 30px;
@@ -97,6 +105,7 @@ body {
   transition-delay: 650ms; }
 
 ul.clients {
+  margin-bottom: 8vw;
   margin-top: 4vw; }
   ul.clients a {
     color: #FFF;
@@ -133,6 +142,7 @@ ul.clients {
       background-color: rgba(112, 214, 61, 0.5); }
 
 footer {
+  display: none;
   margin-top: 10vw;
   padding: 0 30px 30px; }
   footer .contact {
@@ -149,11 +159,11 @@ footer {
     width: 30vw; }
   .brand .tagline-container {
     bottom: auto;
-    left: 16vw;
-    top: 4vw; }
+    left: 14.5vw;
+    top: 3vw; }
   .brand .tagline {
     color: #FFF;
-    font-size: 4vw;
+    font-size: 3vw;
     opacity: .15;
     padding-left: 4vw; }
   ul.clients a {
@@ -210,7 +220,7 @@ ul.clients .keva a:before {
   background-position: -0.6vw -0.6vw;
   background-size: 100px auto;
   opacity: 0.25;
-  transition: all 850ms cubic-bezier(0.47, 0.07, 0.53, 0.99); }
+  transition: all 350ms ease-out; }
 
 .client .brand a {
   opacity: 0;

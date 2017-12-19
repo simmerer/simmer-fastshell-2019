@@ -31,7 +31,7 @@ body {
     position: fixed;
     right: 0;
     top: 0;
-    transition: all 1350ms cubic-bezier(.41,.03,.37,1);
+    transition: all 650ms cubic-bezier(.41,.03,.37,1);
     z-index: 1;
 }
 
@@ -49,10 +49,15 @@ body {
     transition: $transition-slow;
 
     a {
-        background: url('../img/sig.svg') no-repeat 2vw 4vw transparent;
+        // background: url('../img/brand.svg') no-repeat 2vw 4vw transparent;
+        background-color: $white;
         background-size: 100% auto;
         display: block;
         height: 210px;
+        mask-image: url('../img/brand.svg');
+        mask-position: -1.7vw -2vw;
+        mask-repeat: no-repeat;
+        mask-size: 100% auto;
         opacity: 0.15;
         position: relative;
         text-indent: -999em;
@@ -83,7 +88,7 @@ body {
     }
     .tagline {
         color: $white;
-        font-size: $font-size-large-static;
+        font-size: $font-size-large-static*.75;
         font-weight: 600;
         line-height: 0.9;
         padding-left: $font-size-large-static;
@@ -108,6 +113,7 @@ body {
 
 
 ul.clients {
+    margin-bottom: 8vw;
     margin-top: 4vw;
 
     a {
@@ -156,6 +162,8 @@ ul.clients {
 
 
 footer {
+    display: none;
+
     margin-top: 10vw;
     padding: 0 $font-size-large-static $font-size-large-static;
 
@@ -183,12 +191,12 @@ footer {
         }
         .tagline-container {
             bottom: auto;
-            left: 16vw;
-            top: 4vw;
+            left: 14.5vw;
+            top: 3vw;
         }
         .tagline {
             color: $white;
-            font-size: $font-size-large;
+            font-size: $font-size-large*.75;
             opacity: .15;
             padding-left: $font-size-large;
         }
