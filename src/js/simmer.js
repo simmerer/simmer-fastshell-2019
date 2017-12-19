@@ -43,7 +43,7 @@ function run() {
         el.classList.remove('is-paused');
       }, 250);
 
-
+      window.scrollTo(0,0);
 
       this.done();
     }
