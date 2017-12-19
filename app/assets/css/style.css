@@ -191,7 +191,7 @@ footer {
   position: relative; }
   .browser:before {
     background: rgba(0, 0, 0, 0.05);
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.05);
     border-bottom: 0;
     border-radius: 4px 4px 0 0;
     bottom: 100%;
