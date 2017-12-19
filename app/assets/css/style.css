@@ -265,7 +265,7 @@ ul.clients .keva a:before {
   background-position: -0.6vw -0.6vw;
   background-size: 100px auto;
   opacity: 0.25;
-  transition: all 350ms ease-out; }
+  transition: all 450ms ease-out; }
 
 .client .brand a {
   opacity: 0;
