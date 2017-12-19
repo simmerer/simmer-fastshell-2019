@@ -43,20 +43,23 @@ ul.clients {
 
 
 .client {
+    .bg {
+        background-position: -0.6vw -0.6vw;
+        background-size: 100px auto;
+        position: absolute;
+        opacity: 0.25;
+        transition: all 850ms cubic-bezier(.47,.07,.53,.99);
+    }
     .brand {
-        .tagline {
-            opacity: 0 !important;
-        }
         a {
-            background-color: rgba($black, 0.3);
-            height: 64px;
-            width: 100px;
-
-            &:hover,
-            &:focus {
-                background-color: rgba($black, 0.75);
-            }
+            // background-position: -50vw -50vw;
+            opacity: 0;
+            transition: all 250ms;
+            transition-delay: 0;
         }
+    }
+    .tagline {
+        opacity: 0 !important;
     }
     header {
         color: $white;
@@ -105,15 +108,8 @@ ul.clients {
 
 @media screen and (min-width: $medium-min) {
     .client {
-        .brand {
-            margin-bottom: 10vw;
-
-            a {
-                height: 7.68vw;
-                left: -0.6vw;
-                top: -0.6vw;
-                width: 12vw;
-            }
+        .bg {
+            background-size: 12vw auto;
         }
         header {
             font-size: $font-size-large*2;
@@ -137,12 +133,6 @@ ul.clients {
 
 .client-batc {
     background-color: $bg-client-batc;
-
-    .brand {
-        a {
-            background-color: rgba($black, 0.3);
-        }
-    }
 
     header {
         color: $black;
@@ -171,12 +161,6 @@ ul.clients {
 
 .client-vital {
     background-color: $bg-client-vital;
-
-    .brand {
-        a {
-            background-color: rgba($black, 0.3);
-        }
-    }
 
     header {
         color: $black;

@@ -34,7 +34,7 @@ a {
   transition: all 350ms ease; }
 
 body {
-  background-color: #111;
+  background-color: #494E55;
   color: #9CA09F;
   font-family: "freight-display-pro";
   font-weight: 700;
@@ -42,13 +42,15 @@ body {
   transition: background-color 1s; }
 
 .bg {
-  background-size: cover;
+  background: url("../img/brand.svg") no-repeat -320vw -200vw;
+  background-size: 1200vw auto;
   bottom: 0;
   left: 0;
-  opacity: 0.1;
+  opacity: 0.8;
   position: fixed;
   right: 0;
   top: 0;
+  transition: all 1350ms cubic-bezier(0.41, 0.03, 0.37, 1);
   z-index: 1; }
 
 .fg {
@@ -59,32 +61,19 @@ body {
   font-style: italic; }
 
 .brand {
-  position: relative; }
+  position: relative;
+  transition: all 500ms ease-out; }
   .brand a {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: url("../img/sig.svg") no-repeat 2vw 2vw transparent;
+    background-size: 100% auto;
     display: block;
-    height: 160px;
-    left: -2vw;
-    -webkit-mask-image: url("../img/brand.svg");
-            mask-image: url("../img/brand.svg");
-    -webkit-mask-position: 0 0;
-            mask-position: 0 0;
-    -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-    -webkit-mask-size: 100% auto;
-            mask-size: 100% auto;
+    height: 200px;
+    opacity: 0.15;
     position: relative;
     text-indent: -999em;
-    top: -2vw;
-    transition: all 500ms ease-out;
     width: 250px; }
     .brand a:hover, .brand a:focus {
-      background-color: rgba(255, 255, 255, 0.2);
       outline: 0; }
-      .brand a:hover + .tagline-container .tagline, .brand a:focus + .tagline-container .tagline {
-        opacity: 0.75; }
-    .brand a:focus {
-      background-color: rgba(255, 255, 255, 0.9); }
   .brand .tagline-container {
     bottom: 50px;
     left: 0;
@@ -98,13 +87,17 @@ body {
     font-weight: 600;
     line-height: 0.9;
     padding-left: 30px;
-    opacity: .5;
+    opacity: .55;
     transition: all 350ms ease; }
     .brand .tagline .amp {
       margin-left: -0.4em; }
 
+.home .brand a {
+  transition: opacity 2500ms ease-out;
+  transition-delay: 650ms; }
+
 ul.clients {
-  margin-top: 10vw; }
+  margin-top: 4vw; }
   ul.clients a {
     color: #FFF;
     display: inline-block;
@@ -152,16 +145,16 @@ footer {
 
 @media screen and (min-width: 700px) {
   .brand a {
-    height: 26vw;
-    width: 40vw; }
+    height: 25vw;
+    width: 30vw; }
   .brand .tagline-container {
     bottom: auto;
-    left: 22vw;
-    top: 5vw; }
+    left: 16vw;
+    top: 4vw; }
   .brand .tagline {
     color: #FFF;
     font-size: 4vw;
-    opacity: .4;
+    opacity: .15;
     padding-left: 4vw; }
   ul.clients a {
     font-size: 4vw;
@@ -213,15 +206,20 @@ ul.clients .jb a:before {
 ul.clients .keva a:before {
   background-color: rgba(16, 50, 85, 0.95); }
 
-.client .brand .tagline {
-  opacity: 0 !important; }
+.client .bg {
+  background-position: -0.6vw -0.6vw;
+  background-size: 100px auto;
+  position: absolute;
+  opacity: 0.25;
+  transition: all 850ms cubic-bezier(0.47, 0.07, 0.53, 0.99); }
 
 .client .brand a {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 64px;
-  width: 100px; }
-  .client .brand a:hover, .client .brand a:focus {
-    background-color: rgba(0, 0, 0, 0.75); }
+  opacity: 0;
+  transition: all 250ms;
+  transition-delay: 0; }
+
+.client .tagline {
+  opacity: 0 !important; }
 
 .client header {
   color: #FFF;
@@ -254,13 +252,8 @@ ul.clients .keva a:before {
       outline: 0; }
 
 @media screen and (min-width: 700px) {
-  .client .brand {
-    margin-bottom: 10vw; }
-    .client .brand a {
-      height: 7.68vw;
-      left: -0.6vw;
-      top: -0.6vw;
-      width: 12vw; }
+  .client .bg {
+    background-size: 12vw auto; }
   .client header {
     font-size: 8vw; } }
 
@@ -272,8 +265,6 @@ ul.clients .keva a:before {
 
 .client-batc {
   background-color: #EAE8E2; }
-  .client-batc .brand a {
-    background-color: rgba(0, 0, 0, 0.3); }
   .client-batc header {
     color: #000; }
 
@@ -294,8 +285,6 @@ ul.clients .keva a:before {
 
 .client-vital {
   background-color: #F5F5F5; }
-  .client-vital .brand a {
-    background-color: rgba(0, 0, 0, 0.3); }
   .client-vital header {
     color: #000; }
 

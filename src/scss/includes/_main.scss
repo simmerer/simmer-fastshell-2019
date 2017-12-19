@@ -23,14 +23,15 @@ body {
 }
 
 .bg {
-    // background: url('../img/s2.jpg') no-repeat center center $bg;
-    background-size: cover;
+    background: url('../img/brand.svg') no-repeat -320vw -200vw;
+    background-size: 1200vw auto;
     bottom: 0;
     left: 0;
-    opacity: 0.1;
+    opacity: 0.8;
     position: fixed;
     right: 0;
     top: 0;
+    transition: all 1350ms cubic-bezier(.41,.03,.37,1);
     z-index: 1;
 }
 
@@ -45,35 +46,30 @@ body {
 
 .brand {
     position: relative;
+    transition: $transition-slow;
 
     a {
-        background-color: rgba($white, 0.1);
-        // background-size: 100% auto;
+        background: url('../img/sig.svg') no-repeat 2vw 2vw transparent;
+        background-size: 100% auto;
         display: block;
-        height: 160px;
-        left: -2vw;
-        mask-image: url('../img/brand.svg');
-        mask-position: 0 0;
-        mask-repeat: no-repeat;
-        mask-size: 100% auto;
+        height: 200px;
+        opacity: 0.15;
         position: relative;
         text-indent: -999em;
-        top: -2vw;
-        transition: $transition-slow;
         width: 250px;
 
         &:hover,
         &:focus {
-            background-color: rgba($white, 0.2);
+            // background-color: rgba($white, 0.2);
             // opacity: 0.1;
             outline: 0;
 
-            & + .tagline-container .tagline {
-                opacity: 0.75;
-            }
+            // & + .tagline-container .tagline {
+            //     opacity: 0.75;
+            // }
         }
         &:focus {
-            background-color: rgba($white, 0.9);
+            // background-color: rgba($white, 0.9);
         }
     }
 
@@ -91,7 +87,7 @@ body {
         font-weight: 600;
         line-height: 0.9;
         padding-left: $font-size-large-static;
-        opacity: .5;
+        opacity: .55;
         transition: $transition-default;
 
         .amp {
@@ -101,9 +97,18 @@ body {
 }
 
 
+.home {
+    .brand {
+        a {
+            transition: opacity 2500ms ease-out;
+            transition-delay: 650ms;
+        }
+    }
+}
+
 
 ul.clients {
-    margin-top: 10vw;
+    margin-top: 4vw;
 
     a {
         color: $white;
@@ -173,18 +178,18 @@ footer {
 @media screen and (min-width: $medium-min) {
     .brand {
         a {
-            height: 26vw;
-            width: 40vw;
+            height: 25vw;
+            width: 30vw;
         }
         .tagline-container {
             bottom: auto;
-            left: 22vw;
-            top: 5vw;
+            left: 16vw;
+            top: 4vw;
         }
         .tagline {
             color: $white;
             font-size: $font-size-large;
-            opacity: .4;
+            opacity: .15;
             padding-left: $font-size-large;
         }
     }
