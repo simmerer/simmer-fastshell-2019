@@ -256,7 +256,7 @@ ul.clients .keva a:before {
 
 .client nav {
   letter-spacing: -0.02em; }
-  .client nav span {
+  .client nav span:first-child {
     opacity: 0.5; }
   .client nav.upper {
     display: none; }
@@ -338,7 +338,8 @@ ul.clients .keva a:before {
 
 .client-batc {
   background-color: #EAE8E2; }
-  .client-batc header {
+  .client-batc header,
+  .client-batc nav a {
     color: #000; }
 
 .client-raven {
@@ -358,7 +359,8 @@ ul.clients .keva a:before {
 
 .client-vital {
   background-color: #F5F5F5; }
-  .client-vital header {
+  .client-vital header,
+  .client-vital nav a {
     color: #000; }
 
 .client-rt {

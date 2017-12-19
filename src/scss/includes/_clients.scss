@@ -46,7 +46,7 @@ ul.clients {
     nav {
         letter-spacing: -0.02em;
 
-        span {
+        span:first-child {
             opacity: 0.5;
         }
         &.upper {
@@ -173,7 +173,8 @@ ul.clients {
 .client-batc {
     background-color: $bg-client-batc;
 
-    header {
+    header,
+    nav a {
         color: $black;
     }
 }
@@ -201,7 +202,8 @@ ul.clients {
 .client-vital {
     background-color: $bg-client-vital;
 
-    header {
+    header,
+    nav a {
         color: $black;
     }
 }
