@@ -34,7 +34,7 @@ a {
   transition: all 350ms ease; }
 
 body {
-  background-color: #3E3F40;
+  background-color: #4E4F50;
   color: #9CA09F;
   font-family: "freight-display-pro";
   font-weight: 700;
@@ -64,7 +64,7 @@ body {
   position: relative;
   transition: all 500ms ease-out; }
   .brand a {
-    background-color: #FFF;
+    background-color: #000;
     background-size: 100% auto;
     display: block;
     height: 210px;
@@ -76,11 +76,12 @@ body {
             mask-repeat: no-repeat;
     -webkit-mask-size: 100% auto;
             mask-size: 100% auto;
-    opacity: 0.15;
     position: relative;
     text-indent: -999em;
+    transition: background-color 150ms opacity 150ms;
     width: 250px; }
     .brand a:hover, .brand a:focus {
+      background-color: #000;
       outline: 0; }
   .brand .tagline-container {
     bottom: 50px;

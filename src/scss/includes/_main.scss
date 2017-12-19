@@ -50,7 +50,7 @@ body {
 
     a {
         // background: url('../img/brand.svg') no-repeat 2vw 4vw transparent;
-        background-color: $white;
+        background-color: $black;
         background-size: 100% auto;
         display: block;
         height: 210px;
@@ -58,15 +58,16 @@ body {
         mask-position: -1.7vw -2vw;
         mask-repeat: no-repeat;
         mask-size: 100% auto;
-        opacity: 0.15;
+        // opacity: 0.15;
         position: relative;
         text-indent: -999em;
+        transition: background-color 150ms opacity 150ms;
         width: 250px;
 
         &:hover,
         &:focus {
-            // background-color: rgba($white, 0.2);
-            // opacity: 0.1;
+            background-color: $black;
+            // opacity: 1;
             outline: 0;
 
             // & + .tagline-container .tagline {
