@@ -1,9 +1,14 @@
 $black: #000;
 $grey-darkest: #111;
-$grey-darker: #4E4F50;
-$grey-mid: #9CA09F;
+$grey-darker: #5E5F60;
+$grey-mid: #7C807F;
 $grey-light: #9CA09F;
 $white: #FFF;
+
+$sublime-window: #232426;
+$sublime-pane: #1D1F21;
+$sublime-current-line: #181A1B;
+$sublime-dots: #8D8D92;
 
 $green: #70D63D;
 
@@ -21,15 +26,17 @@ $sans: "freight-sans-pro";
 $transition-default: all 350ms ease;
 $transition-slow: all 500ms ease-out;
 
+
 $small-max: 699px;
 $medium-min: 700px;
+$medium-max: 999px;
+$large-min: 1000px;
 
 
 $bg-client-ie: #B9CB41;
 $bg-client-gk: #83A96A;
 $bg-client-batc: #EAE8E2;
 $bg-client-raven: #76CAC1;
-// $bg-client-nb: #DC3B25;
 $bg-client-nb: #E7A344;
 $bg-client-bfmn: #5D8A46;
 $bg-client-vork: #DD4233;

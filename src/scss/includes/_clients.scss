@@ -71,6 +71,7 @@ ul.clients {
         font-size: $font-size-large-static*2;
         letter-spacing: -0.04em;
         line-height: 0.9;
+        margin-bottom: 8vw;
 
         h1 {
             font-size: inherit;
@@ -109,6 +110,13 @@ ul.clients {
             }
         }
     }
+
+    .see {
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+    }
 }
 
 @media screen and (min-width: $medium-min) {
@@ -126,6 +134,17 @@ ul.clients {
     }
 }
 
+@media screen and (min-width: $large-min) {
+    .client {
+        header {
+            float: left;
+        }
+        .see {
+            float: right;
+            width: 50vw;
+        }
+    }
+}
 
 
 .client-ie {

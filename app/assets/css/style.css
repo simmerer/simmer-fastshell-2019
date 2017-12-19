@@ -34,8 +34,8 @@ a {
   transition: all 350ms ease; }
 
 body {
-  background-color: #4E4F50;
-  color: #9CA09F;
+  background-color: #5E5F60;
+  color: #7C807F;
   font-family: "freight-display-pro";
   font-weight: 700;
   letter-spacing: -0.04em;
@@ -235,7 +235,8 @@ ul.clients .keva a:before {
   color: #FFF;
   font-size: 60px;
   letter-spacing: -0.04em;
-  line-height: 0.9; }
+  line-height: 0.9;
+  margin-bottom: 8vw; }
   .client header h1 {
     font-size: inherit;
     padding: 0 4vw; }
@@ -261,11 +262,22 @@ ul.clients .keva a:before {
       opacity: 0.75;
       outline: 0; }
 
+.client .see img {
+  height: auto;
+  max-width: 100%; }
+
 @media screen and (min-width: 700px) {
   .client .bg {
     background-size: 12vw auto; }
   .client header {
     font-size: 8vw; } }
+
+@media screen and (min-width: 1000px) {
+  .client header {
+    float: left; }
+  .client .see {
+    float: right;
+    width: 50vw; } }
 
 .client-ie {
   background-color: #B9CB41; }
