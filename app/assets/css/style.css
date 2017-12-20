@@ -25,6 +25,11 @@
   margin: 0;
   padding: 0; }
 
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: table; }
+
 html {
   font-size: 10px; }
 
@@ -183,17 +188,24 @@ footer {
     footer .contact {
       font-size: 4vw; } }
 
-.browser {
+.device {
   border: 2px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1; }
+
+.browser {
   border-top: 0;
-  border-radius: 0 0 4px 4px;
-  margin-top: 24px;
-  position: relative; }
+  border-radius: 0 0 5px 5px;
+  margin: 24px auto; }
+  .browser.w90 {
+    width: 90%; }
+  .browser.w110 {
+    width: 110%; }
   .browser:before {
     background: rgba(0, 0, 0, 0.05);
     border: 2px solid rgba(0, 0, 0, 0.05);
     border-bottom: 0;
-    border-radius: 4px 4px 0 0;
+    border-radius: 5px 5px 0 0;
     bottom: 100%;
     content: '';
     display: block;
@@ -213,7 +225,31 @@ footer {
     position: absolute;
     top: -30px; }
   .browser img {
-    display: block; }
+    border-radius: 0 0 5px 5px; }
+
+.phone {
+  background: rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 48px auto;
+  padding: 40px 4px;
+  width: 50%;
+  z-index: 10; }
+  .phone:after {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    bottom: 20px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 0 auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 40px; }
+  .phone img {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
 
 ul.clients .ie a:before {
   background-color: rgba(185, 203, 65, 0.95); }
@@ -254,6 +290,9 @@ ul.clients .jb a:before {
 ul.clients .keva a:before {
   background-color: rgba(16, 50, 85, 0.95); }
 
+.client article {
+  padding-top: 20vw; }
+
 .client nav {
   letter-spacing: -0.02em; }
   .client nav span:first-child {
@@ -269,10 +308,14 @@ ul.clients .keva a:before {
   opacity: 0.25;
   transition: all 450ms ease-out; }
 
-.client .brand a {
-  opacity: 0;
-  transition: all 250ms;
-  transition-delay: 0; }
+.client .brand {
+  z-index: 999; }
+  .client .brand a {
+    height: 70px;
+    opacity: 0;
+    transition: all 250ms;
+    transition-delay: unset;
+    width: 110px; }
 
 .client .tagline {
   opacity: 0 !important; }
@@ -310,24 +353,49 @@ ul.clients .keva a:before {
 
 .client .see {
   padding: 0 4vw 4vw; }
+  .client .see figure {
+    margin-bottom: 4vw; }
+    .client .see figure.device, .client .see figure.poster {
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1); }
+    .client .see figure.up10 {
+      margin-top: -10vw; }
+    .client .see figure.up20 {
+      margin-top: -20vw; }
+    .client .see figure.l {
+      left: -2vw;
+      position: relative; }
+    .client .see figure.r {
+      position: relative;
+      right: -2vw; }
+    .client .see figure.typeface {
+      margin-bottom: 20vw; }
   .client .see img {
+    display: block;
     height: auto;
     max-width: 100%; }
 
 @media screen and (min-width: 700px) {
   .client .bg {
     background-size: 12vw auto; }
+  .client .brand {
+    left: 0;
+    position: fixed;
+    top: 0; }
+    .client .brand a {
+      height: 8vw;
+      width: 13vw; }
   .client header {
-    font-size: 8vw; } }
+    font-size: 8vw;
+    left: 0;
+    position: fixed;
+    top: 30vh; } }
 
 @media screen and (min-width: 1000px) {
   .client nav.upper {
     display: block;
     position: absolute;
     right: 4vw;
-    top: -24vw; }
-  .client header {
-    float: left; }
+    top: 3vw; }
   .client .see {
     float: right;
     width: 50vw; } }
@@ -377,7 +445,10 @@ ul.clients .keva a:before {
 .client-keva {
   background-color: #103255; }
 
-article,
+article {
+  opacity: 1;
+  transition: opacity .4s ease-in-out; }
+
 .tagline-container,
 li,
 p {
@@ -426,6 +497,11 @@ ul li:nth-child(13) {
   transition-delay: 1.3s; }
 
 .wf-loading article,
+.wf-loading .tagline-container,
+.wf-loading li,
+.wf-loading p {
+  opacity: 0; }
+
 .wf-loading .tagline-container,
 .wf-loading li,
 .wf-loading p {

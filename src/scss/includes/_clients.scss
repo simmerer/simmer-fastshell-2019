@@ -43,6 +43,9 @@ ul.clients {
 
 
 .client {
+    article {
+        padding-top: 20vw;
+    }
     nav {
         letter-spacing: -0.02em;
 
@@ -64,11 +67,14 @@ ul.clients {
         transition: all 450ms ease-out;
     }
     .brand {
+        z-index: 999;
+
         a {
-            // background-position: -50vw -50vw;
+            height: 70px;
             opacity: 0;
             transition: all 250ms;
-            transition-delay: 0;
+            transition-delay: unset;
+            width: 110px;
         }
     }
     .tagline {
@@ -122,7 +128,39 @@ ul.clients {
     .see {
         padding: 0 4vw 4vw;
 
+        figure {
+            margin-bottom: 4vw;
+
+            &.device,
+            &.poster {
+                box-shadow: 0 10px 50px rgba(0,0,0,0.1);
+            }
+
+            &.up10 {
+                margin-top: -10vw;
+            }
+
+            &.up20 {
+                margin-top: -20vw;
+            }
+
+            &.l {
+                left: -2vw;
+                position: relative;
+            }
+
+            &.r {
+                position: relative;
+                right: -2vw;
+            }
+
+            &.typeface {
+                margin-bottom: 20vw;
+            }
+        }
+
         img {
+            display: block;
             height: auto;
             max-width: 100%;
         }
@@ -134,8 +172,21 @@ ul.clients {
         .bg {
             background-size: 12vw auto;
         }
+        .brand {
+            left: 0;
+            position: fixed;
+            top: 0;
+
+            a {
+                height: 8vw;
+                width: 13vw;
+            }
+        }
         header {
             font-size: $font-size-large*2;
+            left: 0;
+            position: fixed;
+            top: 30vh;
 
             h1 {
 
@@ -151,11 +202,11 @@ ul.clients {
                 display: block;
                 position: absolute;
                 right: 4vw;
-                top: -24vw;
+                top: 3vw;
             }
         }
         header {
-            float: left;
+            // float: left;
         }
         .see {
             float: right;

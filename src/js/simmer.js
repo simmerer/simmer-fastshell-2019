@@ -1,10 +1,14 @@
 /*global Barba*/
+/*global Rellax*/
 
 'use strict';
 
 function run() {
 
-  var rellax = new Rellax('.rellax');
+  var rellaxables = document.querySelectorAll('.rellax');
+  if (rellaxables.length > 0) {
+    var rellax = new Rellax('.rellax'); // jshint ignore:line
+  }
 
   // var getUrl = window.location;
   // var getHomeUrl = getUrl.protocol + '//' + getUrl.host;
@@ -28,7 +32,6 @@ function run() {
       var deferred = Barba.Utils.deferred();
       this.oldContainer.classList.add('fade-out');
       deferred.resolve();
-      console.info(deferred);
       return deferred.promise;
     },
 
@@ -61,6 +64,13 @@ function run() {
     var response = newPageRawHTML.replace(/(<\/?)body( .+?)?>/gi, '$1notBody$2>');
     var responseFrag = document.createRange().createContextualFragment(response);
     newBodyClasses = responseFrag.querySelector('notBody').classList;
+  });
+
+  Barba.Dispatcher.on('transitionCompleted', function() {
+    var rellaxables = document.querySelectorAll('.rellax');
+    if (rellaxables.length > 0) {
+      var rellax = new Rellax('.rellax'); // jshint ignore:line
+    }
   });
 
 }

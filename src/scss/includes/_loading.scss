@@ -1,4 +1,8 @@
-article,
+article {
+    opacity: 1;
+    transition: opacity .4s ease-in-out;
+}
+
 .tagline-container,
 li,
 p {
@@ -12,6 +16,11 @@ ul {
 
 .wf-loading {
     article,
+    .tagline-container,
+    li,
+    p {
+        opacity: 0;
+    }
     .tagline-container,
     li,
     p {
