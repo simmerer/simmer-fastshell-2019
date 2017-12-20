@@ -378,7 +378,6 @@ ul.clients .keva a:before {
   background-color: #103255; }
 
 article,
-header,
 .tagline-container,
 li,
 p {
@@ -427,7 +426,6 @@ ul li:nth-child(13) {
   transition-delay: 1.3s; }
 
 .wf-loading article,
-.wf-loading header,
 .wf-loading .tagline-container,
 .wf-loading li,
 .wf-loading p {

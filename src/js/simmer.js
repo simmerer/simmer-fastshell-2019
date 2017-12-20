@@ -4,8 +4,10 @@
 
 function run() {
 
-  var getUrl = window.location;
-  var getHomeUrl = getUrl.protocol + '//' + getUrl.host;
+  var rellax = new Rellax('.rellax');
+
+  // var getUrl = window.location;
+  // var getHomeUrl = getUrl.protocol + '//' + getUrl.host;
   var newBodyClasses = [];
 
   // •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
