@@ -1,3 +1,5 @@
+/*global Barba*/
+
 'use strict';
 
 function run() {
@@ -29,7 +31,7 @@ function run() {
     },
 
     fadeIn: function fadeIn() {
-      var _this = this;
+      // var _this = this;
       var el = this.newContainer;
 
       var body = document.querySelector('body');
@@ -58,6 +60,7 @@ function run() {
     var responseFrag = document.createRange().createContextualFragment(response);
     newBodyClasses = responseFrag.querySelector('notBody').classList;
   });
+
 }
 
 // in case the document is already rendered
