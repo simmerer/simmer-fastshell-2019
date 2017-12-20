@@ -132,7 +132,8 @@ ul.clients {
             margin-bottom: 4vw;
 
             &.device,
-            &.poster {
+            &.poster,
+            &.floaty {
                 box-shadow: 0 10px 50px rgba(0,0,0,0.1);
             }
 
