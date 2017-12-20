@@ -258,6 +258,8 @@ ul.clients .keva a:before {
   letter-spacing: -0.02em; }
   .client nav span:first-child {
     opacity: 0.5; }
+  .client nav .amp {
+    padding: 0 0.12em; }
   .client nav.upper {
     display: none; }
 

@@ -49,6 +49,9 @@ ul.clients {
         span:first-child {
             opacity: 0.5;
         }
+        .amp {
+            padding: 0 0.12em;
+        }
         &.upper {
             display: none;
         }
