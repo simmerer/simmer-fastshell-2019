@@ -35,8 +35,8 @@ body {
     background-size: 1200vw auto;
     bottom: 0;
     left: 0;
+    position: absolute;
     opacity: 0.8;
-    position: fixed;
     right: 0;
     top: 0;
     transition: all 650ms cubic-bezier(.41,.03,.37,1);
@@ -123,6 +123,9 @@ a {
 
 
 .home {
+    .bg {
+        position: fixed;
+    }
     .brand {
         a {
             transition: opacity 2500ms ease-out;
@@ -203,7 +206,7 @@ footer {
 }
 
 
-@media screen and (min-width: $medium-min) {
+@media screen and (min-width: $large-min) {
     .brand {
         a {
             height: 27vw;
