@@ -3,13 +3,14 @@
 
 # TEAM
 
-  Simmer -- Designer/Developer -- @simmerdesigns
+Simmer: creative developer - david@simmer.ooo
 
 
 # TECHNOLOGY COLOPHON
 
-HTML5, CSS3, jQuery
+HTML5, CSS3, vanilla JS, Rellax
 Gulp, Sass, Uglify, JSHint
+ImageOptim
 
 FastShell -- https://github.com/HosseinKarami/fastshell
 Google Web Starter Kit -- https://github.com/google/web-starter-kit
