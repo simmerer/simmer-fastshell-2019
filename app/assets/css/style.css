@@ -250,6 +250,17 @@ footer {
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px; }
 
+.tablet {
+  background: rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  margin: 48px auto;
+  padding: 40px 10px;
+  width: 45%; }
+  .tablet img {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
+
 .document {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px; }
@@ -473,6 +484,10 @@ ul.clients .keva a:before {
       box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1) !important; }
     .client .see figure.device, .client .see figure.poster, .client .see figure.floaty {
       box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1); }
+    .client .see figure.detail {
+      text-align: right; }
+      .client .see figure.detail img {
+        box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1); }
     .client .see figure.b10 {
       margin-bottom: 10vw; }
     .client .see figure.b20 {
@@ -491,6 +506,8 @@ ul.clients .keva a:before {
       margin-top: -20vw; }
     .client .see figure.up30 {
       margin-top: -30vw; }
+    .client .see figure.w60 {
+      width: 60%; }
     .client .see figure.w80 {
       width: 80%; }
     .client .see figure.w90 {
@@ -506,6 +523,8 @@ ul.clients .keva a:before {
       .client .see figure.r.document {
         margin-left: auto;
         margin-right: -5.5vw; }
+      .client .see figure.r.w60 {
+        right: -12vw; }
     .client .see figure.typeface {
       margin-bottom: 15vw; }
   .client .see img {

@@ -68,6 +68,35 @@
     }
 }
 
+.tablet {
+    background: rgba($black, 0.05);
+    border: $device-border-width solid rgba($black, 0.1);
+    border-radius: $device-tablet-radius;
+    margin: 48px auto;
+    padding: 40px 10px;
+    width: 45%;
+    // z-index: 10;
+
+    // &:after {
+    //     background: rgba($black, 0.1);
+    //     border-radius: $device-browser-radius;
+    //     bottom: 25px;
+    //     content: '';
+    //     display: block;
+    //     height: $device-browser-radius;
+    //     margin: 0 auto;
+    //     left: 0;
+    //     position: absolute;
+    //     right: 0;
+    //     width: 40px;
+    // }
+
+    img {
+        border: $device-border-width solid rgba($black, 0.1);
+        border-radius: $device-browser-radius;
+    }
+}
+
 
 .document {
     border: $device-border-width solid rgba($black, 0.1);
