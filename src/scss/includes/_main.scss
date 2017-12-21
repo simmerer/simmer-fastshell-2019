@@ -26,6 +26,10 @@ body {
     transition: background-color 1s;
 }
 
+.wrap {
+    overflow-x: hidden;
+}
+
 .bg {
     background: url('../img/brand.svg') no-repeat -320vw -200vw;
     background-size: 1200vw auto;

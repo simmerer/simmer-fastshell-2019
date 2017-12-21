@@ -1,0 +1,129 @@
+$sublime-window: #232426;
+$sublime-pane: #1D1F21;
+$sublime-current-line: #181A1B;
+$sublime-dots: #8D8D92;
+$sublime-title: $grey-light;
+$sublime-code: $grey-light;
+
+.st3 {
+    background-color: $sublime-window;
+    border-radius: $device-browser-radius;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.1);
+    letter-spacing: 0;
+    margin-right: -10vw;
+    padding: 30px 5px 15px;
+    position: relative;
+
+    &:before {
+        color: $sublime-dots;
+        content: "...";
+        display: inline-block;
+        @include font-size(70);
+        left: 5px;
+        letter-spacing: 0;
+        line-height: 0;
+        opacity: 0.3;
+        position: absolute;
+        top: -5px;
+    }
+
+    h2 {
+        color: $sublime-title;
+        font-family: $sans;
+        @include font-size(14);
+        font-weight: 500;
+        left: 0;
+        margin: 5px 0;
+        position: absolute;
+        right: 10%;
+        text-align: center;
+        top: 0;
+    }
+}
+
+pre {
+    background-color: $sublime-pane;
+    color: $sublime-code;
+    counter-reset: line;
+    font-family: monospace;
+    @include font-size(14);
+    font-weight: 300;
+    line-height: 1;
+    padding: 10px 0;
+
+    code {
+        .number,
+        .literal,
+        .symbol,
+        .bullet {
+                color: #6897BB;
+        }
+        .keyword,
+        .selector-tag,
+        .deletion {
+                color: #cc7832;
+        }
+        .variable,
+        .template-variable,
+        .link {
+                color: #629755;
+        }
+        .comment,
+        .quote {
+                color: rgba($grey-light, 0.5);
+        }
+        .meta {
+                color: #bbb529;
+        }
+        .string,
+        .attribute,
+        .addition {
+                color: #6A8759;
+        }
+        .section,
+        .title,
+        .type {
+                color: #ffc66d;
+        }
+        .name,
+        .selector-id,
+        .selector-class {
+                color: #e8bf6a;
+        }
+        .emphasis {
+                font-style: italic;
+        }
+        .strong {
+                font-weight: bold;
+        }
+    }
+
+    span {
+        display: block;
+        line-height: 1;
+        margin-top: -1.5em;
+
+        &:before {
+            // background-color: $sublime-window;
+            color: rgba($sublime-dots, 0.3);
+            counter-increment: line;
+            content: counter(line);
+            display: inline-block;
+            margin-right: 0.5em;
+            padding: 0 .5em;
+            text-align: right;
+            width: 1.8em;
+        }
+
+        span {
+            display: inline;
+
+            &:before {
+                content: '';
+                display: none;
+                margin-right: 0;
+                padding: 0;
+            }
+        }
+    }
+}

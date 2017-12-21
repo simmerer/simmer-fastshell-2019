@@ -47,7 +47,14 @@ ul.clients {
         padding-top: 20vw;
     }
     nav {
+        clear: both;
         letter-spacing: -0.02em;
+        text-align: right;
+
+        a {
+            display: block;
+            padding: 3vw 4vw;
+        }
 
         span:first-child {
             opacity: 0.5;
@@ -168,7 +175,8 @@ ul.clients {
     }
 }
 
-@media screen and (min-width: $medium-min) {
+
+@media screen and (min-width: $large-min) {
     .client {
         .bg {
             background-size: 12vw auto;
@@ -193,21 +201,13 @@ ul.clients {
 
             }
         }
-    }
-}
-
-@media screen and (min-width: $large-min) {
-    .client {
         nav {
             &.upper {
                 display: block;
                 position: absolute;
-                right: 4vw;
-                top: 3vw;
+                right: 0;
+                top: 0;
             }
-        }
-        header {
-            // float: left;
         }
         .see {
             float: right;
