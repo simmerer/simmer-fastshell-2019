@@ -404,6 +404,10 @@ ul.clients .keva a:before {
   clear: both;
   letter-spacing: -0.02em;
   text-align: right; }
+  .client nav.upper {
+    display: none; }
+  .client nav.lower {
+    margin-bottom: 4vw; }
   .client nav a {
     display: block;
     padding: 3vw 4vw; }
@@ -411,8 +415,6 @@ ul.clients .keva a:before {
     opacity: 0.5; }
   .client nav .amp {
     padding: 0 0.12em; }
-  .client nav.upper {
-    display: none; }
 
 .client .bg {
   background-position: -0.6vw -0.6vw;
@@ -528,6 +530,13 @@ ul.clients .keva a:before {
     position: absolute;
     right: 0;
     top: 0; }
+  .client nav.lower {
+    margin-bottom: 0; }
+    .client nav.lower a.prev {
+      float: left;
+      text-align: left; }
+    .client nav.lower a.next {
+      float: right; }
   .client .see {
     float: right;
     width: 50vw; } }

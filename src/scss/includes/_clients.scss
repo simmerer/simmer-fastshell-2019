@@ -51,6 +51,13 @@ ul.clients {
         letter-spacing: -0.02em;
         text-align: right;
 
+        &.upper {
+            display: none;
+        }
+        &.lower {
+            margin-bottom: 4vw;
+        }
+
         a {
             display: block;
             padding: 3vw 4vw;
@@ -62,9 +69,7 @@ ul.clients {
         .amp {
             padding: 0 0.12em;
         }
-        &.upper {
-            display: none;
-        }
+
     }
     .bg {
         background-position: -0.6vw -0.6vw;
@@ -249,6 +254,17 @@ ul.clients {
                 position: absolute;
                 right: 0;
                 top: 0;
+            }
+            &.lower {
+                margin-bottom: 0;
+
+                a.prev {
+                    float: left;
+                    text-align: left;
+                }
+                a.next {
+                    float: right;
+                }
             }
         }
         .see {
