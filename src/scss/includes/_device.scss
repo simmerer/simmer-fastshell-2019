@@ -9,14 +9,6 @@
     border-radius: 0 0 $device-browser-radius $device-browser-radius;
     margin: 24px auto;
 
-    &.w90 {
-        width: 90%;
-    }
-
-    &.w110 {
-        width: 110%;
-    }
-
     &:before {
         background: rgba($black, 0.05);
         border: $device-border-width solid rgba(0,0,0,0.05);
@@ -54,7 +46,7 @@
     border: $device-border-width solid rgba($black, 0.1);
     border-radius: $device-phone-radius;
     margin: 48px auto;
-    padding: 50px 4px;
+    padding: 60px 4px;
     width: 45%;
     z-index: 10;
 

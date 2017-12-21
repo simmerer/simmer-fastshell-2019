@@ -144,12 +144,28 @@ ul.clients {
                 box-shadow: 0 10px 50px rgba(0,0,0,0.1);
             }
 
+            &.b10 {
+                margin-bottom: 20vw;
+            }
+
+            &.b20 {
+                margin-bottom: 20vw;
+            }
+
             &.up10 {
                 margin-top: -10vw;
             }
 
             &.up20 {
                 margin-top: -20vw;
+            }
+
+            &.w90 {
+                width: 90%;
+            }
+
+            &.w110 {
+                width: 110%;
             }
 
             &.l {

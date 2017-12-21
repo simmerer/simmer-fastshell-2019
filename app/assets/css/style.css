@@ -200,10 +200,6 @@ footer {
   border-top: 0;
   border-radius: 0 0 5px 5px;
   margin: 24px auto; }
-  .browser.w90 {
-    width: 90%; }
-  .browser.w110 {
-    width: 110%; }
   .browser:before {
     background: rgba(0, 0, 0, 0.05);
     border: 2px solid rgba(0, 0, 0, 0.05);
@@ -233,9 +229,9 @@ footer {
 .phone {
   background: rgba(0, 0, 0, 0.05);
   border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 30px;
   margin: 48px auto;
-  padding: 50px 4px;
+  padding: 60px 4px;
   width: 45%;
   z-index: 10; }
   .phone:after {
@@ -296,7 +292,7 @@ pre {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1;
-  padding: 10px 0; }
+  padding: 10px 0 0; }
   pre code .number,
   pre code .literal,
   pre code .symbol,
@@ -335,6 +331,8 @@ pre {
     display: block;
     line-height: 1;
     margin-top: -1.5em; }
+    pre span:last-child {
+      margin-bottom: -1.5em; }
     pre span:before {
       color: rgba(141, 141, 146, 0.3);
       counter-increment: line;
@@ -365,7 +363,7 @@ ul.clients .raven a:before {
   background-color: rgba(118, 202, 193, 0.95); }
 
 ul.clients .nb a:before {
-  background-color: rgba(231, 163, 68, 0.95); }
+  background-color: rgba(245, 174, 57, 0.95); }
 
 ul.clients .bfmn a:before {
   background-color: rgba(93, 138, 70, 0.95); }
@@ -463,10 +461,18 @@ ul.clients .keva a:before {
     margin-bottom: 4vw; }
     .client .see figure.device, .client .see figure.poster, .client .see figure.floaty {
       box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1); }
+    .client .see figure.b10 {
+      margin-bottom: 20vw; }
+    .client .see figure.b20 {
+      margin-bottom: 20vw; }
     .client .see figure.up10 {
       margin-top: -10vw; }
     .client .see figure.up20 {
       margin-top: -20vw; }
+    .client .see figure.w90 {
+      width: 90%; }
+    .client .see figure.w110 {
+      width: 110%; }
     .client .see figure.l {
       left: -2vw;
       position: relative; }
@@ -520,7 +526,7 @@ ul.clients .keva a:before {
   background-color: #76CAC1; }
 
 .client-nb {
-  background-color: #E7A344; }
+  background-color: #f5AE39; }
 
 .client-bfmn {
   background-color: #5D8A46; }
