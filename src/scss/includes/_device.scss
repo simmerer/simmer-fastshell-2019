@@ -69,3 +69,13 @@
         border-radius: $device-browser-radius;
     }
 }
+
+
+.document {
+    border: $device-border-width solid rgba($black, 0.1);
+    border-radius: $device-document-radius;
+
+    img {
+        border-radius: $device-document-radius;
+    }
+}

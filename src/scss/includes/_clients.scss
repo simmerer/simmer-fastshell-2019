@@ -172,6 +172,10 @@ ul.clients {
                 margin-top: -20vw;
             }
 
+            &.up30 {
+                margin-top: -30vw;
+            }
+
             &.w80 {
                 width: 80%;
             }
@@ -192,6 +196,11 @@ ul.clients {
             &.r {
                 position: relative;
                 right: -2vw;
+
+                &.document {
+                    margin-left: auto;
+                    margin-right: -5.5vw;
+                }
             }
 
             &.typeface {

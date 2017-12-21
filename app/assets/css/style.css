@@ -252,6 +252,12 @@ footer {
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px; }
 
+.document {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px; }
+  .document img {
+    border-radius: 4px; }
+
 .st3 {
   background-color: #232426;
   border-radius: 5px;
@@ -477,6 +483,8 @@ ul.clients .keva a:before {
       margin-top: -10vw; }
     .client .see figure.up20 {
       margin-top: -20vw; }
+    .client .see figure.up30 {
+      margin-top: -30vw; }
     .client .see figure.w80 {
       width: 80%; }
     .client .see figure.w90 {
@@ -489,6 +497,9 @@ ul.clients .keva a:before {
     .client .see figure.r {
       position: relative;
       right: -2vw; }
+      .client .see figure.r.document {
+        margin-left: auto;
+        margin-right: -5.5vw; }
     .client .see figure.typeface {
       margin-bottom: 15vw; }
   .client .see img {
