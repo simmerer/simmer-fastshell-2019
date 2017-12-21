@@ -145,11 +145,23 @@ ul.clients {
             }
 
             &.b10 {
-                margin-bottom: 20vw;
+                margin-bottom: 10vw;
             }
 
             &.b20 {
                 margin-bottom: 20vw;
+            }
+
+            &.t10 {
+                margin-top: 10vw;
+            }
+
+            &.t20 {
+                margin-top: 20vw;
+            }
+
+            &.t30 {
+                margin-top: 30vw;
             }
 
             &.up10 {
@@ -158,6 +170,10 @@ ul.clients {
 
             &.up20 {
                 margin-top: -20vw;
+            }
+
+            &.w80 {
+                width: 80%;
             }
 
             &.w90 {
