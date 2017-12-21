@@ -232,8 +232,7 @@ footer {
   border-radius: 30px;
   margin: 48px auto;
   padding: 60px 4px;
-  width: 45%;
-  z-index: 10; }
+  width: 45%; }
   .phone:after {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
