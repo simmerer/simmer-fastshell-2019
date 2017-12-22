@@ -741,19 +741,13 @@ function run() {
   if (rellaxables.length > 0) {
     var rellax = new Rellax('.rellax'); // jshint ignore:line
   }
-
-  // var getUrl = window.location;
-  // var getHomeUrl = getUrl.protocol + '//' + getUrl.host;
   var newBodyClasses = [];
 
-  // •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
-  // Barba.js
-  // •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
   Barba.Pjax.Dom.wrapperId = 'bw';
   Barba.Pjax.Dom.containerClass = 'bc';
 
   Barba.Pjax.start();
-  // Barba.Prefetch.init();
+  Barba.Prefetch.init();
 
   var FadeTransition = Barba.BaseTransition.extend({
     start: function start() {
@@ -786,6 +780,7 @@ function run() {
       this.oldContainer.classList.add('hide');
       newEl.classList.add('fade-in');
       window.scrollTo(0,0);
+
       this.done();
     }
   });
@@ -805,6 +800,10 @@ function run() {
     if (rellaxables.length > 0) {
       var rellax = new Rellax('.rellax'); // jshint ignore:line
     }
+    setTimeout( function() {
+      var logo = document.querySelector('.brand a');
+      logo.blur();
+    }, 1250);
   });
 
 }
