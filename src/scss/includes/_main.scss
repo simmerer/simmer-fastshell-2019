@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    animation-play-state: running;
     background-color: $bg;
     color: $text-default;
     font-family: $serif;

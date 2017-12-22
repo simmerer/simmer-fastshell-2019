@@ -58,7 +58,7 @@ function run() {
 
     fadeIn: function fadeIn() {
       // var _this = this;
-      var el = this.newContainer;
+      var newEl = this.newContainer;
 
       var body = document.querySelector('body');
       body.classList = newBodyClasses;
@@ -72,17 +72,9 @@ function run() {
         changeFavicon('home');
       }
 
-
       this.oldContainer.classList.add('hide');
-
-      el.classList.add('is-paused');
-      el.classList.add('fade-in');
-      setTimeout(function() {
-        el.classList.remove('is-paused');
-      }, 250);
-
+      newEl.classList.add('fade-in');
       window.scrollTo(0,0);
-
       this.done();
     }
   });

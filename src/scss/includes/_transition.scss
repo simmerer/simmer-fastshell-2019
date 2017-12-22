@@ -1,32 +1,48 @@
 // in
 @keyframes fadeIn {
-    to {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
 
 .fade-in {
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in 1 forwards;
+    // opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    // animation: fadeIn 0.5s ease-in 1 forwards;
 }
 
 
 // out
 @keyframes fadeOut {
-    to {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
         opacity: 0;
     }
 }
 
 .fade-out {
-    opacity: 1;
-    animation: fadeOut 0.25s ease-in 1 forwards;
-}
-
-
-// pause
-.is-paused {
-    animation-play-state: paused;
+    // opacity: 1;
+    animation-name: fadeOut;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    // animation: fadeOut 0.25s ease-in 1 forwards;
 }
 
 

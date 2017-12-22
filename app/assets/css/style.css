@@ -35,6 +35,8 @@ html {
   font-size: 10px; }
 
 body {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
   background-color: #5E5F60;
   color: #7C807F;
   font-family: "freight-display-pro";
@@ -758,34 +760,60 @@ ul li:nth-child(13) {
           transform: translateY(-20px); }
 
 @-webkit-keyframes fadeIn {
-  to {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
     opacity: 1; } }
 
 @keyframes fadeIn {
-  to {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
     opacity: 1; } }
 
 .fade-in {
-  opacity: 0;
-  -webkit-animation: fadeIn 0.5s ease-in 1 forwards;
-          animation: fadeIn 0.5s ease-in 1 forwards; }
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 @-webkit-keyframes fadeOut {
-  to {
+  0% {
+    opacity: 1; }
+  40% {
+    opacity: 1; }
+  100% {
     opacity: 0; } }
 
 @keyframes fadeOut {
-  to {
+  0% {
+    opacity: 1; }
+  40% {
+    opacity: 1; }
+  100% {
     opacity: 0; } }
 
 .fade-out {
-  opacity: 1;
-  -webkit-animation: fadeOut 0.25s ease-in 1 forwards;
-          animation: fadeOut 0.25s ease-in 1 forwards; }
-
-.is-paused {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused; }
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .hide {
   display: none !important; }
