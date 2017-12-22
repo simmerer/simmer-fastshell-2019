@@ -3,6 +3,27 @@
 
 'use strict';
 
+// nodelists to arrays
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+
+// dynamic favicon
+document.head || (document.head = document.getElementsByTagName('head')[0]);
+
+function changeFavicon(src) {
+  var link = document.createElement('link'),
+      oldLink = document.getElementById('dynamic-favicon');
+  link.id = 'dynamic-favicon';
+  link.rel = 'shortcut icon';
+  link.href = '/assets/img/favicons/favicon-' + src + '.ico';
+  if (oldLink) {
+    document.head.removeChild(oldLink);
+  }
+  document.head.appendChild(link);
+}
+
+
+// methods that require a ready DOM
 function run() {
 
   var rellaxables = document.querySelectorAll('.rellax');
@@ -41,6 +62,13 @@ function run() {
 
       var body = document.querySelector('body');
       body.classList = newBodyClasses;
+      var classNames = [].concat(_toConsumableArray(newBodyClasses));
+      var clientStr = classNames.filter(function (c) {return /client-/.test(c);})[0];
+      if (clientStr) {
+        var clientSlug = clientStr.substring('client-'.length);
+        changeFavicon(clientSlug);
+      }
+
 
       this.oldContainer.classList.add('hide');
 
