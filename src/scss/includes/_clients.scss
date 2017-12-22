@@ -32,8 +32,8 @@ ul.clients {
     .oa a:before {
         background-color: rgba($bg-client-oa, $client-list-hover-opacity);
     }
-    .jb a:before {
-        background-color: rgba($bg-client-jb, $client-list-hover-opacity);
+    .mp a:before {
+        background-color: rgba($bg-client-mp, $client-list-hover-opacity);
     }
     .keva a:before {
         background-color: rgba($bg-client-keva, $client-list-hover-opacity);
@@ -143,7 +143,11 @@ ul.clients {
         figure {
             margin-bottom: 4vw;
             position: relative;
-            z-index: 1;
+            z-index: 2;
+
+            &.under {
+                z-index: 1;
+            }
 
             &.insta {
                 iframe {
@@ -365,8 +369,8 @@ ul.clients {
     background-color: $bg-client-oa;
 }
 
-.client-jb {
-    background-color: $bg-client-jb;
+.client-mp {
+    background-color: $bg-client-mp;
 }
 
 .client-keva {
