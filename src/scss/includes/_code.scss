@@ -132,3 +132,10 @@ pre {
         }
     }
 }
+
+
+@media screen and (max-width: $small-max) {
+    .st3 {
+        margin-top: 60px;
+    }
+}

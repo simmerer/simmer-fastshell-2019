@@ -223,11 +223,6 @@ footer {
     footer .contact {
       font-size: 4vw; } }
 
-@media screen and (max-width: 700px) {
-  .rellax {
-    -webkit-transform: translate3d(0, 0, 0) !important;
-            transform: translate3d(0, 0, 0) !important; } }
-
 .device {
   border: 2px solid rgba(0, 0, 0, 0.1); }
 
@@ -264,14 +259,14 @@ footer {
 .phone {
   background: rgba(0, 0, 0, 0.05);
   border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 30px;
+  border-radius: 15px;
   margin: 48px auto;
-  padding: 60px 4px;
+  padding: 40px 4px;
   width: 45%; }
   .phone:after {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    bottom: 25px;
+    bottom: 18px;
     content: '';
     display: block;
     height: 5px;
@@ -283,6 +278,12 @@ footer {
   .phone img {
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px; }
+
+@media screen and (min-width: 1000px) {
+  .phone {
+    padding: 60px 4px; }
+    .phone:after {
+      bottom: 25px; } }
 
 .tablet {
   background: rgba(0, 0, 0, 0.05);
@@ -402,6 +403,10 @@ pre {
         display: none;
         margin-right: 0;
         padding: 0; }
+
+@media screen and (max-width: 699px) {
+  .st3 {
+    margin-top: 60px; } }
 
 ul.clients .ie a:before {
   background-color: rgba(185, 203, 65, 0.95); }
@@ -528,6 +533,7 @@ ul.clients .keva a:before {
   .client .see figure {
     margin-bottom: 4vw;
     position: relative;
+    text-align: center;
     z-index: 2; }
     .client .see figure.under {
       z-index: 1; }
@@ -543,52 +549,56 @@ ul.clients .keva a:before {
         -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
                 box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1); }
     .client .see figure.b10 {
-      margin-bottom: 5vh; }
+      margin-bottom: 10px; }
     .client .see figure.b20 {
-      margin-bottom: 10vh; }
+      margin-bottom: 20px; }
     .client .see figure.b30 {
-      margin-bottom: 15vh; }
+      margin-bottom: 30px; }
     .client .see figure.t10 {
-      margin-top: 5vh; }
+      margin-top: 10px; }
     .client .see figure.t20 {
-      margin-top: 10vh; }
+      margin-top: 20px; }
     .client .see figure.t30 {
-      margin-top: 15vh; }
+      margin-top: 30px; }
     .client .see figure.up10 {
-      margin-top: -5vh; }
+      margin-top: -10px; }
     .client .see figure.up20 {
-      margin-top: -10vh; }
+      margin-top: -20px; }
     .client .see figure.up30 {
-      margin-top: -15vh; }
+      margin-top: -30px; }
     .client .see figure.w60 {
-      width: 60%; }
-    .client .see figure.w80 {
       width: 80%; }
-    .client .see figure.w90 {
+    .client .see figure.w80 {
       width: 90%; }
+    .client .see figure.w90 {
+      width: 95%; }
     .client .see figure.w110 {
-      width: 110%; }
-    .client .see figure.l {
-      left: -1vh;
-      position: relative; }
-    .client .see figure.r {
-      position: relative;
-      right: -1vh; }
-      .client .see figure.r.document {
-        margin-left: auto;
-        margin-right: -2.25vh; }
-      .client .see figure.r.w60 {
-        right: -6vh; }
+      width: 105%; }
     .client .see figure.typeface {
-      margin-bottom: 7.5vh; }
+      margin-bottom: 20px; }
       .client .see figure.typeface.b0 {
         margin-bottom: 0; }
       .client .see figure.typeface.b10 {
-        margin-bottom: 5vh; }
+        margin-bottom: 10px; }
   .client .see img {
     display: block;
     height: auto;
     max-width: 100%; }
+
+@media screen and (max-width: 999px) {
+  .client .see figure.w60, .client .see figure.w80, .client .see figure.w90 {
+    margin-left: auto;
+    margin-right: auto; }
+  .client .see figure.w60 {
+    width: 80%; }
+  .client .see figure.w80 {
+    width: 90%; }
+  .client .see figure.w90 {
+    width: 95%; }
+  .client .see figure.w110 {
+    margin-left: -2.5%;
+    margin-right: -2.5%;
+    width: 105%; } }
 
 @media screen and (min-width: 1000px) {
   .client .bg {
@@ -638,11 +648,22 @@ ul.clients .keva a:before {
       margin-top: -20vw; }
     .client .see figure.up30 {
       margin-top: -30vw; }
+    .client .see figure.w60 {
+      width: 60%; }
+    .client .see figure.w80 {
+      width: 80%; }
+    .client .see figure.w90 {
+      width: 90%; }
+    .client .see figure.w110 {
+      width: 110%; }
     .client .see figure.l {
-      left: -2vw; }
+      left: -2vw;
+      position: relative; }
     .client .see figure.r {
+      position: relative;
       right: -2vw; }
       .client .see figure.r.document {
+        margin-left: auto;
         margin-right: -5.5vw; }
       .client .see figure.r.w60 {
         right: -12vw; }
@@ -852,3 +873,10 @@ ul li:nth-child(13) {
 
 .hide {
   display: none !important; }
+
+@media screen and (max-width: 1000px) {
+  .rellax {
+    margin-bottom: 10vh !important;
+    margin-top: 10vh !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+            transform: translate3d(0, 0, 0) !important; } }

@@ -42,16 +42,16 @@
 .phone {
     background: rgba($black, 0.05);
     border: $device-border-width solid rgba($black, 0.1);
-    border-radius: $device-phone-radius;
+    border-radius: $device-phone-radius/2;
     margin: 48px auto;
-    padding: 60px 4px;
+    padding: 40px 4px;
     width: 45%;
     // z-index: 10;
 
     &:after {
         background: rgba($black, 0.1);
         border-radius: $device-browser-radius;
-        bottom: 25px;
+        bottom: 18px;
         content: '';
         display: block;
         height: $device-browser-radius;
@@ -65,6 +65,16 @@
     img {
         border: $device-border-width solid rgba($black, 0.1);
         border-radius: $device-browser-radius;
+    }
+}
+
+@media screen and (min-width: $large-min) {
+    .phone {
+        padding: 60px 4px;
+
+        &:after {
+            bottom: 25px;
+        }
     }
 }
 

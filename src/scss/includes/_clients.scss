@@ -150,9 +150,11 @@ ul.clients {
     .see {
         padding: 0 4vw 4vw;
 
+
         figure {
             margin-bottom: 4vw;
             position: relative;
+            text-align: center;
             z-index: 2;
 
             &.under {
@@ -180,85 +182,66 @@ ul.clients {
             }
 
             &.b10 {
-                margin-bottom: 5vh;
+                margin-bottom: 10px;
             }
 
             &.b20 {
-                margin-bottom: 10vh;
+                margin-bottom: 20px;
             }
 
             &.b30 {
-                margin-bottom: 15vh;
+                margin-bottom: 30px;
             }
 
             &.t10 {
-                margin-top: 5vh;
+                margin-top: 10px;
             }
 
             &.t20 {
-                margin-top: 10vh;
+                margin-top: 20px;
             }
 
             &.t30 {
-                margin-top: 15vh;
+                margin-top: 30px;
             }
 
             &.up10 {
-                margin-top: -5vh;
+                margin-top: -10px;
             }
 
             &.up20 {
-                margin-top: -10vh;
+                margin-top: -20px;
             }
 
             &.up30 {
-                margin-top: -15vh;
+                margin-top: -30px;
             }
 
             &.w60 {
-                width: 60%;
-            }
-
-            &.w80 {
                 width: 80%;
             }
 
-            &.w90 {
+            &.w80 {
                 width: 90%;
             }
 
+            &.w90 {
+                width: 95%;
+            }
+
             &.w110 {
-                width: 110%;
-            }
-
-            &.l {
-                left: -1vh;
-                position: relative;
-            }
-
-            &.r {
-                position: relative;
-                right: -1vh;
-
-                &.document {
-                    margin-left: auto;
-                    margin-right: -2.25vh;
-                }
-
-                &.w60 {
-                    right: -6vh;
-                }
+                width: 105%;
             }
 
             &.typeface {
-                margin-bottom: 7.5vh;
+                margin-bottom: 20px;
 
                 &.b0 {
                     margin-bottom: 0;
                 }
 
                 &.b10 {
-                    margin-bottom: 5vh;
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -267,6 +250,39 @@ ul.clients {
             display: block;
             height: auto;
             max-width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: $medium-max) {
+    .client {
+        .see {
+            figure {
+                &.w60,
+                &.w80,
+                &.w90 {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                &.w60 {
+                    width: 80%;
+                }
+
+                &.w80 {
+                    width: 90%;
+                }
+
+                &.w90 {
+                    width: 95%;
+                }
+
+                &.w110 {
+                    margin-left: -2.5%;
+                    margin-right: -2.5%;
+                    width: 105%;
+                }
+            }
         }
     }
 }
@@ -359,14 +375,33 @@ ul.clients {
                     margin-top: -30vw;
                 }
 
+                &.w60 {
+                    width: 60%;
+                }
+
+                &.w80 {
+                    width: 80%;
+                }
+
+                &.w90 {
+                    width: 90%;
+                }
+
+                &.w110 {
+                    width: 110%;
+                }
+
                 &.l {
                     left: -2vw;
+                    position: relative;
                 }
 
                 &.r {
+                    position: relative;
                     right: -2vw;
 
                     &.document {
+                        margin-left: auto;
                         margin-right: -5.5vw;
                     }
 
