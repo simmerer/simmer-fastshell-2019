@@ -255,8 +255,7 @@ footer {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 18px;
   margin: 48px auto;
-  padding: 40px 10px;
-  width: 45%; }
+  padding: 40px 10px; }
   .tablet img {
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px; }
@@ -396,7 +395,7 @@ ul.clients .vital a:before {
   background-color: rgba(245, 245, 245, 0.95); }
 
 ul.clients .rt a:before {
-  background-color: rgba(132, 66, 144, 0.95); }
+  background-color: rgba(144, 91, 146, 0.95); }
 
 ul.clients .oa a:before {
   background-color: rgba(182, 38, 47, 0.95); }
@@ -605,7 +604,7 @@ ul.clients .keva a:before {
     color: #000; }
 
 .client-rt {
-  background-color: #844290; }
+  background-color: #905B92; }
 
 .client-oa {
   background-color: #B6262F; }
