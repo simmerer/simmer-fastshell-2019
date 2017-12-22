@@ -439,15 +439,13 @@ ul.clients .keva a:before {
   opacity: 0.25;
   transition: all 450ms ease-out; }
 
-.client #bw {
-  z-index: 10; }
-
-.client .brand a {
-  height: 91px;
-  opacity: 0;
-  transition: all 250ms;
-  transition-delay: unset;
+.client .brand {
   width: 130px; }
+  .client .brand a {
+    height: 91px;
+    opacity: 0;
+    transition: all 250ms;
+    transition-delay: unset; }
 
 .client .tagline {
   opacity: 0 !important; }
@@ -554,7 +552,8 @@ ul.clients .keva a:before {
   .client .brand {
     left: 0;
     position: fixed;
-    top: 0; }
+    top: 0;
+    width: auto; }
     .client .brand a {
       height: 8vw;
       width: 13vw; }
