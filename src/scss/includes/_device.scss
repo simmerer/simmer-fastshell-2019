@@ -98,8 +98,8 @@
 }
 
 
-.document {
-    border: $device-border-width solid rgba($black, 0.1);
+.document,
+.poster {
     border-radius: $device-document-radius;
 
     img {

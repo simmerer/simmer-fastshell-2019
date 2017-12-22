@@ -68,6 +68,9 @@ function run() {
         var clientSlug = clientStr.substring('client-'.length);
         changeFavicon(clientSlug);
       }
+      else {
+        changeFavicon('home');
+      }
 
 
       this.oldContainer.classList.add('hide');
