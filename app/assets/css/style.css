@@ -51,20 +51,6 @@ body {
 .wrap {
   overflow-x: hidden; }
 
-.bg {
-  background: url("../img/brand.svg") no-repeat -320vw -200vw;
-  background-size: 1200vw auto;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  opacity: 0.8;
-  right: 0;
-  top: 0;
-  -webkit-transition: all 650ms cubic-bezier(0.41, 0.03, 0.37, 1);
-  -o-transition: all 650ms cubic-bezier(0.41, 0.03, 0.37, 1);
-  transition: all 650ms cubic-bezier(0.41, 0.03, 0.37, 1);
-  z-index: 1; }
-
 .fg {
   position: relative;
   z-index: 2; }
@@ -134,9 +120,6 @@ a {
   -webkit-transition: all 350ms ease;
   -o-transition: all 350ms ease;
   transition: all 350ms ease; }
-
-.home .bg {
-  position: fixed; }
 
 .home .brand a {
   -webkit-transition: opacity 2500ms ease-out;
@@ -223,84 +206,40 @@ footer {
     footer .contact {
       font-size: 4vw; } }
 
-.device {
-  border: 2px solid rgba(0, 0, 0, 0.1); }
+.bg {
+  background-image: url("../img/brand.svg");
+  background-position: -320vh -200vh;
+  background-repeat: no-repeat;
+  background-size: 1200vh auto;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.8;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 650ms cubic-bezier(0.41, 0.03, 0.37, 1);
+  -o-transition: all 650ms cubic-bezier(0.41, 0.03, 0.37, 1);
+  transition: all 650ms cubic-bezier(0.41, 0.03, 0.37, 1);
+  z-index: 1; }
 
-.browser {
-  border-top: 0;
-  border-radius: 0 0 5px 5px;
-  margin: 24px auto; }
-  .browser:before {
-    background: rgba(0, 0, 0, 0.05);
-    border: 2px solid rgba(0, 0, 0, 0.05);
-    border-bottom: 0;
-    border-radius: 5px 5px 0 0;
-    bottom: 100%;
-    content: '';
-    display: block;
-    left: -2px;
-    position: absolute;
-    right: -2px;
-    top: -24px; }
-  .browser:after {
-    color: rgba(0, 0, 0, 0.1);
-    content: "...";
-    display: inline-block;
-    font-size: 70px;
-    font-size: 7rem;
-    left: 5px;
-    letter-spacing: 0;
-    line-height: 0;
-    position: absolute;
-    top: -30px; }
-  .browser img {
-    border-radius: 0 0 5px 5px; }
+.home .bg {
+  position: fixed; }
 
-.phone {
-  background: rgba(0, 0, 0, 0.05);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  margin: 48px auto;
-  padding: 40px 4px;
-  width: 45%; }
-  .phone:after {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    bottom: 18px;
-    content: '';
-    display: block;
-    height: 5px;
-    margin: 0 auto;
-    left: 0;
-    position: absolute;
-    right: 0;
-    width: 40px; }
-  .phone img {
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px; }
+.client .bg {
+  background-position: -0.6vw -0.6vw;
+  background-size: 130px auto;
+  opacity: 0.25;
+  -webkit-transition: all 450ms ease-out;
+  -o-transition: all 450ms ease-out;
+  transition: all 450ms ease-out; }
 
 @media screen and (min-width: 1000px) {
-  .phone {
-    padding: 60px 4px; }
-    .phone:after {
-      bottom: 25px; } }
-
-.tablet {
-  background: rgba(0, 0, 0, 0.05);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 18px;
-  margin: 48px auto;
-  padding: 40px 10px; }
-  .tablet img {
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px; }
-
-.document,
-.poster {
-  border-radius: 4px; }
-  .document img,
-  .poster img {
-    border-radius: 4px; }
+  .bg {
+    background-position: -350vw -200vw;
+    background-size: 1300vw auto; }
+  .client .bg {
+    background-size: 12vw auto;
+    position: fixed; } }
 
 .st3 {
   background-color: #232426;
@@ -408,6 +347,85 @@ pre {
   .st3 {
     margin-top: 60px; } }
 
+.device {
+  border: 2px solid rgba(0, 0, 0, 0.1); }
+
+.browser {
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+  margin: 24px auto; }
+  .browser:before {
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    bottom: 100%;
+    content: '';
+    display: block;
+    left: -2px;
+    position: absolute;
+    right: -2px;
+    top: -24px; }
+  .browser:after {
+    color: rgba(0, 0, 0, 0.1);
+    content: "...";
+    display: inline-block;
+    font-size: 70px;
+    font-size: 7rem;
+    left: 5px;
+    letter-spacing: 0;
+    line-height: 0;
+    position: absolute;
+    top: -30px; }
+  .browser img {
+    border-radius: 0 0 5px 5px; }
+
+.phone {
+  background: rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 48px auto;
+  padding: 40px 4px;
+  width: 45%; }
+  .phone:after {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    bottom: 18px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 0 auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 40px; }
+  .phone img {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
+
+@media screen and (min-width: 1000px) {
+  .phone {
+    padding: 60px 4px; }
+    .phone:after {
+      bottom: 25px; } }
+
+.tablet {
+  background: rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  margin: 48px auto;
+  padding: 40px 10px; }
+  .tablet img {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
+
+.document,
+.poster {
+  border-radius: 4px; }
+  .document img,
+  .poster img {
+    border-radius: 4px; }
+
 ul.clients .ie a:before {
   background-color: rgba(185, 203, 65, 0.95); }
 
@@ -472,14 +490,6 @@ ul.clients .keva a:before {
     opacity: 0.5; }
   .client nav .amp {
     padding: 0 0.12em; }
-
-.client .bg {
-  background-position: -0.6vw -0.6vw;
-  background-size: 130px auto;
-  opacity: 0.25;
-  -webkit-transition: all 450ms ease-out;
-  -o-transition: all 450ms ease-out;
-  transition: all 450ms ease-out; }
 
 .client .brand {
   width: 130px;
@@ -601,9 +611,6 @@ ul.clients .keva a:before {
     width: 105%; } }
 
 @media screen and (min-width: 1000px) {
-  .client .bg {
-    background-size: 12vw auto;
-    position: fixed; }
   .client .brand {
     left: 0;
     position: fixed;
@@ -815,6 +822,13 @@ ul li:nth-child(13) {
       -ms-transform: translateY(-20px);
           transform: translateY(-20px); }
 
+@media screen and (max-width: 1000px) {
+  .rellax {
+    margin-bottom: 10vh !important;
+    margin-top: 10vh !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+            transform: translate3d(0, 0, 0) !important; } }
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -873,10 +887,3 @@ ul li:nth-child(13) {
 
 .hide {
   display: none !important; }
-
-@media screen and (max-width: 1000px) {
-  .rellax {
-    margin-bottom: 10vh !important;
-    margin-top: 10vh !important;
-    -webkit-transform: translate3d(0, 0, 0) !important;
-            transform: translate3d(0, 0, 0) !important; } }

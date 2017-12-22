@@ -81,13 +81,6 @@ ul.clients {
         }
 
     }
-    .bg {
-        background-position: -0.6vw -0.6vw;
-        background-size: 130px auto;
-        opacity: 0.25;
-        // transition: all 50ms cubic-bezier(0,0,0,1);
-        transition: all 450ms ease-out;
-    }
     .brand {
         width: 130px;
         z-index: 999;
@@ -290,10 +283,6 @@ ul.clients {
 
 @media screen and (min-width: $large-min) {
     .client {
-        .bg {
-            background-size: 12vw auto;
-            position: fixed;
-        }
         .brand {
             left: 0;
             position: fixed;
