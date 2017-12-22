@@ -66,6 +66,7 @@ ul.clients {
 
         &.lower {
             margin-bottom: 4vw;
+            position: relative;
         }
 
         a {
@@ -414,10 +415,18 @@ ul.clients {
 
 .client-ie {
     background-color: $bg-client-ie;
+
+    nav.lower {
+        background-color: rgba($bg-client-ie, 0.925);
+    }
 }
 
 .client-gk {
     background-color: $bg-client-gk;
+
+    nav.lower {
+        background-color: rgba($bg-client-gk, 0.925);
+    }
 }
 
 .client-batc {
@@ -427,26 +436,50 @@ ul.clients {
     nav a {
         color: $black;
     }
+
+    nav.lower {
+        background-color: rgba($bg-client-batc, 0.925);
+    }
 }
 
 .client-raven {
     background-color: $bg-client-raven;
+
+    nav.lower {
+        background-color: rgba($bg-client-raven, 0.925);
+    }
 }
 
 .client-nb {
     background-color: $bg-client-nb;
+
+    nav.lower {
+        background-color: rgba($bg-client-nb, 0.925);
+    }
 }
 
 .client-bfmn {
     background-color: $bg-client-bfmn;
+
+    nav.lower {
+        background-color: rgba($bg-client-bfmn, 0.925);
+    }
 }
 
 .client-vork {
     background-color: $bg-client-vork;
+
+    nav.lower {
+        background-color: rgba($bg-client-vork, 0.925);
+    }
 }
 
 .client-sb {
     background-color: $bg-client-sb;
+
+    nav.lower {
+        background-color: rgba($bg-client-sb, 0.925);
+    }
 }
 
 .client-vital {
@@ -456,23 +489,39 @@ ul.clients {
     nav a {
         color: $black;
     }
+    nav.lower {
+        background-color: rgba($bg-client-vital, 0.925);
+    }
 }
 
 .client-rt {
     background-color: $bg-client-rt;
+
+    nav.lower {
+        background-color: rgba($bg-client-rt, 0.925);
+    }
 }
 
 .client-oa {
     background-color: $bg-client-oa;
+
+    nav.lower {
+        background-color: rgba($bg-client-oa, 0.925);
+    }
 }
 
 .client-mp {
     background-color: $bg-client-mp;
+
+    nav.lower {
+        background-color: rgba($bg-client-mp, 0.925);
+    }
 }
 
 .client-keva {
     background-color: $bg-client-keva;
+
+    nav.lower {
+        background-color: rgba($bg-client-keva, 0.925);
+    }
 }
-
-
-

@@ -482,7 +482,8 @@ ul.clients .keva a:before {
     .client nav.upper span.preface {
       display: block; }
   .client nav.lower {
-    margin-bottom: 4vw; }
+    margin-bottom: 4vw;
+    position: relative; }
   .client nav a {
     display: block;
     padding: 3vw 4vw; }
@@ -681,48 +682,74 @@ ul.clients .keva a:before {
 
 .client-ie {
   background-color: #B9CB41; }
+  .client-ie nav.lower {
+    background-color: rgba(185, 203, 65, 0.925); }
 
 .client-gk {
   background-color: #83A96A; }
+  .client-gk nav.lower {
+    background-color: rgba(131, 169, 106, 0.925); }
 
 .client-batc {
   background-color: #EAE8E2; }
   .client-batc header,
   .client-batc nav a {
     color: #000; }
+  .client-batc nav.lower {
+    background-color: rgba(234, 232, 226, 0.925); }
 
 .client-raven {
   background-color: #76CAC1; }
+  .client-raven nav.lower {
+    background-color: rgba(118, 202, 193, 0.925); }
 
 .client-nb {
   background-color: #f5AE39; }
+  .client-nb nav.lower {
+    background-color: rgba(245, 174, 57, 0.925); }
 
 .client-bfmn {
   background-color: #5D8A46; }
+  .client-bfmn nav.lower {
+    background-color: rgba(93, 138, 70, 0.925); }
 
 .client-vork {
   background-color: #DD4233; }
+  .client-vork nav.lower {
+    background-color: rgba(221, 66, 51, 0.925); }
 
 .client-sb {
   background-color: #3C7DE3; }
+  .client-sb nav.lower {
+    background-color: rgba(60, 125, 227, 0.925); }
 
 .client-vital {
   background-color: #F5F5F5; }
   .client-vital header,
   .client-vital nav a {
     color: #000; }
+  .client-vital nav.lower {
+    background-color: rgba(245, 245, 245, 0.925); }
 
 .client-rt {
   background-color: #905B92; }
+  .client-rt nav.lower {
+    background-color: rgba(144, 91, 146, 0.925); }
 
 .client-oa {
   background-color: #c62634; }
+  .client-oa nav.lower {
+    background-color: rgba(198, 38, 52, 0.925); }
 
 .client-mp {
   background-color: #9A989B; }
+  .client-mp nav.lower {
+    background-color: rgba(154, 152, 155, 0.925); }
 
 .client-keva {
   background-color: #3A85C3; }
+  .client-keva nav.lower {
+    background-color: rgba(58, 133, 195, 0.925); }
 
 article {
   opacity: 1;
