@@ -28,7 +28,7 @@ gulp.task('css', function () {
     .pipe(sass({errLogToConsole: true}))
     .pipe(autoprefixer('last 4 version'))
     .pipe(gulp.dest('app/assets/css'))
-    .pipe(cssnano())
+    .pipe(cssnano({autoprefixer: false}))
     .pipe(rename({ suffix: '.min' }))
     .pipe(header(banner, { package : package }))
     .pipe(gulp.dest('app/assets/css'))
