@@ -301,8 +301,9 @@ ul.clients {
         }
         nav {
             &.upper {
-                a span {
-                    display: block;
+                span.preface {
+                    display: inline-block;
+                    margin-right: 0.15em;
                 }
             }
             &.lower {

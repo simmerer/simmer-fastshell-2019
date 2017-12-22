@@ -563,8 +563,9 @@ ul.clients .keva a:before {
     left: 0;
     position: fixed;
     top: 30vh; }
-  .client nav.upper a span {
-    display: block; }
+  .client nav.upper span.preface {
+    display: inline-block;
+    margin-right: 0.15em; }
   .client nav.lower {
     margin-bottom: 0; }
     .client nav.lower a.prev {
