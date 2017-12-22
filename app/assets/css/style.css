@@ -528,6 +528,10 @@ ul.clients .keva a:before {
         right: -12vw; }
     .client .see figure.typeface {
       margin-bottom: 15vw; }
+      .client .see figure.typeface.b0 {
+        margin-bottom: 0; }
+      .client .see figure.typeface.b10 {
+        margin-bottom: 10vw; }
   .client .see img {
     display: block;
     height: auto;

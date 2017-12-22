@@ -238,6 +238,14 @@ ul.clients {
 
             &.typeface {
                 margin-bottom: 15vw;
+
+                &.b0 {
+                    margin-bottom: 0;
+                }
+
+                &.b10 {
+                    margin-bottom: 10vw;
+                }
             }
         }
 
