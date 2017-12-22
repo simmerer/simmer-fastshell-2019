@@ -440,7 +440,8 @@ ul.clients .keva a:before {
   transition: all 450ms ease-out; }
 
 .client .brand {
-  width: 130px; }
+  width: 130px;
+  z-index: 999; }
   .client .brand a {
     height: 91px;
     opacity: 0;
