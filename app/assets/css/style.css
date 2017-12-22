@@ -374,9 +374,9 @@ pre {
     border-radius: 4px; }
 
 .home .brand a {
-  -webkit-transition: background-color 250ms, opacity 2500ms ease-out;
-  -o-transition: background-color 250ms, opacity 2500ms ease-out;
-  transition: background-color 250ms, opacity 2500ms ease-out;
+  -webkit-transition: background-color 1250ms, opacity 2500ms ease-out;
+  -o-transition: background-color 1250ms, opacity 2500ms ease-out;
+  transition: background-color 1250ms, opacity 2500ms ease-out;
   -webkit-transition-delay: 0, 650ms;
        -o-transition-delay: 0, 650ms;
           transition-delay: 0, 650ms; }
