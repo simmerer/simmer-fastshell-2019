@@ -52,8 +52,18 @@ ul.clients {
         text-align: right;
 
         &.upper {
-            display: none;
+            display: block;
+            left: 50%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1000;
+
+            span.preface {
+                display: block;
+            }
         }
+
         &.lower {
             margin-bottom: 4vw;
         }
@@ -73,20 +83,21 @@ ul.clients {
     }
     .bg {
         background-position: -0.6vw -0.6vw;
-        background-size: 100px auto;
+        background-size: 130px auto;
         opacity: 0.25;
         // transition: all 50ms cubic-bezier(0,0,0,1);
         transition: all 450ms ease-out;
     }
+    #bw {
+        z-index: 10;
+    }
     .brand {
-        z-index: 999;
-
         a {
-            height: 70px;
+            height: 91px;
             opacity: 0;
             transition: all 250ms;
             transition-delay: unset;
-            width: 110px;
+            width: 130px;
         }
     }
     .tagline {
@@ -290,10 +301,9 @@ ul.clients {
         }
         nav {
             &.upper {
-                display: block;
-                position: absolute;
-                right: 0;
-                top: 0;
+                a span {
+                    display: block;
+                }
             }
             &.lower {
                 margin-bottom: 0;
