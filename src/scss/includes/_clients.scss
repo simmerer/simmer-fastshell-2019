@@ -180,39 +180,39 @@ ul.clients {
             }
 
             &.b10 {
-                margin-bottom: 10vw;
+                margin-bottom: 5vh;
             }
 
             &.b20 {
-                margin-bottom: 20vw;
+                margin-bottom: 10vh;
             }
 
             &.b30 {
-                margin-bottom: 30vw;
+                margin-bottom: 15vh;
             }
 
             &.t10 {
-                margin-top: 10vw;
+                margin-top: 5vh;
             }
 
             &.t20 {
-                margin-top: 20vw;
+                margin-top: 10vh;
             }
 
             &.t30 {
-                margin-top: 30vw;
+                margin-top: 15vh;
             }
 
             &.up10 {
-                margin-top: -10vw;
+                margin-top: -5vh;
             }
 
             &.up20 {
-                margin-top: -20vw;
+                margin-top: -10vh;
             }
 
             &.up30 {
-                margin-top: -30vw;
+                margin-top: -15vh;
             }
 
             &.w60 {
@@ -232,33 +232,33 @@ ul.clients {
             }
 
             &.l {
-                left: -2vw;
+                left: -1vh;
                 position: relative;
             }
 
             &.r {
                 position: relative;
-                right: -2vw;
+                right: -1vh;
 
                 &.document {
                     margin-left: auto;
-                    margin-right: -5.5vw;
+                    margin-right: -2.25vh;
                 }
 
                 &.w60 {
-                    right: -12vw;
+                    right: -6vh;
                 }
             }
 
             &.typeface {
-                margin-bottom: 15vw;
+                margin-bottom: 7.5vh;
 
                 &.b0 {
                     margin-bottom: 0;
                 }
 
                 &.b10 {
-                    margin-bottom: 10vw;
+                    margin-bottom: 5vh;
                 }
             }
         }
@@ -321,6 +321,68 @@ ul.clients {
         .see {
             float: right;
             width: 50vw;
+
+            figure {
+                &.b10 {
+                    margin-bottom: 10vw;
+                }
+
+                &.b20 {
+                    margin-bottom: 20vw;
+                }
+
+                &.b30 {
+                    margin-bottom: 30vw;
+                }
+
+                &.t10 {
+                    margin-top: 10vw;
+                }
+
+                &.t20 {
+                    margin-top: 20vw;
+                }
+
+                &.t30 {
+                    margin-top: 30vw;
+                }
+
+                &.up10 {
+                    margin-top: -10vw;
+                }
+
+                &.up20 {
+                    margin-top: -20vw;
+                }
+
+                &.up30 {
+                    margin-top: -30vw;
+                }
+
+                &.l {
+                    left: -2vw;
+                }
+
+                &.r {
+                    right: -2vw;
+
+                    &.document {
+                        margin-right: -5.5vw;
+                    }
+
+                    &.w60 {
+                        right: -12vw;
+                    }
+                }
+
+                &.typeface {
+                    margin-bottom: 15vw;
+
+                    &.b10 {
+                        margin-bottom: 10vw;
+                    }
+                }
+            }
         }
     }
 }

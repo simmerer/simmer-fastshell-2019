@@ -538,23 +538,23 @@ ul.clients .keva a:before {
         -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
                 box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1); }
     .client .see figure.b10 {
-      margin-bottom: 10vw; }
+      margin-bottom: 5vh; }
     .client .see figure.b20 {
-      margin-bottom: 20vw; }
+      margin-bottom: 10vh; }
     .client .see figure.b30 {
-      margin-bottom: 30vw; }
+      margin-bottom: 15vh; }
     .client .see figure.t10 {
-      margin-top: 10vw; }
+      margin-top: 5vh; }
     .client .see figure.t20 {
-      margin-top: 20vw; }
+      margin-top: 10vh; }
     .client .see figure.t30 {
-      margin-top: 30vw; }
+      margin-top: 15vh; }
     .client .see figure.up10 {
-      margin-top: -10vw; }
+      margin-top: -5vh; }
     .client .see figure.up20 {
-      margin-top: -20vw; }
+      margin-top: -10vh; }
     .client .see figure.up30 {
-      margin-top: -30vw; }
+      margin-top: -15vh; }
     .client .see figure.w60 {
       width: 60%; }
     .client .see figure.w80 {
@@ -564,22 +564,22 @@ ul.clients .keva a:before {
     .client .see figure.w110 {
       width: 110%; }
     .client .see figure.l {
-      left: -2vw;
+      left: -1vh;
       position: relative; }
     .client .see figure.r {
       position: relative;
-      right: -2vw; }
+      right: -1vh; }
       .client .see figure.r.document {
         margin-left: auto;
-        margin-right: -5.5vw; }
+        margin-right: -2.25vh; }
       .client .see figure.r.w60 {
-        right: -12vw; }
+        right: -6vh; }
     .client .see figure.typeface {
-      margin-bottom: 15vw; }
+      margin-bottom: 7.5vh; }
       .client .see figure.typeface.b0 {
         margin-bottom: 0; }
       .client .see figure.typeface.b10 {
-        margin-bottom: 10vw; }
+        margin-bottom: 5vh; }
   .client .see img {
     display: block;
     height: auto;
@@ -614,7 +614,37 @@ ul.clients .keva a:before {
       float: right; }
   .client .see {
     float: right;
-    width: 50vw; } }
+    width: 50vw; }
+    .client .see figure.b10 {
+      margin-bottom: 10vw; }
+    .client .see figure.b20 {
+      margin-bottom: 20vw; }
+    .client .see figure.b30 {
+      margin-bottom: 30vw; }
+    .client .see figure.t10 {
+      margin-top: 10vw; }
+    .client .see figure.t20 {
+      margin-top: 20vw; }
+    .client .see figure.t30 {
+      margin-top: 30vw; }
+    .client .see figure.up10 {
+      margin-top: -10vw; }
+    .client .see figure.up20 {
+      margin-top: -20vw; }
+    .client .see figure.up30 {
+      margin-top: -30vw; }
+    .client .see figure.l {
+      left: -2vw; }
+    .client .see figure.r {
+      right: -2vw; }
+      .client .see figure.r.document {
+        margin-right: -5.5vw; }
+      .client .see figure.r.w60 {
+        right: -12vw; }
+    .client .see figure.typeface {
+      margin-bottom: 15vw; }
+      .client .see figure.typeface.b10 {
+        margin-bottom: 10vw; } }
 
 .client-ie {
   background-color: #B9CB41; }
