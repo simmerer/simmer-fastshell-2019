@@ -67,7 +67,7 @@ body {
     background-color: #000;
     background-size: 100% auto;
     display: block;
-    height: 210px;
+    height: 58vw;
     -webkit-mask-image: url("../img/brand.svg");
             mask-image: url("../img/brand.svg");
     -webkit-mask-position: -1.7vw -2vw;
@@ -81,17 +81,16 @@ body {
     -webkit-transition: background-color 250ms, opacity 150ms;
     -o-transition: background-color 250ms, opacity 150ms;
     transition: background-color 250ms, opacity 150ms;
-    width: 250px; }
+    width: 90vw; }
     .brand a:hover, .brand a:focus {
-      background-color: #FFF;
       outline: 0; }
       .brand a:hover + .tagline-container .tagline, .brand a:focus + .tagline-container .tagline {
         opacity: 0.75; }
   .brand .tagline-container {
-    bottom: 50px;
-    left: 0;
+    left: 2vw;
     pointer-events: none;
     position: absolute;
+    top: 18vw;
     -webkit-transition: opacity 1800ms ease-out, -webkit-transform 1800ms ease-out;
     transition: opacity 1800ms ease-out, -webkit-transform 1800ms ease-out;
     -o-transition: transform 1800ms ease-out, opacity 1800ms ease-out;
@@ -102,7 +101,7 @@ body {
             transition-delay: 700ms; }
   .brand .tagline {
     color: #FFF;
-    font-size: 30px;
+    font-size: 10vw;
     font-weight: 600;
     line-height: 0.9;
     padding-left: 30px;
@@ -142,7 +141,8 @@ footer {
   .brand .tagline-container {
     bottom: auto;
     left: 14.5vw;
-    top: 3vw; }
+    top: 3vw;
+    width: 27vw; }
   .brand .tagline {
     color: #FFF;
     font-size: 3vw;
@@ -386,7 +386,17 @@ pre {
 
 ul.clients {
   margin-bottom: 8vw;
-  margin-top: 4vw; }
+  margin-top: 4vw;
+  position: relative;
+  z-index: 1; }
+  ul.clients:before {
+    color: rgba(0, 0, 0, 0.4);
+    content: 'Clients';
+    font-size: 30vw;
+    left: -2vw;
+    top: -13vw;
+    position: absolute;
+    z-index: -1; }
   ul.clients a {
     color: #FFF;
     display: inline-block;
@@ -428,16 +438,25 @@ ul.clients {
 
 @media screen and (min-width: 1000px) {
   ul.clients {
+    margin-top: 31vw;
     max-width: 50vw; }
+    ul.clients:before {
+      font-size: 21vw;
+      position: fixed;
+      top: 20vw; }
     ul.clients a {
       font-size: 4vw;
       margin: 1vw 0;
       padding-bottom: 0;
       padding-left: 4vw;
       padding-top: 0; }
+  .home .brand {
+    left: 0;
+    position: fixed;
+    top: 0; }
   .home aside {
     margin-left: 0;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 4vw; }
     .home aside pre {

@@ -3,7 +3,7 @@
  * Signature creative & technical work.
  * https://simmer.ooo
  * @author David Simmer
- * @version 5.0.1
+ * @version 5.0.0
  * Copyright 2017. CC BY-NC-ND licensed.
  */
 /* jshint ignore:start */
@@ -400,7 +400,7 @@
  * Signature creative & technical work.
  * https://simmer.ooo
  * @author David Simmer
- * @version 5.0.1
+ * @version 5.0.0
  * Copyright 2017. CC BY-NC-ND licensed.
  */
 /* jshint ignore:start */
@@ -706,7 +706,7 @@
  * Signature creative & technical work.
  * https://simmer.ooo
  * @author David Simmer
- * @version 5.0.1
+ * @version 5.0.0
  * Copyright 2017. CC BY-NC-ND licensed.
  */
 /*global Barba*/

@@ -15,6 +15,18 @@
 ul.clients {
     margin-bottom: 8vw;
     margin-top: 4vw;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        color: rgba($black, 0.4);
+        content: 'Clients';
+        font-size: 30vw;
+        left: -2vw;
+        top: -13vw;
+        position: absolute;
+        z-index: -1;
+    }
 
     a {
         color: $white;
@@ -63,7 +75,14 @@ ul.clients {
 
 @media screen and (min-width: $large-min) {
     ul.clients {
+        margin-top: 31vw;
         max-width: 50vw;
+
+        &:before {
+            font-size: 21vw;
+            position: fixed;
+            top: 20vw;
+        }
 
         a {
             font-size: $font-size-large;
@@ -75,9 +94,14 @@ ul.clients {
     }
 
     .home {
+        .brand {
+            left: 0;
+            position: fixed;
+            top: 0;
+        }
         aside {
             margin-left: 0;
-            position: fixed;
+            position: absolute;
             right: 0;
             top: 4vw;
 

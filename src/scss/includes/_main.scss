@@ -51,7 +51,7 @@ body {
         background-color: $black;
         background-size: 100% auto;
         display: block;
-        height: 210px;
+        height: 58vw;
         mask-image: url('../img/brand.svg');
         mask-position: -1.7vw -2vw;
         mask-repeat: no-repeat;
@@ -60,11 +60,11 @@ body {
         position: relative;
         text-indent: -999em;
         transition: background-color 250ms, opacity 150ms;
-        width: 250px;
+        width: 90vw;
 
         &:hover,
         &:focus {
-            background-color: $white;
+            // background-color: $white;
             // opacity: 1;
             outline: 0;
 
@@ -78,16 +78,17 @@ body {
     }
 
     .tagline-container {
-        bottom: 50px;
-        left: 0;
+        // bottom: 50px;
+        left: 2vw;
         pointer-events: none;
         position: absolute;
+        top: 18vw;
         transition: transform 1800ms ease-out, opacity 1800ms ease-out;
         transition-delay: 700ms;
     }
     .tagline {
         color: $white;
-        font-size: $font-size-large-static;
+        font-size: 10vw;
         font-weight: 600;
         line-height: 0.9;
         padding-left: $font-size-large-static;
@@ -144,6 +145,7 @@ footer {
             bottom: auto;
             left: 14.5vw;
             top: 3vw;
+            width: 27vw;
         }
         .tagline {
             color: $white;
