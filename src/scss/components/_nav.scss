@@ -1,4 +1,6 @@
 header {
+    margin-bottom: 10vh;
+
     nav {
         a {
             display: block;
@@ -16,8 +18,8 @@ header {
     a {
         background: url('/assets/img/sig.svg') no-repeat center transparent;
         display: block;
-        height: 25vw;
-        width: 33vw;
+        height: 38vw;
+        width: 50vw;
         text-indent: -999em;
 
         &:hover,
@@ -30,11 +32,11 @@ header {
 }
 .tagline {
     font-size: 3vw;
-    left: 14vw;
+    left: 23vw;
     line-height: 1;
     opacity: 0.25;
     position: relative;
-    top: -9vw;
+    top: -11vw;
 
     .amp {
         margin-left: -0.3em;
@@ -43,17 +45,29 @@ header {
 
 
 @media screen and (min-width: $medium-min) {
+    .brand {
+        a {
+            height: 18vw;
+            width: 24vw;
+        }
+    }
     .tagline {
         font-size: 3vw;
-        left: 14vw;
-        top: -6vw;
+        left: 11vw;
+        top: -5vw;
     }
 }
 
 @media screen and (min-width: $large-min) {
+    .brand {
+        a {
+            height: 10vw;
+            width: 13vw;
+        }
+    }
     .tagline {
-        font-size: 2vw;
-        left: 10vw;
-        top: -4vw;
+        font-size: 1.5vw;
+        left: 6vw;
+        top: -3vw;
     }
 }

@@ -1,60 +1,37 @@
-ul.clients {
+.clients {
+    .fg {
+        padding: 10vh 5vw 10vh;
+    }
+    h2 {
+        font-size: 13vw;
+        letter-spacing: -0.03em;
+        line-height: 0.8;
+        max-width: 50vw;
+        opacity: 0.1;
+    }
+}
+
+
+ul.client-list {
     margin-bottom: 8vw;
     margin-top: 4vw;
     position: relative;
     z-index: 1;
 
-    &:before {
-        color: rgba($black, 0.4);
-        // content: 'Clients';
-        font-size: 30vw;
-        left: -2vw;
-        top: -13vw;
-        position: absolute;
-        z-index: -1;
-    }
-
     a {
-        color: $white;
         display: inline-block;
         font-size: $font-size-large-static;
         line-height: 1.1;
         margin: 10px 0;
         // opacity: 0.6;
         padding-bottom: 7px;
-        padding-left: $font-size-large-static;
         padding-top: 7px;
         position: relative;
-
-        &:before {
-            background-color: rgba($black, 0.5);
-            bottom: 0;
-            content: '';
-            left: 0;
-            opacity: 0.3;
-            position: absolute;
-            right: 1vw;
-            top: 0;
-            transform: translateX(-100%);
-            transition: all 500ms ease-out;
-            will-change: transform;
-            z-index: -1;
-        }
 
         &:hover,
         &:focus {
             opacity: 1;
             outline: 0;
-
-            &:before {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        &:focus {
-            &:before {
-                background-color: rgba($green, 0.5);
-            }
         }
     }
 
@@ -100,21 +77,14 @@ ul.clients {
 }
 
 @media screen and (min-width: $large-min) {
-    ul.clients {
+    ul.client-list {
         // margin-top: 31vw;
         // max-width: 50vw;
 
-        &:before {
-            font-size: 21vw;
-            position: fixed;
-            top: 20vw;
-        }
-
         a {
-            font-size: 6vw;
+            font-size: 5vw;
             margin: 1vw $font-size-large-static 1vw 0;
             padding-bottom: 0;
-            padding-left: $font-size-large;
             padding-top: 0;
         }
     }
