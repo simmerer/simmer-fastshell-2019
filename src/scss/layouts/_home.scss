@@ -1,0 +1,59 @@
+.home {
+    .fg {
+        min-height: 100vh;
+        padding: 10vh 5vw 10vh;
+    }
+    header {
+        nav {
+            font-size: 2vw;
+        }
+    }
+    .brand {
+        a {
+            height: 38vw;
+            width: 50vw;
+        }
+    }
+
+    .intro {
+        color: $grey-pale;
+        margin-top: 7vh;
+        font-size: 7vw;
+    }
+    .tagline {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $medium-min) {
+    .home {
+        .fg {
+            min-height: 100vh;
+            padding-top: 30vh;
+        }
+        .brand {
+            a {
+                height: 18vw;
+                width: 24vw;
+            }
+        }
+        .intro {
+            font-size: 5vw;
+            margin-top: 12vh;
+        }
+    }
+}
+
+@media screen and (min-width: $large-min) {
+    .home {
+        .brand {
+            a {
+                height: 10vw;
+                width: 13vw;
+            }
+        }
+        .intro {
+            font-size: 4vw;
+        }
+    }
+}

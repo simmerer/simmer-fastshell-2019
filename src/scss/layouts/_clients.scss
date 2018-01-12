@@ -1,17 +1,3 @@
-
-.home {
-    .brand {
-        a {
-            transition: background-color 1250ms, opacity 2500ms ease-out;
-            transition-delay: 0, 650ms;
-        }
-    }
-
-    aside {
-        margin-left: 4vw;
-    }
-}
-
 ul.clients {
     margin-bottom: 8vw;
     margin-top: 4vw;
@@ -20,7 +6,7 @@ ul.clients {
 
     &:before {
         color: rgba($black, 0.4);
-        content: 'Clients';
+        // content: 'Clients';
         font-size: 30vw;
         left: -2vw;
         top: -13vw;
@@ -34,7 +20,7 @@ ul.clients {
         font-size: $font-size-large-static;
         line-height: 1.1;
         margin: 10px 0;
-        opacity: 0.6;
+        // opacity: 0.6;
         padding-bottom: 7px;
         padding-left: $font-size-large-static;
         padding-top: 7px;
@@ -71,12 +57,52 @@ ul.clients {
             }
         }
     }
+
+    .ie a:before {
+        background-color: rgba($bg-client-ie, $client-list-hover-opacity);
+    }
+    .gk a:before {
+        background-color: rgba($bg-client-gk, $client-list-hover-opacity);
+    }
+    .batc a:before {
+        background-color: rgba($bg-client-batc, $client-list-hover-opacity);
+    }
+    .raven a:before {
+        background-color: rgba($bg-client-raven, $client-list-hover-opacity);
+    }
+    .nb a:before {
+        background-color: rgba($bg-client-nb, $client-list-hover-opacity);
+    }
+    .bfmn a:before {
+        background-color: rgba($bg-client-bfmn, $client-list-hover-opacity);
+    }
+    .vork a:before {
+        background-color: rgba($bg-client-vork, $client-list-hover-opacity);
+    }
+    .sb a:before {
+        background-color: rgba($bg-client-sb, $client-list-hover-opacity);
+    }
+    .vital a:before {
+        background-color: rgba($bg-client-vital, $client-list-hover-opacity);
+    }
+    .rt a:before {
+        background-color: rgba($bg-client-rt, $client-list-hover-opacity);
+    }
+    .oa a:before {
+        background-color: rgba($bg-client-oa, $client-list-hover-opacity);
+    }
+    .mp a:before {
+        background-color: rgba($bg-client-mp, $client-list-hover-opacity);
+    }
+    .keva a:before {
+        background-color: rgba($bg-client-keva, $client-list-hover-opacity);
+    }
 }
 
 @media screen and (min-width: $large-min) {
     ul.clients {
-        margin-top: 31vw;
-        max-width: 50vw;
+        // margin-top: 31vw;
+        // max-width: 50vw;
 
         &:before {
             font-size: 21vw;
@@ -85,29 +111,11 @@ ul.clients {
         }
 
         a {
-            font-size: $font-size-large;
-            margin: 1vw 0;
+            font-size: 6vw;
+            margin: 1vw $font-size-large-static 1vw 0;
             padding-bottom: 0;
             padding-left: $font-size-large;
             padding-top: 0;
-        }
-    }
-
-    .home {
-        .brand {
-            left: 0;
-            position: fixed;
-            top: 0;
-        }
-        aside {
-            margin-left: 0;
-            position: absolute;
-            right: 0;
-            top: 4vw;
-
-            pre {
-                padding-right: 8vw;
-            }
         }
     }
 }

@@ -1,14 +1,16 @@
 @import "includes/variables";
 @import "includes/mixins";
-@import "includes/main";
 
-@import "includes/bg";
-@import "includes/code";
-@import "includes/device";
+@import "components/code";
+@import "components/device";
+// @import "components/loading";
+@import "components/nav";
+@import "components/rellax";
+@import "components/transition";
 
-@import "includes/home";
-@import "includes/clients";
-@import "includes/loading";
-@import "includes/rellax";
-@import "includes/transition";
+@import "layouts/main";
+@import "layouts/home";
+@import "layouts/clients";
+@import "layouts/client";
+
 
