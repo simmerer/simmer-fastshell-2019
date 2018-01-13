@@ -734,13 +734,55 @@ function changeFavicon(src) {
 }
 
 
+
+function $$(query, context) {
+  return Array.prototype.slice.call(
+    (context || document).querySelectorAll(query)
+  );
+}
+
+function addBodyClass(classStr) {
+  var body = document.querySelector('body');
+  body.classList.add(classStr);
+}
+function removeBodyClass(classStr) {
+  var body = document.querySelector('body');
+  body.classList.remove(classStr);
+}
+
+function attachHoverListener(el) {
+  el.addEventListener('mouseover', function(ev){
+    var clientClass = ev.target.parentNode.classList[0];
+    addBodyClass('client-hover');
+    addBodyClass('client-' + clientClass);
+  });
+  el.addEventListener('mouseout', function(ev){
+    var clientClass = ev.target.parentNode.classList[0];
+    removeBodyClass('client-hover');
+    removeBodyClass('client-' + clientClass);
+  });
+}
+
+
 // methods that require a ready DOM
 function run() {
 
+  // rellax
   var rellaxables = document.querySelectorAll('.rellax');
   if (rellaxables.length > 0) {
     var rellax = new Rellax('.rellax'); // jshint ignore:line
   }
+
+
+  // fancy hovers
+  var clientList = document.querySelector('#client-list');
+  var clientArray = $$('a', clientList);
+  clientArray.forEach(function(client){
+    attachHoverListener(client);
+  });
+
+
+  // barba
   var newBodyClasses = [];
 
   Barba.Pjax.Dom.wrapperId = 'bw';

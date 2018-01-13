@@ -3,11 +3,12 @@
         padding: 10vh 5vw 10vh;
     }
     h2 {
+        color: $black;
         font-size: 13vw;
         letter-spacing: -0.03em;
         line-height: 0.8;
         max-width: 50vw;
-        opacity: 0.1;
+        opacity: 0.05;
     }
 }
 
@@ -19,68 +20,34 @@ ul.client-list {
     z-index: 1;
 
     a {
+        color: rgba($black, 0.6);
         display: inline-block;
         font-size: $font-size-large-static;
         line-height: 1.1;
         margin: 10px 0;
-        // opacity: 0.6;
         padding-bottom: 7px;
         padding-top: 7px;
         position: relative;
 
         &:hover,
         &:focus {
-            opacity: 1;
+            color: $white;
+            opacity: 1 !important;
             outline: 0;
         }
     }
+}
 
-    .ie a:before {
-        background-color: rgba($bg-client-ie, $client-list-hover-opacity);
-    }
-    .gk a:before {
-        background-color: rgba($bg-client-gk, $client-list-hover-opacity);
-    }
-    .batc a:before {
-        background-color: rgba($bg-client-batc, $client-list-hover-opacity);
-    }
-    .raven a:before {
-        background-color: rgba($bg-client-raven, $client-list-hover-opacity);
-    }
-    .nb a:before {
-        background-color: rgba($bg-client-nb, $client-list-hover-opacity);
-    }
-    .bfmn a:before {
-        background-color: rgba($bg-client-bfmn, $client-list-hover-opacity);
-    }
-    .vork a:before {
-        background-color: rgba($bg-client-vork, $client-list-hover-opacity);
-    }
-    .sb a:before {
-        background-color: rgba($bg-client-sb, $client-list-hover-opacity);
-    }
-    .vital a:before {
-        background-color: rgba($bg-client-vital, $client-list-hover-opacity);
-    }
-    .rt a:before {
-        background-color: rgba($bg-client-rt, $client-list-hover-opacity);
-    }
-    .oa a:before {
-        background-color: rgba($bg-client-oa, $client-list-hover-opacity);
-    }
-    .mp a:before {
-        background-color: rgba($bg-client-mp, $client-list-hover-opacity);
-    }
-    .keva a:before {
-        background-color: rgba($bg-client-keva, $client-list-hover-opacity);
+.client-hover {
+    ul.client-list {
+        a {
+            opacity: 0.3;
+        }
     }
 }
 
 @media screen and (min-width: $large-min) {
     ul.client-list {
-        // margin-top: 31vw;
-        // max-width: 50vw;
-
         a {
             font-size: 5vw;
             margin: 1vw $font-size-large-static 1vw 0;
