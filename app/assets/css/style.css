@@ -936,8 +936,7 @@ ul.client-list {
       opacity: 1; }
 
 .me footer {
-  bottom: 10vh;
-  position: absolute; }
+  display: none; }
 
 @media screen and (min-width: 700px) {
   .me .about {
