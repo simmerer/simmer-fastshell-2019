@@ -32,6 +32,11 @@ body {
 }
 
 .fg {
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: auto 75vh;
+    min-height: 100vh;
     padding: 15vh 5vw 10vh;
     position: relative;
     transition: $transition-slow;

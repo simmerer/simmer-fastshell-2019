@@ -4,6 +4,7 @@
         padding-top: 0;
 
         .site-header {
+            margin-bottom: 0;
             padding-top: 15vh;
 
             nav {
@@ -18,13 +19,11 @@
     }
 
     .brand {
-        left: 5vw;
-        position: fixed;
-        top: 13vh;
-        z-index: 9999;
-
         a {
+            height: 98px;
+            margin-left: 1vw;
             opacity: 0.25;
+            width: 130px;
 
             &:hover,
             &:focus {
@@ -37,7 +36,7 @@
     }
 
     article {
-        padding-top: 20vw;
+        padding-top: 10vw;
     }
     nav.nextprev {
         clear: both;
@@ -77,14 +76,14 @@
     }
     header.client-name {
         color: $white;
-        font-size: $font-size-large-static*2;
+        font-size: 18vw;
         letter-spacing: -0.04em;
         line-height: 0.9;
         margin-bottom: 100px;
 
         h1 {
             font-size: inherit;
-            padding: 0 5vw;
+            padding: 0 2vw;
 
             .amp {
                 left: -0.1em;
@@ -111,7 +110,7 @@
             letter-spacing: -0.04em;
             margin-top: 0.5em;
             opacity: 0.25;
-            padding-left: 5vw;
+            padding-left: 2vw;
 
             &:hover,
             &:focus {
@@ -122,7 +121,7 @@
     }
 
     .see {
-        padding: 0 5vw 4vw;
+        padding: 0 4vw 4vw 0;
 
 
         figure {
@@ -269,9 +268,15 @@
             max-width: 50vw;
         }
         .brand {
+            left: 5vw;
+            position: fixed;
+            top: 13vh;
+            z-index: 9999;
+
             a {
-                height: 6vw;
-                width: 8vw;
+                // height: 6vw;
+                margin-left: 0;
+                // width: 8vw;
             }
         }
         header.client-name {
@@ -280,8 +285,9 @@
             position: fixed;
             top: 30vh;
 
-            h1 {
-
+            h1,
+            a.project {
+                padding-left: 5vw;
             }
         }
         nav.nextprev {

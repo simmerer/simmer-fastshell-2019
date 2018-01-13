@@ -378,6 +378,11 @@ body {
   overflow-x: hidden; }
 
 .fg {
+  background-color: transparent;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: auto 75vh;
+  min-height: 100vh;
   padding: 15vh 5vw 10vh;
   position: relative;
   -webkit-transition: all 500ms ease-out;
@@ -484,6 +489,7 @@ ul.client-list {
   padding-right: 0;
   padding-top: 0; }
   .client .fg .site-header {
+    margin-bottom: 0;
     padding-top: 15vh; }
     .client .fg .site-header nav {
       padding: 2.25vw 0;
@@ -492,21 +498,19 @@ ul.client-list {
 .client a {
   color: #FFF; }
 
-.client .brand {
-  left: 5vw;
-  position: fixed;
-  top: 13vh;
-  z-index: 9999; }
-  .client .brand a {
-    opacity: 0.25; }
-    .client .brand a:hover, .client .brand a:focus {
-      opacity: 1; }
+.client .brand a {
+  height: 98px;
+  margin-left: 1vw;
+  opacity: 0.25;
+  width: 130px; }
+  .client .brand a:hover, .client .brand a:focus {
+    opacity: 1; }
 
 .client .tagline {
   opacity: 0; }
 
 .client article {
-  padding-top: 20vw; }
+  padding-top: 10vw; }
 
 .client nav.nextprev {
   clear: both;
@@ -534,13 +538,13 @@ ul.client-list {
 
 .client header.client-name {
   color: #FFF;
-  font-size: 60px;
+  font-size: 18vw;
   letter-spacing: -0.04em;
   line-height: 0.9;
   margin-bottom: 100px; }
   .client header.client-name h1 {
     font-size: inherit;
-    padding: 0 5vw; }
+    padding: 0 2vw; }
     .client header.client-name h1 .amp {
       left: -0.1em;
       position: relative; }
@@ -559,13 +563,13 @@ ul.client-list {
     letter-spacing: -0.04em;
     margin-top: 0.5em;
     opacity: 0.25;
-    padding-left: 5vw; }
+    padding-left: 2vw; }
     .client header.client-name a.project:hover, .client header.client-name a.project:focus {
       opacity: 0.75;
       outline: 0; }
 
 .client .see {
-  padding: 0 5vw 4vw; }
+  padding: 0 4vw 4vw 0; }
   .client .see figure {
     margin-bottom: 4vw;
     position: relative;
@@ -640,14 +644,21 @@ ul.client-list {
   .client .site-header {
     height: 13vw;
     max-width: 50vw; }
-  .client .brand a {
-    height: 6vw;
-    width: 8vw; }
+  .client .brand {
+    left: 5vw;
+    position: fixed;
+    top: 13vh;
+    z-index: 9999; }
+    .client .brand a {
+      margin-left: 0; }
   .client header.client-name {
     font-size: 8vw;
     left: 0;
     position: fixed;
     top: 30vh; }
+    .client header.client-name h1,
+    .client header.client-name a.project {
+      padding-left: 5vw; }
   .client nav.nextprev.upper span.preface {
     display: inline-block;
     margin-right: 0.15em; }
@@ -774,3 +785,12 @@ ul.client-list {
   background-color: #3A85C3; }
   .client-keva nav.lower {
     background-color: rgba(58, 133, 195, 0.925); }
+
+.me .fg {
+  background-image: url("/assets/img/david-simmer.jpg");
+  background-size: auto 75vh; }
+
+.me .brand a {
+  opacity: 0.1; }
+  .me .brand a:hover, .me .brand a:focus {
+    opacity: 1; }

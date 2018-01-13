@@ -1,0 +1,16 @@
+.me {
+    .fg {
+        background-image: url('/assets/img/david-simmer.jpg');
+        background-size: auto 75vh;
+    }
+    .brand {
+        a {
+            opacity: 0.1;
+
+            &:hover,
+            &:focus {
+                opacity: 1;
+            }
+        }
+    }
+}
