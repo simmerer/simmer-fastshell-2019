@@ -253,7 +253,8 @@ pre {
   top: -11vw;
   -webkit-transition: all 500ms ease-out;
   -o-transition: all 500ms ease-out;
-  transition: all 500ms ease-out; }
+  transition: all 500ms ease-out;
+  display: none; }
   .tagline .amp {
     margin-left: -0.3em; }
 
