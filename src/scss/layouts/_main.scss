@@ -32,7 +32,9 @@ body {
 }
 
 .fg {
+    padding: 15vh 5vw 10vh;
     position: relative;
+    transition: $transition-slow;
     z-index: 2;
 }
 

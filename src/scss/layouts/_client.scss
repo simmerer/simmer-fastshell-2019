@@ -1,11 +1,45 @@
 .client {
+    .fg {
+        padding-right: 0;
+        padding-top: 0;
+
+        .site-header {
+            padding-top: 15vh;
+
+            nav {
+                padding: 2.25vw 0;
+                top: 0;
+            }
+        }
+    }
+
     a {
         color: $white;
     }
+
+    .brand {
+        left: 5vw;
+        position: fixed;
+        top: 13vh;
+        z-index: 9999;
+
+        a {
+            opacity: 0.25;
+
+            &:hover,
+            &:focus {
+                opacity: 1;
+            }
+        }
+    }
+    .tagline {
+        opacity: 0;
+    }
+
     article {
         padding-top: 20vw;
     }
-    nav {
+    nav.nextprev {
         clear: both;
         letter-spacing: -0.02em;
         text-align: right;
@@ -30,7 +64,7 @@
 
         a {
             display: block;
-            padding: 3vw 4vw;
+            padding: 3vw 5vw;
         }
 
         span:first-child {
@@ -41,21 +75,7 @@
         }
 
     }
-    .brand {
-        width: 130px;
-        z-index: 999;
-
-        a {
-            height: 91px;
-            opacity: 0;
-            transition: all 250ms;
-            transition-delay: unset;
-        }
-    }
-    .tagline {
-        opacity: 0 !important;
-    }
-    header {
+    header.client-name {
         color: $white;
         font-size: $font-size-large-static*2;
         letter-spacing: -0.04em;
@@ -64,7 +84,7 @@
 
         h1 {
             font-size: inherit;
-            padding: 0 4vw;
+            padding: 0 5vw;
 
             .amp {
                 left: -0.1em;
@@ -90,7 +110,7 @@
             font-size: 50%;
             letter-spacing: -0.04em;
             opacity: 0.25;
-            padding-left: 4vw;
+            padding-left: 5vw;
 
             &:hover,
             &:focus {
@@ -101,7 +121,7 @@
     }
 
     .see {
-        padding: 0 4vw 4vw;
+        padding: 0 5vw 4vw;
 
 
         figure {
@@ -243,18 +263,17 @@
 
 @media screen and (min-width: $large-min) {
     .client {
+        .site-header {
+            height: 13vw;
+            max-width: 50vw;
+        }
         .brand {
-            left: 0;
-            position: fixed;
-            top: 0;
-            width: auto;
-
             a {
-                height: 8vw;
-                width: 13vw;
+                height: 6vw;
+                width: 8vw;
             }
         }
-        header {
+        header.client-name {
             font-size: $font-size-large*2;
             left: 0;
             position: fixed;
@@ -264,7 +283,7 @@
 
             }
         }
-        nav {
+        nav.nextprev {
             &.upper {
                 span.preface {
                     display: inline-block;
@@ -273,6 +292,7 @@
             }
             &.lower {
                 margin-bottom: 0;
+                margin-left: -5vw;
 
                 a.prev {
                     float: left;
@@ -391,8 +411,8 @@
 .client-batc {
     background-color: $bg-client-batc;
 
-    header,
-    nav a {
+    header.client-name,
+    nav.nextprev a {
         color: $black;
     }
 
@@ -444,8 +464,8 @@
 .client-vital {
     background-color: $bg-client-vital;
 
-    header,
-    nav a {
+    header.client-name,
+    nav.nextprev a {
         color: $black;
     }
     nav.lower {

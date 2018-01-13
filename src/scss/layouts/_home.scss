@@ -1,11 +1,7 @@
 .home {
-    .fg {
-        min-height: 100vh;
-        padding: 10vh 5vw 10vh;
-    }
-    header {
+    .site-header {
         nav {
-            font-size: 2vw;
+            opacity: 0;
         }
     }
     .intro {
@@ -14,7 +10,7 @@
         font-size: 7vw;
     }
     .tagline {
-        display: none;
+        opacity: 0;
     }
 }
 

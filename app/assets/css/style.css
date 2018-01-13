@@ -205,13 +205,34 @@ pre {
   .poster img {
     border-radius: 4px; }
 
-header {
-  margin-bottom: 10vh; }
-  header nav a {
-    display: block;
-    padding: 1vh 1vw; }
-    header nav a:hover, header nav a:focus {
-      color: #000; }
+.site-header {
+  margin-bottom: 10vh;
+  position: relative; }
+  .site-header nav {
+    left: 0;
+    position: absolute;
+    -webkit-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    top: -7vw; }
+    .site-header nav:hover a {
+      opacity: 0.5; }
+    .site-header nav li {
+      display: inline-block; }
+    .site-header nav a {
+      color: #000;
+      display: block;
+      letter-spacing: -0.02em;
+      opacity: 0.25;
+      padding: 1vh 1vw; }
+      .site-header nav a:hover, .site-header nav a:focus {
+        color: #000;
+        opacity: 1; }
+
+.clients .site-header li.clients a,
+.contact .site-header li.contact a,
+.me .site-header li.me a {
+  opacity: 1; }
 
 .brand a {
   background: url("/assets/img/sig.svg") no-repeat center transparent;
@@ -223,12 +244,16 @@ header {
     outline: 0; }
 
 .tagline {
+  color: rgba(0, 0, 0, 0.7);
   font-size: 3vw;
   left: 23vw;
   line-height: 1;
   opacity: 0.25;
   position: relative;
-  top: -11vw; }
+  top: -11vw;
+  -webkit-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out; }
   .tagline .amp {
     margin-left: -0.3em; }
 
@@ -348,7 +373,11 @@ body {
   overflow-x: hidden; }
 
 .fg {
+  padding: 15vh 5vw 10vh;
   position: relative;
+  -webkit-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   z-index: 2; }
 
 .amp {
@@ -378,12 +407,8 @@ footer {
         opacity: 0.5;
         outline: 0; }
 
-.home .fg {
-  min-height: 100vh;
-  padding: 10vh 5vw 10vh; }
-
-.home header nav {
-  font-size: 2vw; }
+.home .site-header nav {
+  opacity: 0; }
 
 .home .intro {
   color: #ced0cf;
@@ -391,7 +416,7 @@ footer {
   font-size: 7vw; }
 
 .home .tagline {
-  display: none; }
+  opacity: 0; }
 
 @media screen and (min-width: 700px) {
   .home .fg {
@@ -405,9 +430,6 @@ footer {
 @media screen and (min-width: 1000px) {
   .home .intro {
     font-size: 4vw; } }
-
-.clients .fg {
-  padding: 10vh 5vw 10vh; }
 
 .clients h2 {
   color: #000;
@@ -432,12 +454,19 @@ ul.client-list {
     padding-top: 7px;
     position: relative; }
     ul.client-list a:hover, ul.client-list a:focus {
-      color: #FFF;
-      opacity: 1 !important;
+      color: #000;
       outline: 0; }
+
+.client-hover ul.client-list li.batc a:hover, .client-hover ul.client-list li.batc a:focus,
+.client-hover ul.client-list li.vital a:hover,
+.client-hover ul.client-list li.vital a:focus {
+  color: #000; }
 
 .client-hover ul.client-list a {
   opacity: 0.3; }
+  .client-hover ul.client-list a:hover, .client-hover ul.client-list a:focus {
+    color: #FFF;
+    opacity: 1 !important; }
 
 @media screen and (min-width: 1000px) {
   ul.client-list a {
@@ -446,85 +475,91 @@ ul.client-list {
     padding-bottom: 0;
     padding-top: 0; } }
 
+.client .fg {
+  padding-right: 0;
+  padding-top: 0; }
+  .client .fg .site-header {
+    padding-top: 15vh; }
+    .client .fg .site-header nav {
+      padding: 2.25vw 0;
+      top: 0; }
+
 .client a {
   color: #FFF; }
+
+.client .brand {
+  left: 5vw;
+  position: fixed;
+  top: 13vh;
+  z-index: 9999; }
+  .client .brand a {
+    opacity: 0.25; }
+    .client .brand a:hover, .client .brand a:focus {
+      opacity: 1; }
+
+.client .tagline {
+  opacity: 0; }
 
 .client article {
   padding-top: 20vw; }
 
-.client nav {
+.client nav.nextprev {
   clear: both;
   letter-spacing: -0.02em;
   text-align: right; }
-  .client nav.upper {
+  .client nav.nextprev.upper {
     display: block;
     left: 50%;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 1000; }
-    .client nav.upper span.preface {
+    .client nav.nextprev.upper span.preface {
       display: block; }
-  .client nav.lower {
+  .client nav.nextprev.lower {
     margin-bottom: 4vw;
     position: relative; }
-  .client nav a {
+  .client nav.nextprev a {
     display: block;
-    padding: 3vw 4vw; }
-  .client nav span:first-child {
+    padding: 3vw 5vw; }
+  .client nav.nextprev span:first-child {
     opacity: 0.5; }
-  .client nav .amp {
+  .client nav.nextprev .amp {
     padding: 0 0.12em; }
 
-.client .brand {
-  width: 130px;
-  z-index: 999; }
-  .client .brand a {
-    height: 91px;
-    opacity: 0;
-    -webkit-transition: all 250ms;
-    -o-transition: all 250ms;
-    transition: all 250ms;
-    -webkit-transition-delay: unset;
-         -o-transition-delay: unset;
-            transition-delay: unset; }
-
-.client .tagline {
-  opacity: 0 !important; }
-
-.client header {
+.client header.client-name {
   color: #FFF;
   font-size: 60px;
   letter-spacing: -0.04em;
   line-height: 0.9;
   margin-bottom: 100px; }
-  .client header h1 {
+  .client header.client-name h1 {
     font-size: inherit;
-    padding: 0 4vw; }
-    .client header h1 .amp {
+    padding: 0 5vw; }
+    .client header.client-name h1 .amp {
       left: -0.1em;
       position: relative; }
-    .client header h1 > span {
+    .client header.client-name h1 > span {
       display: block; }
-      .client header h1 > span.interstitial {
+      .client header.client-name h1 > span.interstitial {
         font-size: 50%;
         font-style: italic;
         letter-spacing: 0;
         line-height: 1.333;
         opacity: 0.5; }
-  .client header a.project {
+  .client header.client-name a.project {
     color: inherit;
     display: block;
     font-size: 50%;
     letter-spacing: -0.04em;
     opacity: 0.25;
-    padding-left: 4vw; }
-    .client header a.project:hover, .client header a.project:focus {
+    padding-left: 5vw; }
+    .client header.client-name a.project:hover, .client header.client-name a.project:focus {
       opacity: 0.75;
       outline: 0; }
 
 .client .see {
-  padding: 0 4vw 4vw; }
+  padding: 0 5vw 4vw; }
   .client .see figure {
     margin-bottom: 4vw;
     position: relative;
@@ -596,28 +631,27 @@ ul.client-list {
     width: 105%; } }
 
 @media screen and (min-width: 1000px) {
-  .client .brand {
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: auto; }
-    .client .brand a {
-      height: 8vw;
-      width: 13vw; }
-  .client header {
+  .client .site-header {
+    height: 13vw;
+    max-width: 50vw; }
+  .client .brand a {
+    height: 6vw;
+    width: 8vw; }
+  .client header.client-name {
     font-size: 8vw;
     left: 0;
     position: fixed;
     top: 30vh; }
-  .client nav.upper span.preface {
+  .client nav.nextprev.upper span.preface {
     display: inline-block;
     margin-right: 0.15em; }
-  .client nav.lower {
-    margin-bottom: 0; }
-    .client nav.lower a.prev {
+  .client nav.nextprev.lower {
+    margin-bottom: 0;
+    margin-left: -5vw; }
+    .client nav.nextprev.lower a.prev {
       float: left;
       text-align: left; }
-    .client nav.lower a.next {
+    .client nav.nextprev.lower a.next {
       float: right; }
   .client .see {
     float: right;
@@ -676,8 +710,8 @@ ul.client-list {
 
 .client-batc {
   background-color: #EAE8E2; }
-  .client-batc header,
-  .client-batc nav a {
+  .client-batc header.client-name,
+  .client-batc nav.nextprev a {
     color: #000; }
   .client-batc nav.lower {
     background-color: rgba(234, 232, 226, 0.925); }
@@ -709,8 +743,8 @@ ul.client-list {
 
 .client-vital {
   background-color: #F5F5F5; }
-  .client-vital header,
-  .client-vital nav a {
+  .client-vital header.client-name,
+  .client-vital nav.nextprev a {
     color: #000; }
   .client-vital nav.lower {
     background-color: rgba(245, 245, 245, 0.925); }

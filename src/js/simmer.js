@@ -25,9 +25,11 @@ function changeFavicon(src) {
 
 
 function $$(query, context) {
-  return Array.prototype.slice.call(
+  var arr = Array.prototype.slice.call(
     (context || document).querySelectorAll(query)
   );
+  console.log(arr);
+  return arr;
 }
 
 function addBodyClass(classStr) {
@@ -40,15 +42,23 @@ function removeBodyClass(classStr) {
 }
 
 function attachHoverListener(el) {
-  el.addEventListener('mouseover', function(ev){
+  el.addEventListener('mouseenter', function(ev){
     var clientClass = ev.target.parentNode.classList[0];
     addBodyClass('client-hover');
     addBodyClass('client-' + clientClass);
   });
-  el.addEventListener('mouseout', function(ev){
+  el.addEventListener('mouseleave', function(ev){
     var clientClass = ev.target.parentNode.classList[0];
     removeBodyClass('client-hover');
     removeBodyClass('client-' + clientClass);
+  });
+}
+
+function addClientHovers() {
+  var clientList = document.querySelector('#client-list');
+  var clientArray = $$('a', clientList);
+  clientArray.forEach(function(client){
+    attachHoverListener(client);
   });
 }
 
@@ -62,13 +72,8 @@ function run() {
     var rellax = new Rellax('.rellax'); // jshint ignore:line
   }
 
-
   // fancy hovers
-  var clientList = document.querySelector('#client-list');
-  var clientArray = $$('a', clientList);
-  clientArray.forEach(function(client){
-    attachHoverListener(client);
-  });
+  addClientHovers();
 
 
   // barba
@@ -131,6 +136,7 @@ function run() {
     if (rellaxables.length > 0) {
       var rellax = new Rellax('.rellax'); // jshint ignore:line
     }
+    addClientHovers();
     setTimeout( function() {
       var logo = document.querySelector('.brand a');
       logo.blur();

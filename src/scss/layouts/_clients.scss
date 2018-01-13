@@ -1,7 +1,4 @@
 .clients {
-    .fg {
-        padding: 10vh 5vw 10vh;
-    }
     h2 {
         color: $black;
         font-size: 13vw;
@@ -31,8 +28,7 @@ ul.client-list {
 
         &:hover,
         &:focus {
-            color: $white;
-            opacity: 1 !important;
+            color: $black;
             outline: 0;
         }
     }
@@ -40,8 +36,23 @@ ul.client-list {
 
 .client-hover {
     ul.client-list {
+        li.batc,
+        li.vital {
+            a {
+                &:hover,
+                &:focus {
+                    color: $black;
+                }
+            }
+        }
         a {
             opacity: 0.3;
+
+            &:hover,
+            &:focus {
+                color: $white;
+                opacity: 1 !important;
+            }
         }
     }
 }
