@@ -884,6 +884,25 @@ ul.client-list {
   .client-keva nav.lower {
     background-color: rgba(58, 133, 195, 0.925); }
 
+.contact article ul li {
+  color: #ced0cf;
+  font-size: 10vw;
+  margin-bottom: 10vw; }
+  .contact article ul li span {
+    display: block; }
+
+@media screen and (min-width: 700px) {
+  .contact article ul li {
+    color: rgba(206, 208, 207, 0.5);
+    font-size: 7vw;
+    margin-bottom: 7vw;
+    max-width: 85vw; } }
+
+@media screen and (min-width: 1000px) {
+  .contact article ul li {
+    font-size: 5vw;
+    margin-bottom: 5vw; } }
+
 .me .brand a {
   opacity: 0.1; }
   .me .brand a:hover, .me .brand a:focus {
@@ -896,7 +915,10 @@ ul.client-list {
   position: relative;
   z-index: 10; }
   .me .about p {
-    margin-bottom: 4vw; }
+    margin-bottom: 1em; }
+
+.me aside {
+  margin-top: 5vw; }
 
 .me figure {
   margin-bottom: -10vh;

@@ -1,0 +1,43 @@
+.contact {
+    article {
+        ul {
+            li {
+                color: $grey-pale;
+                font-size: 10vw;
+                margin-bottom: 10vw;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $medium-min) {
+    .contact {
+        article {
+            ul {
+                li {
+                    color: rgba($grey-pale, 0.5);
+                    font-size: 7vw;
+                    margin-bottom: 7vw;
+                    max-width: 85vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $large-min) {
+    .contact {
+        article {
+            ul {
+                li {
+                    font-size: 5vw;
+                    margin-bottom: 5vw;
+                }
+            }
+        }
+    }
+}
