@@ -719,7 +719,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 
 // dynamic favicon
-document.head || (document.head = document.getElementsByTagName('head')[0]);
+document.head || (document.head = document.getElementsByTagName('head')[0]); // jshint ignore:line
 
 function changeFavicon(src) {
   var link = document.createElement('link'),

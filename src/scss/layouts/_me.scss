@@ -1,8 +1,4 @@
 .me {
-    .fg {
-        background-image: url('/assets/img/david-simmer.jpg');
-        background-size: auto 65vh;
-    }
     .brand {
         a {
             opacity: 0.1;
@@ -11,6 +7,77 @@
             &:focus {
                 opacity: 1;
             }
+        }
+    }
+    .about {
+        color: $grey-pale;
+        font-size: 6vw;
+        margin-bottom: 7vh;
+        position: relative;
+        z-index: 10;
+
+        p {
+            margin-bottom: 4vw;
+        }
+    }
+    figure {
+        margin-bottom: -10vh;
+        margin-left: -5vw;
+        position: relative;
+
+        img {
+            display: block;
+            height: 100%;
+            width: auto;
+        }
+
+        figcaption {
+            color: rgba($black, 0.3);
+            left: 5vw;
+            opacity: 0.5;
+            position: absolute;
+            top: -1vh;
+            transition: $transition-default;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: $medium-min) {
+    .me {
+        .about {
+            float: right;
+            font-size: 3vw;
+            margin-top: -15vh;
+            width: 50vw;
+        }
+
+        figure {
+            bottom: 0;
+            height: 65vh;
+            left: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            position: fixed;
+
+            figcaption {
+                bottom: 1vw;
+                left: 50vh;
+                position: absolute;
+                top: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $large-min) {
+    .me {
+        .about {
+            font-size: 3vw;
         }
     }
 }

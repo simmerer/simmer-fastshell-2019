@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.13.2//EN
+N:Simmer;David;;;
+FN:David Simmer
+NICKNAME:David
+ORG:Simmer;
+TITLE:Creative Developer
+item1.EMAIL;type=INTERNET;type=pref:david@simmer.ooo
+item1.X-ABLabel:main
+TEL;type=CELL;type=VOICE;type=pref:952-200-6071
+item2.URL;type=pref:https://simmer.ooo
+item2.X-ABLabel:_$!<HomePage>!$_
+UID:867679E7-B14C-4AEF-8A92-BD01EA12AB32
+X-ABUID:C8355394-683A-40B8-A422-70CC188AFB5E:ABPerson
+END:VCARD

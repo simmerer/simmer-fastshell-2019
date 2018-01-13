@@ -54,73 +54,76 @@
     right: 10%;
     text-align: center;
     top: 0; }
-
-pre {
-  background-color: #1D1F21;
-  color: #9CA09F;
-  counter-reset: line;
-  font-family: monospace;
-  font-size: 14px;
-  font-size: 1.4rem;
-  font-weight: 300;
-  line-height: 1;
-  padding: 10px 6vw 0 0; }
-  pre code .number,
-  pre code .literal,
-  pre code .symbol,
-  pre code .bullet {
-    color: #6897BB; }
-  pre code .keyword,
-  pre code .selector-tag,
-  pre code .deletion {
-    color: #cc7832; }
-  pre code .variable,
-  pre code .template-variable,
-  pre code .link {
-    color: #629755; }
-  pre code .comment,
-  pre code .quote {
-    color: rgba(156, 160, 159, 0.5); }
-  pre code .meta {
-    color: #bbb529; }
-  pre code .string,
-  pre code .attribute,
-  pre code .addition {
-    color: #6A8759; }
-  pre code .section,
-  pre code .title,
-  pre code .type {
-    color: #ffc66d; }
-  pre code .name,
-  pre code .selector-id,
-  pre code .selector-class {
-    color: #e8bf6a; }
-  pre code .emphasis {
-    font-style: italic; }
-  pre code .strong {
-    font-weight: bold; }
-  pre span {
-    display: block;
+  .st3 pre {
+    background-color: #1D1F21;
+    color: #9CA09F;
+    counter-reset: line;
+    font-family: monospace;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 300;
     line-height: 1;
-    margin-top: -1.5em; }
-    pre span:last-child {
-      margin-bottom: -1.5em; }
-    pre span:before {
-      color: rgba(141, 141, 146, 0.3);
-      counter-increment: line;
-      content: counter(line);
-      display: inline-block;
-      margin-right: 0.5em;
-      padding: 0 .5em;
-      text-align: right;
-      width: 1.8em; }
-    pre span span {
-      display: inline; }
-      pre span span:before {
-        content: '';
-        display: none;
-        margin-right: 0;
-        padding: 0; }
+    padding: 10px 6vw 0 0; }
+    .st3 pre code .number,
+    .st3 pre code .literal,
+    .st3 pre code .symbol,
+    .st3 pre code .bullet {
+      color: #6897BB; }
+    .st3 pre code .keyword,
+    .st3 pre code .selector-tag,
+    .st3 pre code .deletion {
+      color: #cc7832; }
+    .st3 pre code .variable,
+    .st3 pre code .template-variable,
+    .st3 pre code .link {
+      color: #629755; }
+    .st3 pre code .comment,
+    .st3 pre code .quote {
+      color: rgba(156, 160, 159, 0.5); }
+    .st3 pre code .meta {
+      color: #bbb529; }
+    .st3 pre code .string,
+    .st3 pre code .attribute,
+    .st3 pre code .addition {
+      color: #6A8759; }
+    .st3 pre code .section,
+    .st3 pre code .title,
+    .st3 pre code .type {
+      color: #ffc66d; }
+    .st3 pre code .name,
+    .st3 pre code .selector-id,
+    .st3 pre code .selector-class {
+      color: #e8bf6a; }
+    .st3 pre code .emphasis {
+      font-style: italic; }
+    .st3 pre code .strong {
+      font-weight: bold; }
+    .st3 pre span {
+      display: block;
+      line-height: 1;
+      margin-top: -1.5em; }
+      .st3 pre span:last-child {
+        margin-bottom: -1.5em; }
+      .st3 pre span:before {
+        color: rgba(141, 141, 146, 0.3);
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        margin-right: 0.5em;
+        padding: 0 .5em;
+        text-align: right;
+        width: 1.8em; }
+      .st3 pre span span {
+        display: inline; }
+        .st3 pre span span:before {
+          content: '';
+          display: none;
+          margin-right: 0;
+          padding: 0; }
+  .st3.light {
+    background-color: #e3e4e3; }
+    .st3.light pre {
+      background-color: #e8e9e9; }
 
 @media screen and (max-width: 699px) {
   .st3 {
@@ -204,6 +207,101 @@ pre {
   .document img,
   .poster img {
     border-radius: 4px; }
+
+article {
+  opacity: 1;
+  -webkit-transition: opacity .4s ease-in-out;
+  -o-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out; }
+
+li,
+p {
+  opacity: 1;
+  -webkit-transition: opacity .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  transition: opacity .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  -o-transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+  transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+  transition: transform .4s ease-in-out, opacity .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0); }
+
+ul li:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
+
+ul li:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s; }
+
+ul li:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+       -o-transition-delay: 0.3s;
+          transition-delay: 0.3s; }
+
+ul li:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s; }
+
+ul li:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+       -o-transition-delay: 0.5s;
+          transition-delay: 0.5s; }
+
+ul li:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+       -o-transition-delay: 0.6s;
+          transition-delay: 0.6s; }
+
+ul li:nth-child(7) {
+  -webkit-transition-delay: 0.7s;
+       -o-transition-delay: 0.7s;
+          transition-delay: 0.7s; }
+
+ul li:nth-child(8) {
+  -webkit-transition-delay: 0.8s;
+       -o-transition-delay: 0.8s;
+          transition-delay: 0.8s; }
+
+ul li:nth-child(9) {
+  -webkit-transition-delay: 0.9s;
+       -o-transition-delay: 0.9s;
+          transition-delay: 0.9s; }
+
+ul li:nth-child(10) {
+  -webkit-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s; }
+
+ul li:nth-child(11) {
+  -webkit-transition-delay: 1.1s;
+       -o-transition-delay: 1.1s;
+          transition-delay: 1.1s; }
+
+ul li:nth-child(12) {
+  -webkit-transition-delay: 1.2s;
+       -o-transition-delay: 1.2s;
+          transition-delay: 1.2s; }
+
+ul li:nth-child(13) {
+  -webkit-transition-delay: 1.3s;
+       -o-transition-delay: 1.3s;
+          transition-delay: 1.3s; }
+
+.wf-loading article,
+.wf-loading li,
+.wf-loading p {
+  opacity: 0; }
+
+.wf-loading li,
+.wf-loading p {
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px); }
 
 .site-header {
   margin-bottom: 10vh;
@@ -375,7 +473,7 @@ body {
   transition: background-color 1s; }
 
 .wrap {
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .fg {
   background-color: transparent;
@@ -422,8 +520,8 @@ footer {
 
 .home .intro {
   color: #ced0cf;
-  margin-top: 7vh;
-  font-size: 6vw; }
+  font-size: 6vw;
+  margin-top: 7vh; }
 
 .home .tagline {
   opacity: 0; }
@@ -786,11 +884,59 @@ ul.client-list {
   .client-keva nav.lower {
     background-color: rgba(58, 133, 195, 0.925); }
 
-.me .fg {
-  background-image: url("/assets/img/david-simmer.jpg");
-  background-size: auto 65vh; }
-
 .me .brand a {
   opacity: 0.1; }
   .me .brand a:hover, .me .brand a:focus {
     opacity: 1; }
+
+.me .about {
+  color: #ced0cf;
+  font-size: 6vw;
+  margin-bottom: 7vh;
+  position: relative;
+  z-index: 10; }
+  .me .about p {
+    margin-bottom: 4vw; }
+
+.me figure {
+  margin-bottom: -10vh;
+  margin-left: -5vw;
+  position: relative; }
+  .me figure img {
+    display: block;
+    height: 100%;
+    width: auto; }
+  .me figure figcaption {
+    color: rgba(0, 0, 0, 0.3);
+    left: 5vw;
+    opacity: 0.5;
+    position: absolute;
+    top: -1vh;
+    -webkit-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .me figure figcaption:hover {
+      opacity: 1; }
+
+@media screen and (min-width: 700px) {
+  .me .about {
+    float: right;
+    font-size: 3vw;
+    margin-top: -15vh;
+    width: 50vw; }
+  .me figure {
+    bottom: 0;
+    height: 65vh;
+    left: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    position: fixed; }
+    .me figure figcaption {
+      bottom: 1vw;
+      left: 50vh;
+      position: absolute;
+      top: auto; } }
+
+@media screen and (min-width: 1000px) {
+  .me .about {
+    font-size: 3vw; } }
