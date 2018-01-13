@@ -6,7 +6,7 @@
         left: 0;
         position: absolute;
         transition: $transition-slow;
-        top: -7vw;
+        top: -11vh;
 
         &:hover {
             a {
@@ -28,6 +28,10 @@
             &:focus {
                 color: $black;
                 opacity: 1;
+            }
+
+            span {
+                display: none;
             }
         }
     }
@@ -76,6 +80,15 @@
 
 
 @media screen and (min-width: $medium-min) {
+    .site-header {
+        nav {
+            a {
+                span {
+                    display: inline;
+                }
+            }
+        }
+    }
     .brand {
         a {
             height: 18vw;

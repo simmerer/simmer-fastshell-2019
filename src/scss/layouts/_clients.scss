@@ -1,7 +1,7 @@
 .clients {
     h2 {
         color: $black;
-        font-size: 13vw;
+        font-size: 25vw;
         letter-spacing: -0.03em;
         line-height: 0.8;
         max-width: 50vw;
@@ -19,8 +19,8 @@ ul.client-list {
     a {
         color: rgba($black, 0.6);
         display: inline-block;
-        font-size: $font-size-large-static;
-        line-height: 1.1;
+        font-size: 11vw;
+        line-height: 1;
         margin: 10px 0;
         padding-bottom: 7px;
         padding-top: 7px;
@@ -58,12 +58,15 @@ ul.client-list {
 }
 
 @media screen and (min-width: $large-min) {
+    .clients {
+        h2 {
+            font-size: 15vw;
+        }
+    }
     ul.client-list {
         a {
-            font-size: 5vw;
-            margin: 1vw $font-size-large-static 1vw 0;
-            padding-bottom: 0;
-            padding-top: 0;
+            font-size: 6vw;
+            margin: 1vw 11vw 1vw 0;
         }
     }
 }

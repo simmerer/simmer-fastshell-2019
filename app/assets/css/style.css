@@ -214,7 +214,7 @@ pre {
     -webkit-transition: all 500ms ease-out;
     -o-transition: all 500ms ease-out;
     transition: all 500ms ease-out;
-    top: -7vw; }
+    top: -11vh; }
     .site-header nav:hover a {
       opacity: 0.5; }
     .site-header nav li {
@@ -228,6 +228,8 @@ pre {
       .site-header nav a:hover, .site-header nav a:focus {
         color: #000;
         opacity: 1; }
+      .site-header nav a span {
+        display: none; }
 
 .clients .site-header li.clients a,
 .contact .site-header li.contact a,
@@ -259,6 +261,8 @@ pre {
     margin-left: -0.3em; }
 
 @media screen and (min-width: 700px) {
+  .site-header nav a span {
+    display: inline; }
   .brand a {
     height: 18vw;
     width: 24vw; }
@@ -414,7 +418,7 @@ footer {
 .home .intro {
   color: #ced0cf;
   margin-top: 7vh;
-  font-size: 7vw; }
+  font-size: 6vw; }
 
 .home .tagline {
   opacity: 0; }
@@ -434,7 +438,7 @@ footer {
 
 .clients h2 {
   color: #000;
-  font-size: 13vw;
+  font-size: 25vw;
   letter-spacing: -0.03em;
   line-height: 0.8;
   max-width: 50vw;
@@ -448,8 +452,8 @@ ul.client-list {
   ul.client-list a {
     color: rgba(0, 0, 0, 0.6);
     display: inline-block;
-    font-size: 30px;
-    line-height: 1.1;
+    font-size: 11vw;
+    line-height: 1;
     margin: 10px 0;
     padding-bottom: 7px;
     padding-top: 7px;
@@ -470,11 +474,11 @@ ul.client-list {
     opacity: 1 !important; }
 
 @media screen and (min-width: 1000px) {
+  .clients h2 {
+    font-size: 15vw; }
   ul.client-list a {
-    font-size: 5vw;
-    margin: 1vw 30px 1vw 0;
-    padding-bottom: 0;
-    padding-top: 0; } }
+    font-size: 6vw;
+    margin: 1vw 11vw 1vw 0; } }
 
 .client .fg {
   padding-right: 0;
@@ -553,6 +557,7 @@ ul.client-list {
     display: block;
     font-size: 50%;
     letter-spacing: -0.04em;
+    margin-top: 0.5em;
     opacity: 0.25;
     padding-left: 5vw; }
     .client header.client-name a.project:hover, .client header.client-name a.project:focus {
