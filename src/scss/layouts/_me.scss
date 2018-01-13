@@ -21,9 +21,11 @@
         }
     }
     aside {
-        margin-top: 5vw;
+        margin-bottom: 15vh;
+        margin-top: 5vh;
     }
     figure {
+        height: 80vh;
         margin-bottom: -10vh;
         margin-left: -5vw;
         position: relative;
@@ -39,13 +41,17 @@
             left: 5vw;
             opacity: 0.5;
             position: absolute;
-            top: -1vh;
+            top: -5vh;
             transition: $transition-default;
 
             &:hover {
                 opacity: 1;
             }
         }
+    }
+    footer {
+        bottom: 10vh;
+        position: absolute;
     }
 }
 
@@ -68,7 +74,7 @@
             position: fixed;
 
             figcaption {
-                bottom: 1vw;
+                bottom: 3vh;
                 left: 50vh;
                 position: absolute;
                 top: auto;

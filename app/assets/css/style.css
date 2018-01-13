@@ -504,16 +504,9 @@ a {
     color: #000; }
 
 footer {
-  display: none;
-  margin-top: 10vw;
-  padding: 0 30px 30px; }
-  footer .contact {
-    font-size: 30px; }
-    footer .contact a {
-      opacity: 0.2; }
-      footer .contact a:hover, footer .contact a:focus {
-        opacity: 0.5;
-        outline: 0; }
+  color: rgba(206, 208, 207, 0.5);
+  letter-spacing: -0.01em;
+  margin-top: 12vh; }
 
 .home .site-header nav {
   opacity: 0; }
@@ -918,9 +911,11 @@ ul.client-list {
     margin-bottom: 1em; }
 
 .me aside {
-  margin-top: 5vw; }
+  margin-bottom: 15vh;
+  margin-top: 5vh; }
 
 .me figure {
+  height: 80vh;
   margin-bottom: -10vh;
   margin-left: -5vw;
   position: relative; }
@@ -933,12 +928,16 @@ ul.client-list {
     left: 5vw;
     opacity: 0.5;
     position: absolute;
-    top: -1vh;
+    top: -5vh;
     -webkit-transition: all 350ms ease;
     -o-transition: all 350ms ease;
     transition: all 350ms ease; }
     .me figure figcaption:hover {
       opacity: 1; }
+
+.me footer {
+  bottom: 10vh;
+  position: absolute; }
 
 @media screen and (min-width: 700px) {
   .me .about {
@@ -954,7 +953,7 @@ ul.client-list {
     margin-left: 0;
     position: fixed; }
     .me figure figcaption {
-      bottom: 1vw;
+      bottom: 3vh;
       left: 50vh;
       position: absolute;
       top: auto; } }
