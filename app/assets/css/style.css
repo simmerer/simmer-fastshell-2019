@@ -337,9 +337,9 @@ ul li:nth-child(13) {
 .brand a {
   background: url("/assets/img/sig.svg") no-repeat center transparent;
   display: block;
-  height: 38vw;
-  width: 50vw;
-  text-indent: -999em; }
+  height: 98px;
+  text-indent: -999em;
+  width: 130px; }
   .brand a:hover, .brand a:focus {
     outline: 0; }
 

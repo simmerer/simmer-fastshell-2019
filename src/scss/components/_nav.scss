@@ -49,9 +49,11 @@
     a {
         background: url('/assets/img/sig.svg') no-repeat center transparent;
         display: block;
-        height: 38vw;
-        width: 50vw;
+        height: 98px;
+        // height: 38vw;
+        // width: 50vw;
         text-indent: -999em;
+        width: 130px;
 
         &:hover,
         &:focus {
