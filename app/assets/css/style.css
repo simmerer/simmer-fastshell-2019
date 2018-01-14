@@ -513,7 +513,7 @@ footer {
   pointer-events: none; }
 
 .home .intro {
-  color: #ced0cf;
+  color: #b4b7b6;
   font-size: 6vw;
   margin-top: 7vh; }
 
@@ -525,6 +525,7 @@ footer {
     min-height: 100vh;
     padding-top: 30vh; }
   .home .intro {
+    color: #ced0cf;
     font-size: 5vw;
     margin-top: 12vh;
     max-width: 85vw; } }
@@ -539,7 +540,7 @@ footer {
   letter-spacing: -0.03em;
   line-height: 0.8;
   max-width: 50vw;
-  opacity: 0.05; }
+  opacity: 0.2; }
 
 ul.client-list {
   margin-bottom: 8vw;
@@ -569,6 +570,10 @@ ul.client-list {
   .client-hover ul.client-list a:hover, .client-hover ul.client-list a:focus {
     color: #FFF;
     opacity: 1 !important; }
+
+@media screen and (min-width: 700px) {
+  .clients h2 {
+    opacity: 0.05; } }
 
 @media screen and (min-width: 1000px) {
   .clients h2 {
@@ -899,7 +904,7 @@ ul.client-list {
     opacity: 1; }
 
 .me .about {
-  color: #ced0cf;
+  color: #b4b7b6;
   font-size: 6vw;
   margin-bottom: 7vh;
   position: relative;
@@ -909,6 +914,7 @@ ul.client-list {
 
 .me aside {
   margin-bottom: 15vh;
+  margin-right: -6vw;
   margin-top: 5vh; }
 
 .me figure {
@@ -937,6 +943,7 @@ ul.client-list {
 
 @media screen and (min-width: 700px) {
   .me .about {
+    color: #ced0cf;
     float: right;
     font-size: 3vw;
     margin-top: -15vh;

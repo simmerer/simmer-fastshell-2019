@@ -6,7 +6,7 @@
         }
     }
     .intro {
-        color: $grey-pale;
+        color: darken($grey-pale, 10%);
         font-size: 6vw;
         margin-top: 7vh;
     }
@@ -22,6 +22,7 @@
             padding-top: 30vh;
         }
         .intro {
+            color: $grey-pale;
             font-size: 5vw;
             margin-top: 12vh;
             max-width: 85vw;

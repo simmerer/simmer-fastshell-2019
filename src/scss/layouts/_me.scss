@@ -10,7 +10,7 @@
         }
     }
     .about {
-        color: $grey-pale;
+        color: darken($grey-pale, 10%);
         font-size: 6vw;
         margin-bottom: 7vh;
         position: relative;
@@ -22,6 +22,7 @@
     }
     aside {
         margin-bottom: 15vh;
+        margin-right: -6vw;
         margin-top: 5vh;
     }
     figure {
@@ -58,6 +59,7 @@
 @media screen and (min-width: $medium-min) {
     .me {
         .about {
+            color: $grey-pale;
             float: right;
             font-size: 3vw;
             margin-top: -15vh;
