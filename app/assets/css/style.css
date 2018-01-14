@@ -509,7 +509,8 @@ footer {
   margin-top: 12vh; }
 
 .home .site-header nav {
-  opacity: 0; }
+  opacity: 0;
+  pointer-events: none; }
 
 .home .intro {
   color: #ced0cf;
@@ -577,14 +578,10 @@ ul.client-list {
     margin: 1vw 11vw 1vw 0; } }
 
 .client .fg {
-  padding-right: 0;
-  padding-top: 0; }
+  padding-right: 0; }
   .client .fg .site-header {
     margin-bottom: 0;
     padding-top: 15vh; }
-    .client .fg .site-header nav {
-      padding: 2.25vw 0;
-      top: 0; }
 
 .client a {
   color: #FFF; }

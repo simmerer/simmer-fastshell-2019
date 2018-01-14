@@ -2,6 +2,7 @@
     .site-header {
         nav {
             opacity: 0;
+            pointer-events: none;
         }
     }
     .intro {
