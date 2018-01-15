@@ -916,13 +916,10 @@ ul.client-list {
   height: 80vh;
   margin-bottom: -10vh;
   margin-left: -5vw;
-  overflow-y: hidden;
   position: relative; }
   .me figure img {
     display: block;
     height: 100%;
-    position: relative;
-    top: 1px;
     width: auto; }
   .me figure figcaption {
     color: rgba(0, 0, 0, 0.3);
