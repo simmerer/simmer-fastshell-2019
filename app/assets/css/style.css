@@ -898,11 +898,6 @@ ul.client-list {
     font-size: 5vw;
     margin-bottom: 5vw; } }
 
-.me .brand a {
-  opacity: 0.1; }
-  .me .brand a:hover, .me .brand a:focus {
-    opacity: 1; }
-
 .me .about {
   color: #b4b7b6;
   font-size: 6vw;
@@ -942,6 +937,10 @@ ul.client-list {
   display: none; }
 
 @media screen and (min-width: 700px) {
+  .me .brand a {
+    opacity: 0.1; }
+    .me .brand a:hover, .me .brand a:focus {
+      opacity: 1; }
   .me .about {
     color: #ced0cf;
     float: right;

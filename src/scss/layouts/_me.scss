@@ -1,14 +1,4 @@
 .me {
-    .brand {
-        a {
-            opacity: 0.1;
-
-            &:hover,
-            &:focus {
-                opacity: 1;
-            }
-        }
-    }
     .about {
         color: darken($grey-pale, 10%);
         font-size: 6vw;
@@ -58,6 +48,16 @@
 
 @media screen and (min-width: $medium-min) {
     .me {
+        .brand {
+            a {
+                opacity: 0.1;
+
+                &:hover,
+                &:focus {
+                    opacity: 1;
+                }
+            }
+        }
         .about {
             color: $grey-pale;
             float: right;
