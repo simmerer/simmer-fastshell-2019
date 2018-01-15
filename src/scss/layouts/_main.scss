@@ -67,5 +67,7 @@ a {
 footer {
     color: rgba($black, 0.3);
     letter-spacing: -0.01em;
-    margin-top: 12vh;
+    padding-top: 12vh;
+    position: relative;
+    z-index: 1;
 }
