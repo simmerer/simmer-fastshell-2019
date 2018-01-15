@@ -114,7 +114,9 @@
         text-align: right;
         width: 1.8em; }
       .st3 pre span span {
-        display: inline; }
+        display: none; }
+        .st3 pre span span.small {
+          display: inline; }
         .st3 pre span span:before {
           content: '';
           display: none;
@@ -128,6 +130,12 @@
 @media screen and (max-width: 699px) {
   .st3 {
     margin-top: 60px; } }
+
+@media screen and (min-width: 700px) {
+  .st3 pre span span {
+    display: inline; }
+    .st3 pre span span.small {
+      display: none; } }
 
 .device {
   border: 2px solid rgba(0, 0, 0, 0.1); }

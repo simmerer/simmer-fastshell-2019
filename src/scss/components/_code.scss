@@ -120,7 +120,11 @@ $sublime-code: $grey-light;
             }
 
             span {
-                display: inline;
+                display: none;
+
+                &.small {
+                    display: inline;
+                }
 
                 &:before {
                     content: '';
@@ -144,5 +148,21 @@ $sublime-code: $grey-light;
 @media screen and (max-width: $small-max) {
     .st3 {
         margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: $medium-min) {
+    .st3 {
+        pre {
+            span {
+                span {
+                    display: inline;
+
+                    &.small {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
