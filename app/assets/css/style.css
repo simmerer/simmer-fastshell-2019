@@ -552,6 +552,9 @@ footer {
   max-width: 50vw;
   opacity: 0.2; }
 
+.clients footer {
+  background-color: transparent !important; }
+
 ul.client-list {
   margin-bottom: 8vw;
   margin-top: 4vw;
