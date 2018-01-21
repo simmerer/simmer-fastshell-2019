@@ -1,0 +1,45 @@
+.ooops {
+    h2 {
+        color: rgba($black, 0.15);
+        font-size: 20vw;
+        letter-spacing: -0.03em;
+        line-height: 0.8;
+    }
+    article {
+        p {
+            color: darken($grey-pale, 10%);
+            font-size: 6vw;
+            margin-top: 7vh;
+        }
+        strong {
+            color: rgba($red, 0.5);
+        }
+    }
+}
+
+@media screen and (min-width: $medium-min) {
+    .ooops {
+        article {
+            p {
+                color: $grey-pale;
+                font-size: 5vw;
+                margin-top: 12vh;
+                max-width: 85vw;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: $large-min) {
+    .ooops {
+        h2 {
+            color: rgba($black, 0.05);
+        }
+        article {
+            p {
+                font-size: 4vw;
+            }
+        }
+    }
+}

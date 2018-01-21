@@ -43,7 +43,7 @@
     position: absolute;
     top: -5px; }
   .st3 h2 {
-    color: #9CA09F;
+    color: #9ca09f;
     font-family: "freight-sans-pro";
     font-size: 14px;
     font-size: 1.4rem;
@@ -56,7 +56,7 @@
     top: 0; }
   .st3 pre {
     background-color: #1D1F21;
-    color: #9CA09F;
+    color: #9ca09f;
     counter-reset: line;
     font-family: monospace;
     font-size: 14px;
@@ -471,8 +471,8 @@ html {
 body {
   -webkit-animation-play-state: running;
           animation-play-state: running;
-  background-color: #FFF;
-  color: #7C807F;
+  background-color: #fff;
+  color: #7c807f;
   font-family: "freight-display-pro";
   font-size: 18px;
   font-size: 1.8rem;
@@ -505,7 +505,7 @@ ul {
   list-style: none; }
 
 a {
-  color: #5E5F60;
+  color: #5e5f60;
   text-decoration: none;
   -webkit-transition: all 350ms ease;
   -o-transition: all 350ms ease;
@@ -584,7 +584,7 @@ ul.client-list {
 .client-hover ul.client-list a {
   opacity: 0.3; }
   .client-hover ul.client-list a:hover, .client-hover ul.client-list a:focus {
-    color: #FFF;
+    color: #fff;
     opacity: 1 !important; }
 
 @media screen and (min-width: 700px) {
@@ -605,7 +605,7 @@ ul.client-list {
     padding-top: 15vh; }
 
 .client a {
-  color: #FFF; }
+  color: #fff; }
 
 .client .brand a {
   height: 98px;
@@ -646,7 +646,7 @@ ul.client-list {
     padding: 0 0.12em; }
 
 .client header.client-name {
-  color: #FFF;
+  color: #fff;
   font-size: 18vw;
   letter-spacing: -0.04em;
   line-height: 0.9;
@@ -828,19 +828,19 @@ ul.client-list {
         margin-bottom: 10vw; } }
 
 .client-ie {
-  background-color: #B9CB41; }
+  background-color: #b9cb41; }
   .client-ie nav.lower,
   .client-ie footer {
     background-color: rgba(185, 203, 65, 0.925); }
 
 .client-gk {
-  background-color: #83A96A; }
+  background-color: #83a96a; }
   .client-gk nav.lower,
   .client-gk footer {
     background-color: rgba(131, 169, 106, 0.925); }
 
 .client-batc {
-  background-color: #EAE8E2; }
+  background-color: #eae8e2; }
   .client-batc header.client-name,
   .client-batc nav.nextprev a {
     color: #000; }
@@ -849,37 +849,37 @@ ul.client-list {
     background-color: rgba(234, 232, 226, 0.925); }
 
 .client-raven {
-  background-color: #76CAC1; }
+  background-color: #76cac1; }
   .client-raven nav.lower,
   .client-raven footer {
     background-color: rgba(118, 202, 193, 0.925); }
 
 .client-nb {
-  background-color: #f5AE39; }
+  background-color: #f5ae39; }
   .client-nb nav.lower,
   .client-nb footer {
     background-color: rgba(245, 174, 57, 0.925); }
 
 .client-bfmn {
-  background-color: #5D8A46; }
+  background-color: #5d8a46; }
   .client-bfmn nav.lower,
   .client-bfmn footer {
     background-color: rgba(93, 138, 70, 0.925); }
 
 .client-vork {
-  background-color: #DD4233; }
+  background-color: #dd4233; }
   .client-vork nav.lower,
   .client-vork footer {
     background-color: rgba(221, 66, 51, 0.925); }
 
 .client-sb {
-  background-color: #3C7DE3; }
+  background-color: #3c7de3; }
   .client-sb nav.lower,
   .client-sb footer {
     background-color: rgba(60, 125, 227, 0.925); }
 
 .client-vital {
-  background-color: #F5F5F5; }
+  background-color: #f5f5f5; }
   .client-vital header.client-name,
   .client-vital nav.nextprev a {
     color: #000; }
@@ -888,7 +888,7 @@ ul.client-list {
     background-color: rgba(245, 245, 245, 0.925); }
 
 .client-rt {
-  background-color: #905B92; }
+  background-color: #905b92; }
   .client-rt nav.lower,
   .client-rt footer {
     background-color: rgba(144, 91, 146, 0.925); }
@@ -900,13 +900,13 @@ ul.client-list {
     background-color: rgba(198, 38, 52, 0.925); }
 
 .client-mp {
-  background-color: #9A989B; }
+  background-color: #9a989b; }
   .client-mp nav.lower,
   .client-mp footer {
     background-color: rgba(154, 152, 155, 0.925); }
 
 .client-keva {
-  background-color: #3A85C3; }
+  background-color: #3a85c3; }
   .client-keva nav.lower,
   .client-keva footer {
     background-color: rgba(58, 133, 195, 0.925); }
@@ -995,3 +995,30 @@ ul.client-list {
 @media screen and (min-width: 1000px) {
   .me .about {
     font-size: 3vw; } }
+
+.ooops h2 {
+  color: rgba(0, 0, 0, 0.15);
+  font-size: 20vw;
+  letter-spacing: -0.03em;
+  line-height: 0.8; }
+
+.ooops article p {
+  color: #b4b7b6;
+  font-size: 6vw;
+  margin-top: 7vh; }
+
+.ooops article strong {
+  color: rgba(207, 0, 15, 0.5); }
+
+@media screen and (min-width: 700px) {
+  .ooops article p {
+    color: #ced0cf;
+    font-size: 5vw;
+    margin-top: 12vh;
+    max-width: 85vw; } }
+
+@media screen and (min-width: 1000px) {
+  .ooops h2 {
+    color: rgba(0, 0, 0, 0.05); }
+  .ooops article p {
+    font-size: 4vw; } }

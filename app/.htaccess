@@ -14,3 +14,5 @@ RewriteRule (.*)$ /$1/ [R=301,L]
 
 Redirect 301 /me/ /david-simmer/
 Redirect 301 /david/ /david-simmer/
+
+ErrorDocument 404 /ps.html
