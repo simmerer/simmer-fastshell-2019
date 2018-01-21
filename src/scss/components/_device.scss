@@ -1,5 +1,6 @@
 .device {
     border: $device-border-width solid rgba($black, 0.1);
+    display: inline-block;
 }
 
 .browser {
@@ -44,8 +45,8 @@
     border: $device-border-width solid rgba($black, 0.1);
     border-radius: $device-phone-radius/2;
     margin: 48px auto;
+    max-width: 45%;
     padding: 40px 4px;
-    width: 45%;
     // z-index: 10;
 
     &:after {
@@ -111,6 +112,7 @@
 .document,
 .poster {
     border-radius: $device-document-radius;
+    display: inline-block;
 
     img {
         border-radius: $device-document-radius;

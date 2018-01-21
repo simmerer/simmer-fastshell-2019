@@ -116,7 +116,11 @@
 
     .see {
         padding: 0 4vw 4vw 0;
+        text-align: center;
 
+        aside {
+            text-align: left;
+        }
 
         figure {
             margin-bottom: 4vw;
@@ -185,19 +189,19 @@
             }
 
             &.w60 {
-                width: 80%;
+                max-width: 80%;
             }
 
             &.w80 {
-                width: 90%;
+                max-width: 90%;
             }
 
             &.w90 {
-                width: 95%;
+                max-width: 95%;
             }
 
             &.w110 {
-                width: 105%;
+                max-width: 105%;
             }
 
             &.typeface {
@@ -233,21 +237,21 @@
                     margin-right: auto;
                 }
                 &.w60 {
-                    width: 80%;
+                    max-width: 80%;
                 }
 
                 &.w80 {
-                    width: 90%;
+                    max-width: 90%;
                 }
 
                 &.w90 {
-                    width: 95%;
+                    max-width: 95%;
                 }
 
                 &.w110 {
                     margin-left: -2.5%;
                     margin-right: -2.5%;
-                    width: 105%;
+                    max-width: 105%;
                 }
             }
         }
@@ -346,19 +350,19 @@
                 }
 
                 &.w60 {
-                    width: 60%;
+                    max-width: 60%;
                 }
 
                 &.w80 {
-                    width: 80%;
+                    max-width: 80%;
                 }
 
                 &.w90 {
-                    width: 90%;
+                    max-width: 90%;
                 }
 
                 &.w110 {
-                    width: 110%;
+                    max-width: 110%;
                 }
 
                 &.l {
