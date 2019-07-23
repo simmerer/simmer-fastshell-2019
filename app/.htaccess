@@ -1,21 +1,19 @@
-# RewriteEngine On
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
-Redirect 301 /resume /assets/files/davidsimmer-resume.pdf
-
 RewriteEngine On
+
+Redirect 301 /me/ /david-simmer/
+Redirect 301 /david/ /david-simmer/
+Redirect 302 /resume /assets/files/davidsimmer-resume.pdf
+
+RewriteCond %{REQUEST_URI} \.(pdf)$ [NC]
+RewriteRule ^ - [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^/]+)/$ $1.html
 RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
-RewriteRule (.*)$ /$1/ [R=301,L]
-
-Redirect 301 /me/ /david-simmer/
-Redirect 301 /david/ /david-simmer/
-
+RewriteRule (.*)$ /$1/ [R,L]
 
 ErrorDocument 404 /ps.html
