@@ -28,7 +28,6 @@ function $$(query, context) {
   var arr = Array.prototype.slice.call(
     (context || document).querySelectorAll(query)
   );
-  console.log(arr);
   return arr;
 }
 
