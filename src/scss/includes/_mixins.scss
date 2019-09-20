@@ -30,30 +30,5 @@
         #{$item}:nth-child(#{$i}) {
             transition-delay: $i * $t-delay;
         }
-        // @debug $i;
     }
 }
-
-
-/*@mixin sprite-icons($x, $y) {
-        $xpos: $x + px;
-        $ypos: $y + px;
-        background: url('../images/icons-sprite.png') no-repeat $xpos $ypos transparent;
-}
-
-@mixin sprite-icons-2x {
-        background-image: url('../images/icons-sprite@2x.png');
-        background-size: 145px 329px;
-}
-
-@mixin sprite-logo($x, $y) {
-        $xpos: $x + px;
-        $ypos: $y + px;
-        background: url('../images/logo_sprite.png') no-repeat $xpos $ypos transparent;
-}
-
-@mixin sprite-logo-2x {
-        background-image: url('../images/logo_sprite@2x.png');
-        background-size: 822px 137px;
-}
-*/
