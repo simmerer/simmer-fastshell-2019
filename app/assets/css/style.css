@@ -947,15 +947,15 @@ ul.project-list {
   display: none; }
 
 @media screen and (min-width: 700px) {
-  .me .brand a {
-    opacity: 0.1; }
-    .me .brand a:hover, .me .brand a:focus {
-      opacity: 1; }
+  .me .brand {
+    left: 5vw;
+    position: fixed;
+    top: 15vh;
+    z-index: 9999; }
   .me .about {
     color: #ced0cf;
     float: right;
     font-size: 3vw;
-    margin-top: -15vh;
     width: 50vw; }
   .me figure {
     bottom: 0;
