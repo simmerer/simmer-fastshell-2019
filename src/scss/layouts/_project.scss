@@ -1,4 +1,4 @@
-.client {
+.project {
     .fg {
         padding-right: 0;
 
@@ -68,7 +68,7 @@
         }
 
     }
-    header.client-name {
+    header.project-name {
         color: $white;
         font-size: 18vw;
         letter-spacing: -0.04em;
@@ -227,7 +227,7 @@
 
 
 @media screen and (max-width: $medium-max) {
-    .client {
+    .project {
         .see {
             figure {
                 &.w60,
@@ -260,7 +260,7 @@
 
 
 @media screen and (min-width: $large-min) {
-    .client {
+    .project {
         .site-header {
             height: 13vw;
             max-width: 50vw;
@@ -277,7 +277,7 @@
                 // width: 8vw;
             }
         }
-        header.client-name {
+        header.project-name {
             font-size: $font-size-large*2;
             left: 0;
             position: fixed;
@@ -397,128 +397,128 @@
 }
 
 
-.client-ie {
-    background-color: $bg-client-ie;
+.project-ie {
+    background-color: $bg-project-ie;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-ie, 0.925);
+        background-color: rgba($bg-project-ie, 0.925);
     }
 }
 
-.client-gk {
-    background-color: $bg-client-gk;
+.project-gk {
+    background-color: $bg-project-gk;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-gk, 0.925);
+        background-color: rgba($bg-project-gk, 0.925);
     }
 }
 
-.client-batc {
-    background-color: $bg-client-batc;
+.project-batc {
+    background-color: $bg-project-batc;
 
-    header.client-name,
+    header.project-name,
     nav.nextprev a {
         color: $black;
     }
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-batc, 0.925);
+        background-color: rgba($bg-project-batc, 0.925);
     }
 }
 
-.client-raven {
-    background-color: $bg-client-raven;
+.project-raven {
+    background-color: $bg-project-raven;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-raven, 0.925);
+        background-color: rgba($bg-project-raven, 0.925);
     }
 }
 
-.client-nb {
-    background-color: $bg-client-nb;
+.project-nb {
+    background-color: $bg-project-nb;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-nb, 0.925);
+        background-color: rgba($bg-project-nb, 0.925);
     }
 }
 
-.client-bfmn {
-    background-color: $bg-client-bfmn;
+.project-bfmn {
+    background-color: $bg-project-bfmn;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-bfmn, 0.925);
+        background-color: rgba($bg-project-bfmn, 0.925);
     }
 }
 
-.client-vork {
-    background-color: $bg-client-vork;
+.project-vork {
+    background-color: $bg-project-vork;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-vork, 0.925);
+        background-color: rgba($bg-project-vork, 0.925);
     }
 }
 
-.client-sb {
-    background-color: $bg-client-sb;
+.project-sb {
+    background-color: $bg-project-sb;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-sb, 0.925);
+        background-color: rgba($bg-project-sb, 0.925);
     }
 }
 
-.client-vital {
-    background-color: $bg-client-vital;
+.project-vital {
+    background-color: $bg-project-vital;
 
-    header.client-name,
+    header.project-name,
     nav.nextprev a {
         color: $black;
     }
     nav.lower,
     footer {
-        background-color: rgba($bg-client-vital, 0.925);
+        background-color: rgba($bg-project-vital, 0.925);
     }
 }
 
-.client-rt {
-    background-color: $bg-client-rt;
+.project-rt {
+    background-color: $bg-project-rt;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-rt, 0.925);
+        background-color: rgba($bg-project-rt, 0.925);
     }
 }
 
-.client-oa {
-    background-color: $bg-client-oa;
+.project-oa {
+    background-color: $bg-project-oa;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-oa, 0.925);
+        background-color: rgba($bg-project-oa, 0.925);
     }
 }
 
-.client-mp {
-    background-color: $bg-client-mp;
+.project-mp {
+    background-color: $bg-project-mp;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-mp, 0.925);
+        background-color: rgba($bg-project-mp, 0.925);
     }
 }
 
-.client-keva {
-    background-color: $bg-client-keva;
+.project-keva {
+    background-color: $bg-project-keva;
 
     nav.lower,
     footer {
-        background-color: rgba($bg-client-keva, 0.925);
+        background-color: rgba($bg-project-keva, 0.925);
     }
 }

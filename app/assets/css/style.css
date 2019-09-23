@@ -317,7 +317,7 @@ ul li:nth-child(13) {
       .site-header nav a span {
         display: none; }
 
-.clients .site-header li.clients a,
+.projects .site-header li.projects a,
 .contact .site-header li.contact a,
 .me .site-header li.me a {
   opacity: 1; }
@@ -525,7 +525,7 @@ footer {
   .home .intro {
     font-size: 4vw; } }
 
-.clients h2 {
+.projects h2 {
   color: #000;
   font-size: 25vw;
   letter-spacing: -0.03em;
@@ -533,15 +533,15 @@ footer {
   max-width: 50vw;
   opacity: 0.2; }
 
-.clients footer {
+.projects footer {
   background-color: transparent !important; }
 
-ul.client-list {
+ul.project-list {
   margin-bottom: 8vw;
   margin-top: 4vw;
   position: relative;
   z-index: 1; }
-  ul.client-list a {
+  ul.project-list a {
     color: rgba(0, 0, 0, 0.6);
     display: inline-block;
     font-size: 11vw;
@@ -550,100 +550,100 @@ ul.client-list {
     padding-bottom: 7px;
     padding-top: 7px;
     position: relative; }
-    ul.client-list a:hover, ul.client-list a:focus {
+    ul.project-list a:hover, ul.project-list a:focus {
       color: #000;
       outline: 0; }
 
-.client-hover ul.client-list li.batc a:hover, .client-hover ul.client-list li.batc a:focus,
-.client-hover ul.client-list li.vital a:hover,
-.client-hover ul.client-list li.vital a:focus {
+.project-hover ul.project-list li.batc a:hover, .project-hover ul.project-list li.batc a:focus,
+.project-hover ul.project-list li.vital a:hover,
+.project-hover ul.project-list li.vital a:focus {
   color: #000; }
 
-.client-hover ul.client-list a {
+.project-hover ul.project-list a {
   opacity: 0.3; }
-  .client-hover ul.client-list a:hover, .client-hover ul.client-list a:focus {
+  .project-hover ul.project-list a:hover, .project-hover ul.project-list a:focus {
     color: #fff;
     opacity: 1 !important; }
 
 @media screen and (min-width: 700px) {
-  .clients h2 {
+  .projects h2 {
     opacity: 0.05; } }
 
 @media screen and (min-width: 1000px) {
-  .clients h2 {
+  .projects h2 {
     font-size: 15vw; }
-  ul.client-list a {
+  ul.project-list a {
     font-size: 6vw;
     margin: 1vw 11vw 1vw 0; } }
 
-.client .fg {
+.project .fg {
   padding-right: 0; }
-  .client .fg .site-header {
+  .project .fg .site-header {
     margin-bottom: 0;
     padding-top: 15vh; }
 
-.client a {
+.project a {
   color: #fff; }
 
-.client .brand a {
+.project .brand a {
   height: 98px;
   margin-left: 1vw;
   opacity: 0.25;
   width: 130px; }
-  .client .brand a:hover, .client .brand a:focus {
+  .project .brand a:hover, .project .brand a:focus {
     opacity: 1; }
 
-.client .tagline {
+.project .tagline {
   opacity: 0; }
 
-.client article {
+.project article {
   padding-top: 10vw; }
 
-.client nav.nextprev {
+.project nav.nextprev {
   clear: both;
   letter-spacing: -0.02em;
   text-align: right; }
-  .client nav.nextprev.upper {
+  .project nav.nextprev.upper {
     display: block;
     left: 50%;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 1000; }
-    .client nav.nextprev.upper span.preface {
+    .project nav.nextprev.upper span.preface {
       display: block; }
-  .client nav.nextprev.lower {
+  .project nav.nextprev.lower {
     margin-bottom: 4vw;
     position: relative; }
-  .client nav.nextprev a {
+  .project nav.nextprev a {
     display: block;
     padding: 3vw 5vw; }
-  .client nav.nextprev span:first-child {
+  .project nav.nextprev span:first-child {
     opacity: 0.5; }
-  .client nav.nextprev .amp {
+  .project nav.nextprev .amp {
     padding: 0 0.12em; }
 
-.client header.client-name {
+.project header.project-name {
   color: #fff;
   font-size: 18vw;
   letter-spacing: -0.04em;
   line-height: 0.9;
   margin-bottom: 100px; }
-  .client header.client-name h1 {
+  .project header.project-name h1 {
     font-size: inherit;
     padding: 0 2vw; }
-    .client header.client-name h1 .amp {
+    .project header.project-name h1 .amp {
       left: -0.1em;
       position: relative; }
-    .client header.client-name h1 > span {
+    .project header.project-name h1 > span {
       display: block; }
-      .client header.client-name h1 > span.interstitial {
+      .project header.project-name h1 > span.interstitial {
         font-size: 50%;
         font-style: italic;
         letter-spacing: 0;
         line-height: 1.333;
         opacity: 0.5; }
-  .client header.client-name a.project {
+  .project header.project-name a.project {
     color: inherit;
     display: block;
     font-size: 50%;
@@ -651,248 +651,242 @@ ul.client-list {
     margin-top: 0.5em;
     opacity: 0.25;
     padding-left: 2vw; }
-    .client header.client-name a.project:hover, .client header.client-name a.project:focus {
+    .project header.project-name a.project:hover, .project header.project-name a.project:focus {
       opacity: 0.75;
       outline: 0; }
 
-.client .see {
+.project .see {
   padding: 0 4vw 4vw 0;
   text-align: center; }
-  .client .see aside {
+  .project .see aside {
     text-align: left; }
-  .client .see figure {
+  .project .see figure {
     margin-bottom: 4vw;
     position: relative;
     text-align: center;
     z-index: 2; }
-    .client .see figure.under {
+    .project .see figure.under {
       z-index: 1; }
-    .client .see figure.insta iframe {
+    .project .see figure.insta iframe {
       -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1) !important;
               box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1) !important; }
-    .client .see figure.device, .client .see figure.poster, .client .see figure.floaty {
+    .project .see figure.device, .project .see figure.poster, .project .see figure.floaty {
       -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
               box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1); }
-    .client .see figure.detail {
+    .project .see figure.detail {
       text-align: right; }
-      .client .see figure.detail img {
+      .project .see figure.detail img {
         -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
                 box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1); }
-    .client .see figure.b10 {
+    .project .see figure.b10 {
       margin-bottom: 10px; }
-    .client .see figure.b20 {
+    .project .see figure.b20 {
       margin-bottom: 20px; }
-    .client .see figure.b30 {
+    .project .see figure.b30 {
       margin-bottom: 30px; }
-    .client .see figure.t10 {
+    .project .see figure.t10 {
       margin-top: 10px; }
-    .client .see figure.t20 {
+    .project .see figure.t20 {
       margin-top: 20px; }
-    .client .see figure.t30 {
+    .project .see figure.t30 {
       margin-top: 30px; }
-    .client .see figure.up10 {
+    .project .see figure.up10 {
       margin-top: -10px; }
-    .client .see figure.up20 {
+    .project .see figure.up20 {
       margin-top: -20px; }
-    .client .see figure.up30 {
+    .project .see figure.up30 {
       margin-top: -30px; }
-    .client .see figure.w60 {
+    .project .see figure.w60 {
       max-width: 80%; }
-    .client .see figure.w80 {
+    .project .see figure.w80 {
       max-width: 90%; }
-    .client .see figure.w90 {
+    .project .see figure.w90 {
       max-width: 95%; }
-    .client .see figure.w110 {
+    .project .see figure.w110 {
       max-width: 105%; }
-    .client .see figure.typeface {
+    .project .see figure.typeface {
       margin-bottom: 20px; }
-      .client .see figure.typeface.b0 {
+      .project .see figure.typeface.b0 {
         margin-bottom: 0; }
-      .client .see figure.typeface.b10 {
+      .project .see figure.typeface.b10 {
         margin-bottom: 10px; }
-  .client .see img {
+  .project .see img {
     display: block;
     height: auto;
     max-width: 100%; }
 
 @media screen and (max-width: 999px) {
-  .client .see figure.w60, .client .see figure.w80, .client .see figure.w90 {
+  .project .see figure.w60, .project .see figure.w80, .project .see figure.w90 {
     margin-left: auto;
     margin-right: auto; }
-  .client .see figure.w60 {
+  .project .see figure.w60 {
     max-width: 80%; }
-  .client .see figure.w80 {
+  .project .see figure.w80 {
     max-width: 90%; }
-  .client .see figure.w90 {
+  .project .see figure.w90 {
     max-width: 95%; }
-  .client .see figure.w110 {
+  .project .see figure.w110 {
     margin-left: -2.5%;
     margin-right: -2.5%;
     max-width: 105%; } }
 
 @media screen and (min-width: 1000px) {
-  .client .site-header {
+  .project .site-header {
     height: 13vw;
     max-width: 50vw; }
-  .client .brand {
+  .project .brand {
     left: 5vw;
     position: fixed;
     top: 13vh;
     z-index: 9999; }
-    .client .brand a {
+    .project .brand a {
       margin-left: 0; }
-  .client header.client-name {
+  .project header.project-name {
     font-size: 8vw;
     left: 0;
     position: fixed;
     top: 30vh; }
-    .client header.client-name h1,
-    .client header.client-name a.project {
+    .project header.project-name h1,
+    .project header.project-name a.project {
       padding-left: 5vw; }
-  .client nav.nextprev.upper span.preface {
+  .project nav.nextprev.upper span.preface {
     display: inline-block;
     margin-right: 0.15em; }
-  .client nav.nextprev.lower {
+  .project nav.nextprev.lower {
     margin-bottom: 0;
     margin-left: -5vw; }
-    .client nav.nextprev.lower a.prev {
+    .project nav.nextprev.lower a.prev {
       float: left;
       text-align: left; }
-    .client nav.nextprev.lower a.next {
+    .project nav.nextprev.lower a.next {
       float: right; }
-  .client .see {
+  .project .see {
     float: right;
     width: 50vw; }
-    .client .see figure.b10 {
+    .project .see figure.b10 {
       margin-bottom: 10vw; }
-    .client .see figure.b20 {
+    .project .see figure.b20 {
       margin-bottom: 20vw; }
-    .client .see figure.b30 {
+    .project .see figure.b30 {
       margin-bottom: 30vw; }
-    .client .see figure.t10 {
+    .project .see figure.t10 {
       margin-top: 10vw; }
-    .client .see figure.t20 {
+    .project .see figure.t20 {
       margin-top: 20vw; }
-    .client .see figure.t30 {
+    .project .see figure.t30 {
       margin-top: 30vw; }
-    .client .see figure.up10 {
+    .project .see figure.up10 {
       margin-top: -10vw; }
-    .client .see figure.up20 {
+    .project .see figure.up20 {
       margin-top: -20vw; }
-    .client .see figure.up30 {
+    .project .see figure.up30 {
       margin-top: -30vw; }
-    .client .see figure.w60 {
+    .project .see figure.w60 {
       max-width: 60%; }
-    .client .see figure.w80 {
+    .project .see figure.w80 {
       max-width: 80%; }
-    .client .see figure.w90 {
+    .project .see figure.w90 {
       max-width: 90%; }
-    .client .see figure.w110 {
+    .project .see figure.w110 {
       max-width: 110%; }
-    .client .see figure.l {
+    .project .see figure.l {
       left: -2vw;
       position: relative; }
-    .client .see figure.r {
+    .project .see figure.r {
       position: relative;
       right: -2vw; }
-      .client .see figure.r.document {
+      .project .see figure.r.document {
         margin-left: auto;
         margin-right: -5.5vw; }
-      .client .see figure.r.w60 {
+      .project .see figure.r.w60 {
         right: -12vw; }
-    .client .see figure.typeface {
+    .project .see figure.typeface {
       margin-bottom: 15vw; }
-      .client .see figure.typeface.b10 {
+      .project .see figure.typeface.b10 {
         margin-bottom: 10vw; } }
 
-.client-ie {
+.project-ie {
   background-color: #b9cb41; }
-  .client-ie nav.lower,
-  .client-ie footer {
+  .project-ie nav.lower,
+  .project-ie footer {
     background-color: rgba(185, 203, 65, 0.925); }
 
-.client-gk {
+.project-gk {
   background-color: #83a96a; }
-  .client-gk nav.lower,
-  .client-gk footer {
+  .project-gk nav.lower,
+  .project-gk footer {
     background-color: rgba(131, 169, 106, 0.925); }
 
-.client-strom {
-  background-color: #e6893d; }
-  .client-strom nav.lower,
-  .client-strom footer {
-    background-color: rgba(230, 137, 61, 0.925); }
-
-.client-batc {
+.project-batc {
   background-color: #eae8e2; }
-  .client-batc header.client-name,
-  .client-batc nav.nextprev a {
+  .project-batc header.project-name,
+  .project-batc nav.nextprev a {
     color: #000; }
-  .client-batc nav.lower,
-  .client-batc footer {
+  .project-batc nav.lower,
+  .project-batc footer {
     background-color: rgba(234, 232, 226, 0.925); }
 
-.client-raven {
+.project-raven {
   background-color: #76cac1; }
-  .client-raven nav.lower,
-  .client-raven footer {
+  .project-raven nav.lower,
+  .project-raven footer {
     background-color: rgba(118, 202, 193, 0.925); }
 
-.client-nb {
+.project-nb {
   background-color: #f5ae39; }
-  .client-nb nav.lower,
-  .client-nb footer {
+  .project-nb nav.lower,
+  .project-nb footer {
     background-color: rgba(245, 174, 57, 0.925); }
 
-.client-bfmn {
+.project-bfmn {
   background-color: #5d8a46; }
-  .client-bfmn nav.lower,
-  .client-bfmn footer {
+  .project-bfmn nav.lower,
+  .project-bfmn footer {
     background-color: rgba(93, 138, 70, 0.925); }
 
-.client-vork {
+.project-vork {
   background-color: #dd4233; }
-  .client-vork nav.lower,
-  .client-vork footer {
+  .project-vork nav.lower,
+  .project-vork footer {
     background-color: rgba(221, 66, 51, 0.925); }
 
-.client-sb {
+.project-sb {
   background-color: #3c7de3; }
-  .client-sb nav.lower,
-  .client-sb footer {
+  .project-sb nav.lower,
+  .project-sb footer {
     background-color: rgba(60, 125, 227, 0.925); }
 
-.client-vital {
+.project-vital {
   background-color: #f5f5f5; }
-  .client-vital header.client-name,
-  .client-vital nav.nextprev a {
+  .project-vital header.project-name,
+  .project-vital nav.nextprev a {
     color: #000; }
-  .client-vital nav.lower,
-  .client-vital footer {
+  .project-vital nav.lower,
+  .project-vital footer {
     background-color: rgba(245, 245, 245, 0.925); }
 
-.client-rt {
+.project-rt {
   background-color: #905b92; }
-  .client-rt nav.lower,
-  .client-rt footer {
+  .project-rt nav.lower,
+  .project-rt footer {
     background-color: rgba(144, 91, 146, 0.925); }
 
-.client-oa {
+.project-oa {
   background-color: #c62634; }
-  .client-oa nav.lower,
-  .client-oa footer {
+  .project-oa nav.lower,
+  .project-oa footer {
     background-color: rgba(198, 38, 52, 0.925); }
 
-.client-mp {
+.project-mp {
   background-color: #9a989b; }
-  .client-mp nav.lower,
-  .client-mp footer {
+  .project-mp nav.lower,
+  .project-mp footer {
     background-color: rgba(154, 152, 155, 0.925); }
 
-.client-keva {
+.project-keva {
   background-color: #3a85c3; }
-  .client-keva nav.lower,
-  .client-keva footer {
+  .project-keva nav.lower,
+  .project-keva footer {
     background-color: rgba(58, 133, 195, 0.925); }
 
 .contact article ul li {

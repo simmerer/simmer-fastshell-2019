@@ -753,22 +753,22 @@ function removeBodyClass(classStr) {
 
 function attachHoverListener(el) {
   el.addEventListener('mouseenter', function(ev){
-    var clientClass = ev.target.parentNode.classList[0];
-    addBodyClass('client-hover');
-    addBodyClass('client-' + clientClass);
+    var projectClass = ev.target.parentNode.classList[0];
+    addBodyClass('project-hover');
+    addBodyClass('project-' + projectClass);
   });
   el.addEventListener('mouseleave', function(ev){
-    var clientClass = ev.target.parentNode.classList[0];
-    removeBodyClass('client-hover');
-    removeBodyClass('client-' + clientClass);
+    var projectClass = ev.target.parentNode.classList[0];
+    removeBodyClass('project-hover');
+    removeBodyClass('project-' + projectClass);
   });
 }
 
-function addClientHovers() {
-  var clientList = document.querySelector('#client-list');
-  var clientArray = $$('a', clientList);
-  clientArray.forEach(function(client){
-    attachHoverListener(client);
+function addProjectHovers() {
+  var projectList = document.querySelector('#project-list');
+  var projectArray = $$('a', projectList);
+  projectArray.forEach(function(project){
+    attachHoverListener(project);
   });
 }
 
@@ -783,7 +783,7 @@ function run() {
   }
 
   // fancy hovers
-  addClientHovers();
+  addProjectHovers();
 
 
   // barba
@@ -814,10 +814,10 @@ function run() {
       var body = document.querySelector('body');
       body.classList = newBodyClasses;
       var classNames = [].concat(_toConsumableArray(newBodyClasses));
-      var clientStr = classNames.filter(function (c) {return /client-/.test(c);})[0];
-      if (clientStr) {
-        var clientSlug = clientStr.substring('client-'.length);
-        changeFavicon(clientSlug);
+      var projectStr = classNames.filter(function (c) {return /project-/.test(c);})[0];
+      if (projectStr) {
+        var projectSlug = projectStr.substring('project-'.length);
+        changeFavicon(projectSlug);
       }
       else {
         changeFavicon('home');
@@ -846,7 +846,7 @@ function run() {
     if (rellaxables.length > 0) {
       var rellax = new Rellax('.rellax'); // jshint ignore:line
     }
-    addClientHovers();
+    addProjectHovers();
     setTimeout( function() {
       var logo = document.querySelector('.brand a');
       logo.blur();

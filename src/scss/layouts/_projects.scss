@@ -1,4 +1,4 @@
-.clients {
+.projects {
     h2 {
         color: $black;
         font-size: 25vw;
@@ -13,7 +13,7 @@
 }
 
 
-ul.client-list {
+ul.project-list {
     margin-bottom: 8vw;
     margin-top: 4vw;
     position: relative;
@@ -37,8 +37,8 @@ ul.client-list {
     }
 }
 
-.client-hover {
-    ul.client-list {
+.project-hover {
+    ul.project-list {
         li.batc,
         li.vital {
             a {
@@ -61,7 +61,7 @@ ul.client-list {
 }
 
 @media screen and (min-width: $medium-min) {
-    .clients {
+    .projects {
         h2 {
             opacity: 0.05;
         }
@@ -69,12 +69,12 @@ ul.client-list {
 }
 
 @media screen and (min-width: $large-min) {
-    .clients {
+    .projects {
         h2 {
             font-size: 15vw;
         }
     }
-    ul.client-list {
+    ul.project-list {
         a {
             font-size: 6vw;
             margin: 1vw 11vw 1vw 0;

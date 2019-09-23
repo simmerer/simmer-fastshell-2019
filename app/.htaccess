@@ -2,6 +2,7 @@ RewriteEngine On
 
 Redirect 301 /me/ /david-simmer/
 Redirect 301 /david/ /david-simmer/
+Redirect 301 /clients/ /projects/
 Redirect 302 /resume /assets/files/davidsimmer-resume.pdf
 
 RewriteCond %{REQUEST_URI} \.(pdf)$ [NC]
