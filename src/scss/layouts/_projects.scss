@@ -1,11 +1,15 @@
 .projects {
     h2 {
         color: $black;
-        font-size: 25vw;
+        font-size: 19vw;
         letter-spacing: -0.03em;
         line-height: 0.8;
-        max-width: 50vw;
+        max-width: 5em;
         opacity: 0.2;
+
+        @media screen and (min-width: $medium-min) {
+            opacity: 0.05;
+        }
     }
     footer {
         background-color: transparent !important;
@@ -13,7 +17,7 @@
 }
 
 
-ul.project-list {
+.project-list {
     margin-bottom: 8vw;
     margin-top: 4vw;
     position: relative;
@@ -22,7 +26,7 @@ ul.project-list {
     a {
         color: rgba($black, 0.6);
         display: inline-block;
-        font-size: 11vw;
+        font-size: calc(4rem + 3vw);
         line-height: 1;
         margin: 10px 0;
         padding-bottom: 7px;
@@ -34,11 +38,22 @@ ul.project-list {
             color: $black;
             outline: 0;
         }
+
+        @media screen and (min-width: $large-min) {
+            font-size: calc(6rem + 2vw);
+            margin: 1vw 11vw 1vw 0;
+        }
+
+        @media screen and (min-width: $wide-min) {
+            font-size: calc(6rem + 2vw);
+            margin: 1vw 11vw 2vw 0;
+        }
     }
 }
 
-.project-hover {
-    ul.project-list {
+.projects-hover {
+    .project-list {
+        li.qc,
         li.batc,
         li.vital {
             a {
@@ -56,28 +71,6 @@ ul.project-list {
                 color: $white;
                 opacity: 1 !important;
             }
-        }
-    }
-}
-
-@media screen and (min-width: $medium-min) {
-    .projects {
-        h2 {
-            opacity: 0.05;
-        }
-    }
-}
-
-@media screen and (min-width: $large-min) {
-    .projects {
-        h2 {
-            font-size: 15vw;
-        }
-    }
-    ul.project-list {
-        a {
-            font-size: 6vw;
-            margin: 1vw 11vw 1vw 0;
         }
     }
 }
