@@ -43,12 +43,12 @@ function removeBodyClass(classStr) {
 function attachHoverListener(el) {
   el.addEventListener('mouseenter', function(ev){
     var projectClass = ev.target.parentNode.classList[0];
-    addBodyClass('project-hover');
+    addBodyClass('projects-hover');
     addBodyClass('project-' + projectClass);
   });
   el.addEventListener('mouseleave', function(ev){
     var projectClass = ev.target.parentNode.classList[0];
-    removeBodyClass('project-hover');
+    removeBodyClass('projects-hover');
     removeBodyClass('project-' + projectClass);
   });
 }
