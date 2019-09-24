@@ -12,6 +12,7 @@ $green: #70d63d;
 $bg: $white;
 $text-default: $grey-mid;
 
+$text-transparent--white: rgba($white, 0.6);
 $font-size-large-static: 30px;
 $font-size-large: 4vw;
 
@@ -36,6 +37,7 @@ $device-phone-radius: 30px;
 $device-document-radius: 4px;
 
 
+$bg-project-rinse: #776e64;
 $bg-project-ie: #b9cb41;
 $bg-project-gk: #83a96a;
 $bg-project-batc: #eae8e2;

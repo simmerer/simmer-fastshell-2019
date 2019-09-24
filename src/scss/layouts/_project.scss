@@ -118,6 +118,12 @@
         padding: 0 4vw 4vw 0;
         text-align: center;
 
+        p {
+            font-size: calc(3rem + 1vw);
+            margin-bottom: 2em;
+            text-align: left;
+        }
+
         aside {
             text-align: left;
         }
@@ -398,6 +404,20 @@
 
 
 .project-ie {
+.project-rinse,
+.projects--rinse-hover {
+    background-color: $bg-project-rinse;
+
+    .see p {
+        color: $text-transparent--white;
+    }
+
+    nav.lower,
+    footer {
+        background-color: rgba($bg-project-rinse, 0.925);
+    }
+}
+
     background-color: $bg-project-ie;
 
     nav.lower,

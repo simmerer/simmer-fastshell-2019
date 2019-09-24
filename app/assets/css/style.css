@@ -527,54 +527,56 @@ footer {
 
 .projects h2 {
   color: #000;
-  font-size: 25vw;
+  font-size: 19vw;
   letter-spacing: -0.03em;
   line-height: 0.8;
-  max-width: 50vw;
+  max-width: 5em;
   opacity: 0.2; }
+  @media screen and (min-width: 700px) {
+    .projects h2 {
+      opacity: 0.05; } }
 
 .projects footer {
   background-color: transparent !important; }
 
-ul.project-list {
+.project-list {
   margin-bottom: 8vw;
   margin-top: 4vw;
   position: relative;
   z-index: 1; }
-  ul.project-list a {
+  .project-list a {
     color: rgba(0, 0, 0, 0.6);
     display: inline-block;
-    font-size: 11vw;
+    font-size: calc(4rem + 3vw);
     line-height: 1;
     margin: 10px 0;
     padding-bottom: 7px;
     padding-top: 7px;
     position: relative; }
-    ul.project-list a:hover, ul.project-list a:focus {
+    .project-list a:hover, .project-list a:focus {
       color: #000;
       outline: 0; }
+    @media screen and (min-width: 1000px) {
+      .project-list a {
+        font-size: calc(6rem + 2vw);
+        margin: 1vw 11vw 1vw 0; } }
+    @media screen and (min-width: 1500px) {
+      .project-list a {
+        font-size: calc(6rem + 2vw);
+        margin: 1vw 11vw 2vw 0; } }
 
-.project-hover ul.project-list li.batc a:hover, .project-hover ul.project-list li.batc a:focus,
-.project-hover ul.project-list li.vital a:hover,
-.project-hover ul.project-list li.vital a:focus {
+.projects-hover .project-list li.qc a:hover, .projects-hover .project-list li.qc a:focus,
+.projects-hover .project-list li.batc a:hover,
+.projects-hover .project-list li.batc a:focus,
+.projects-hover .project-list li.vital a:hover,
+.projects-hover .project-list li.vital a:focus {
   color: #000; }
 
-.project-hover ul.project-list a {
+.projects-hover .project-list a {
   opacity: 0.3; }
-  .project-hover ul.project-list a:hover, .project-hover ul.project-list a:focus {
+  .projects-hover .project-list a:hover, .projects-hover .project-list a:focus {
     color: #fff;
     opacity: 1 !important; }
-
-@media screen and (min-width: 700px) {
-  .projects h2 {
-    opacity: 0.05; } }
-
-@media screen and (min-width: 1000px) {
-  .projects h2 {
-    font-size: 15vw; }
-  ul.project-list a {
-    font-size: 6vw;
-    margin: 1vw 11vw 1vw 0; } }
 
 .project .fg {
   padding-right: 0; }
@@ -658,6 +660,10 @@ ul.project-list {
 .project .see {
   padding: 0 4vw 4vw 0;
   text-align: center; }
+  .project .see p {
+    font-size: calc(3rem + 1vw);
+    margin-bottom: 2em;
+    text-align: left; }
   .project .see aside {
     text-align: left; }
   .project .see figure {
@@ -805,88 +811,202 @@ ul.project-list {
       .project .see figure.typeface.b10 {
         margin-bottom: 10vw; } }
 
-.project-ie {
+.project-rinse,
+.projects--rinse-hover {
+  background-color: #776e64; }
+  .project-rinse .see p,
+  .projects--rinse-hover .see p {
+    color: rgba(255, 255, 255, 0.6); }
+  .project-rinse nav.lower,
+  .project-rinse footer,
+  .projects--rinse-hover nav.lower,
+  .projects--rinse-hover footer {
+    background-color: rgba(119, 110, 100, 0.925); }
+
+.project-tecweigh,
+.projects--tecweigh-hover {
+  background-color: #3F6793; }
+  .project-tecweigh nav.lower,
+  .project-tecweigh footer,
+  .projects--tecweigh-hover nav.lower,
+  .projects--tecweigh-hover footer {
+    background-color: rgba(63, 103, 147, 0.925); }
+
+.project-parade,
+.projects--parade-hover {
+  background-color: #41B8CB; }
+  .project-parade nav.lower,
+  .project-parade footer,
+  .projects--parade-hover nav.lower,
+  .projects--parade-hover footer {
+    background-color: rgba(65, 184, 203, 0.925); }
+
+.project-qara,
+.projects--qara-hover {
+  background-color: #A0ED6C; }
+  .project-qara nav.lower,
+  .project-qara footer,
+  .projects--qara-hover nav.lower,
+  .projects--qara-hover footer {
+    background-color: rgba(160, 237, 108, 0.925); }
+
+.project-ie,
+.projects--ie-hover {
   background-color: #b9cb41; }
   .project-ie nav.lower,
-  .project-ie footer {
+  .project-ie footer,
+  .projects--ie-hover nav.lower,
+  .projects--ie-hover footer {
     background-color: rgba(185, 203, 65, 0.925); }
 
-.project-gk {
+.project-gk,
+.projects--gk-hover {
   background-color: #83a96a; }
   .project-gk nav.lower,
-  .project-gk footer {
+  .project-gk footer,
+  .projects--gk-hover nav.lower,
+  .projects--gk-hover footer {
     background-color: rgba(131, 169, 106, 0.925); }
 
-.project-batc {
+.project-strom,
+.projects--strom-hover {
+  background-color: #E6893C; }
+  .project-strom nav.lower,
+  .project-strom footer,
+  .projects--strom-hover nav.lower,
+  .projects--strom-hover footer {
+    background-color: rgba(230, 137, 60, 0.925); }
+
+.project-batc,
+.projects--batc-hover {
   background-color: #eae8e2; }
   .project-batc header.project-name,
-  .project-batc nav.nextprev a {
+  .project-batc nav.nextprev a,
+  .projects--batc-hover header.project-name,
+  .projects--batc-hover nav.nextprev a {
     color: #000; }
   .project-batc nav.lower,
-  .project-batc footer {
+  .project-batc footer,
+  .projects--batc-hover nav.lower,
+  .projects--batc-hover footer {
     background-color: rgba(234, 232, 226, 0.925); }
 
-.project-raven {
+.project-raven,
+.projects--raven-hover {
   background-color: #76cac1; }
   .project-raven nav.lower,
-  .project-raven footer {
+  .project-raven footer,
+  .projects--raven-hover nav.lower,
+  .projects--raven-hover footer {
     background-color: rgba(118, 202, 193, 0.925); }
 
-.project-nb {
+.project-qc,
+.projects--qc-hover {
+  background-color: #4D93C8; }
+  .project-qc header.project-name,
+  .project-qc nav.nextprev a,
+  .projects--qc-hover header.project-name,
+  .projects--qc-hover nav.nextprev a {
+    color: #000; }
+  .project-qc nav.lower,
+  .project-qc footer,
+  .projects--qc-hover nav.lower,
+  .projects--qc-hover footer {
+    background-color: rgba(77, 147, 200, 0.925); }
+
+.project-nb,
+.projects--nb-hover {
   background-color: #f5ae39; }
   .project-nb nav.lower,
-  .project-nb footer {
+  .project-nb footer,
+  .projects--nb-hover nav.lower,
+  .projects--nb-hover footer {
     background-color: rgba(245, 174, 57, 0.925); }
 
-.project-bfmn {
+.project-medg,
+.projects--medg-hover {
+  background-color: #D7742B; }
+  .project-medg nav.lower,
+  .project-medg footer,
+  .projects--medg-hover nav.lower,
+  .projects--medg-hover footer {
+    background-color: rgba(215, 116, 43, 0.925); }
+
+.project-bfmn,
+.projects--bfmn-hover {
   background-color: #5d8a46; }
   .project-bfmn nav.lower,
-  .project-bfmn footer {
+  .project-bfmn footer,
+  .projects--bfmn-hover nav.lower,
+  .projects--bfmn-hover footer {
     background-color: rgba(93, 138, 70, 0.925); }
 
-.project-vork {
+.project-vork,
+.projects--vork-hover {
   background-color: #dd4233; }
   .project-vork nav.lower,
-  .project-vork footer {
+  .project-vork footer,
+  .projects--vork-hover nav.lower,
+  .projects--vork-hover footer {
     background-color: rgba(221, 66, 51, 0.925); }
 
-.project-sb {
+.project-sb,
+.projects--sb-hover {
   background-color: #3c7de3; }
   .project-sb nav.lower,
-  .project-sb footer {
+  .project-sb footer,
+  .projects--sb-hover nav.lower,
+  .projects--sb-hover footer {
     background-color: rgba(60, 125, 227, 0.925); }
 
-.project-vital {
+.project-vital,
+.projects--vital-hover {
   background-color: #f5f5f5; }
   .project-vital header.project-name,
-  .project-vital nav.nextprev a {
+  .project-vital nav.nextprev a,
+  .projects--vital-hover header.project-name,
+  .projects--vital-hover nav.nextprev a {
     color: #000; }
   .project-vital nav.lower,
-  .project-vital footer {
+  .project-vital footer,
+  .projects--vital-hover nav.lower,
+  .projects--vital-hover footer {
     background-color: rgba(245, 245, 245, 0.925); }
 
-.project-rt {
+.project-rt,
+.projects--rt-hover {
   background-color: #905b92; }
   .project-rt nav.lower,
-  .project-rt footer {
+  .project-rt footer,
+  .projects--rt-hover nav.lower,
+  .projects--rt-hover footer {
     background-color: rgba(144, 91, 146, 0.925); }
 
-.project-oa {
+.project-oa,
+.projects--oa-hover {
   background-color: #c62634; }
   .project-oa nav.lower,
-  .project-oa footer {
+  .project-oa footer,
+  .projects--oa-hover nav.lower,
+  .projects--oa-hover footer {
     background-color: rgba(198, 38, 52, 0.925); }
 
-.project-mp {
+.project-mp,
+.projects--mp-hover {
   background-color: #9a989b; }
   .project-mp nav.lower,
-  .project-mp footer {
+  .project-mp footer,
+  .projects--mp-hover nav.lower,
+  .projects--mp-hover footer {
     background-color: rgba(154, 152, 155, 0.925); }
 
-.project-keva {
+.project-keva,
+.projects--keva-hover {
   background-color: #3a85c3; }
   .project-keva nav.lower,
-  .project-keva footer {
+  .project-keva footer,
+  .projects--keva-hover nav.lower,
+  .projects--keva-hover footer {
     background-color: rgba(58, 133, 195, 0.925); }
 
 .contact article ul li {
