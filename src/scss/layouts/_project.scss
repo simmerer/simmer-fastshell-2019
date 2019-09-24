@@ -403,7 +403,6 @@
 }
 
 
-.project-ie {
 .project-rinse,
 .projects--rinse-hover {
     background-color: $bg-project-rinse;
@@ -418,6 +417,8 @@
     }
 }
 
+.project-ie,
+.projects--ie-hover {
     background-color: $bg-project-ie;
 
     nav.lower,
@@ -426,7 +427,8 @@
     }
 }
 
-.project-gk {
+.project-gk,
+.projects--gk-hover {
     background-color: $bg-project-gk;
 
     nav.lower,
@@ -435,7 +437,8 @@
     }
 }
 
-.project-batc {
+.project-batc,
+.projects--batc-hover {
     background-color: $bg-project-batc;
 
     header.project-name,
@@ -449,7 +452,8 @@
     }
 }
 
-.project-raven {
+.project-raven,
+.projects--raven-hover {
     background-color: $bg-project-raven;
 
     nav.lower,
@@ -458,7 +462,8 @@
     }
 }
 
-.project-nb {
+.project-nb,
+.projects--nb-hover {
     background-color: $bg-project-nb;
 
     nav.lower,
@@ -467,7 +472,8 @@
     }
 }
 
-.project-bfmn {
+.project-bfmn,
+.projects--bfmn-hover {
     background-color: $bg-project-bfmn;
 
     nav.lower,
@@ -476,7 +482,8 @@
     }
 }
 
-.project-vork {
+.project-vork,
+.projects--vork-hover {
     background-color: $bg-project-vork;
 
     nav.lower,
@@ -485,7 +492,8 @@
     }
 }
 
-.project-sb {
+.project-sb,
+.projects--sb-hover {
     background-color: $bg-project-sb;
 
     nav.lower,
@@ -494,7 +502,8 @@
     }
 }
 
-.project-vital {
+.project-vital,
+.projects--vital-hover {
     background-color: $bg-project-vital;
 
     header.project-name,
@@ -507,7 +516,8 @@
     }
 }
 
-.project-rt {
+.project-rt,
+.projects--rt-hover {
     background-color: $bg-project-rt;
 
     nav.lower,
@@ -516,7 +526,8 @@
     }
 }
 
-.project-oa {
+.project-oa,
+.projects--oa-hover {
     background-color: $bg-project-oa;
 
     nav.lower,
@@ -525,7 +536,8 @@
     }
 }
 
-.project-mp {
+.project-mp,
+.projects--mp-hover {
     background-color: $bg-project-mp;
 
     nav.lower,
@@ -534,7 +546,8 @@
     }
 }
 
-.project-keva {
+.project-keva,
+.projects--keva-hover {
     background-color: $bg-project-keva;
 
     nav.lower,
