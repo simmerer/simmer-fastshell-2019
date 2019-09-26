@@ -417,6 +417,16 @@
     }
 }
 
+.project-tecweigh,
+.projects--tecweigh-hover {
+    background-color: $bg-project-tecweigh;
+
+    nav.lower,
+    footer {
+        background-color: rgba($bg-project-tecweigh, 0.925);
+    }
+}
+
 .project-ie,
 .projects--ie-hover {
     background-color: $bg-project-ie;
