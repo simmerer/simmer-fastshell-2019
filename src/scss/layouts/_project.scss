@@ -119,6 +119,7 @@
         text-align: center;
 
         p {
+            color: $text-transparent--white;
             font-size: calc(3rem + 1vw);
             margin-bottom: 2em;
             text-align: left;
@@ -406,10 +407,6 @@
 .project-rinse,
 .projects--rinse-hover {
     background-color: $bg-project-rinse;
-
-    .see p {
-        color: $text-transparent--white;
-    }
 
     nav.lower,
     footer {
