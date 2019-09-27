@@ -427,6 +427,16 @@
     }
 }
 
+.project-parade,
+.projects--parade-hover {
+    background-color: $bg-project-parade;
+
+    nav.lower,
+    footer {
+        background-color: rgba($bg-project-parade, 0.925);
+    }
+}
+
 .project-ie,
 .projects--ie-hover {
     background-color: $bg-project-ie;
