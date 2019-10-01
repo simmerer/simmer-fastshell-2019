@@ -454,6 +454,16 @@
     }
 }
 
+.project-strom,
+.projects--strom-hover {
+    background-color: $bg-project-strom;
+
+    nav.lower,
+    footer {
+        background-color: rgba($bg-project-strom, 0.925);
+    }
+}
+
 .project-batc,
 .projects--batc-hover {
     background-color: $bg-project-batc;
