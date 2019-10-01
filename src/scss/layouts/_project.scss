@@ -464,9 +464,9 @@
     }
 }
 
-.project-batc,
-.projects--batc-hover {
-    background-color: $bg-project-batc;
+.project-artisan,
+.projects--artisan-hover {
+    background-color: $bg-project-artisan;
 
     header.project-name,
     nav.nextprev a {
@@ -475,7 +475,7 @@
 
     nav.lower,
     footer {
-        background-color: rgba($bg-project-batc, 0.925);
+        background-color: rgba($bg-project-artisan, 0.925);
     }
 }
 
