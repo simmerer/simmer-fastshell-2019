@@ -44,6 +44,7 @@
     background: rgba($black, 0.05);
     border: $device-border-width solid rgba($black, 0.1);
     border-radius: $device-phone-radius/2;
+    display: inline-block;
     margin: 48px auto;
     max-width: 45%;
     padding: 40px 4px;
@@ -83,6 +84,7 @@
     background: rgba($black, 0.05);
     border: $device-border-width solid rgba($black, 0.1);
     border-radius: $device-tablet-radius;
+    display: inline-block;
     margin: 48px auto;
     padding: 40px 10px;
     // width: 45%;
