@@ -153,6 +153,7 @@
   background: rgba(0, 0, 0, 0.05);
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  display: inline-block;
   margin: 48px auto;
   max-width: 45%;
   padding: 40px 4px; }
@@ -182,6 +183,7 @@
   background: rgba(0, 0, 0, 0.05);
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 18px;
+  display: inline-block;
   margin: 48px auto;
   padding: 40px 10px; }
   .tablet img {
@@ -639,7 +641,8 @@ footer {
       position: relative; }
     .project header.project-name h1 > span {
       display: block; }
-      .project header.project-name h1 > span.interstitial {
+      .project header.project-name h1 > span.interstitial,
+      .project header.project-name h1 > span .interstitial {
         font-size: 50%;
         font-style: italic;
         letter-spacing: 0;
@@ -661,6 +664,7 @@ footer {
   padding: 0 4vw 4vw 0;
   text-align: center; }
   .project .see p {
+    color: rgba(255, 255, 255, 0.6);
     font-size: calc(3rem + 1vw);
     margin-bottom: 2em;
     text-align: left; }
@@ -814,9 +818,6 @@ footer {
 .project-rinse,
 .projects--rinse-hover {
   background-color: #776e64; }
-  .project-rinse .see p,
-  .projects--rinse-hover .see p {
-    color: rgba(255, 255, 255, 0.6); }
   .project-rinse nav.lower,
   .project-rinse footer,
   .projects--rinse-hover nav.lower,
@@ -825,12 +826,12 @@ footer {
 
 .project-tecweigh,
 .projects--tecweigh-hover {
-  background-color: #3F6793; }
+  background-color: #6d7278; }
   .project-tecweigh nav.lower,
   .project-tecweigh footer,
   .projects--tecweigh-hover nav.lower,
   .projects--tecweigh-hover footer {
-    background-color: rgba(63, 103, 147, 0.925); }
+    background-color: rgba(109, 114, 120, 0.925); }
 
 .project-parade,
 .projects--parade-hover {
@@ -843,12 +844,20 @@ footer {
 
 .project-qara,
 .projects--qara-hover {
-  background-color: #A0ED6C; }
+  background-color: #EAE9E7; }
+  .project-qara header.project-name,
+  .project-qara nav.nextprev a,
+  .projects--qara-hover header.project-name,
+  .projects--qara-hover nav.nextprev a {
+    color: #000; }
+  .project-qara .see p,
+  .projects--qara-hover .see p {
+    color: rgba(0, 0, 0, 0.6); }
   .project-qara nav.lower,
   .project-qara footer,
   .projects--qara-hover nav.lower,
   .projects--qara-hover footer {
-    background-color: rgba(160, 237, 108, 0.925); }
+    background-color: rgba(234, 233, 231, 0.925); }
 
 .project-ie,
 .projects--ie-hover {
@@ -877,18 +886,18 @@ footer {
   .projects--strom-hover footer {
     background-color: rgba(230, 137, 60, 0.925); }
 
-.project-batc,
-.projects--batc-hover {
+.project-artisan,
+.projects--artisan-hover {
   background-color: #eae8e2; }
-  .project-batc header.project-name,
-  .project-batc nav.nextprev a,
-  .projects--batc-hover header.project-name,
-  .projects--batc-hover nav.nextprev a {
+  .project-artisan header.project-name,
+  .project-artisan nav.nextprev a,
+  .projects--artisan-hover header.project-name,
+  .projects--artisan-hover nav.nextprev a {
     color: #000; }
-  .project-batc nav.lower,
-  .project-batc footer,
-  .projects--batc-hover nav.lower,
-  .projects--batc-hover footer {
+  .project-artisan nav.lower,
+  .project-artisan footer,
+  .projects--artisan-hover nav.lower,
+  .projects--artisan-hover footer {
     background-color: rgba(234, 232, 226, 0.925); }
 
 .project-raven,

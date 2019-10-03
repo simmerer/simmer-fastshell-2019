@@ -87,7 +87,8 @@
             &>span {
                 display: block;
 
-                &.interstitial {
+                &.interstitial,
+                .interstitial {
                     font-size: 50%;
                     font-style: italic;
                     letter-spacing: 0;
@@ -508,6 +509,21 @@
     }
 }
 
+.project-qc,
+.projects--qc-hover {
+    background-color: $bg-project-qc;
+
+    header.project-name,
+    nav.nextprev a {
+        color: $black;
+    }
+
+    nav.lower,
+    footer {
+        background-color: rgba($bg-project-qc, 0.925);
+    }
+}
+
 .project-nb,
 .projects--nb-hover {
     background-color: $bg-project-nb;
@@ -515,6 +531,16 @@
     nav.lower,
     footer {
         background-color: rgba($bg-project-nb, 0.925);
+    }
+}
+
+.project-medg,
+.projects--medg-hover {
+    background-color: $bg-project-medg;
+
+    nav.lower,
+    footer {
+        background-color: rgba($bg-project-medg, 0.925);
     }
 }
 
