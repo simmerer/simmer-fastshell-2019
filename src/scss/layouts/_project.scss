@@ -434,6 +434,25 @@
     }
 }
 
+.project-qara,
+.projects--qara-hover {
+    background-color: $bg-project-qara;
+
+    header.project-name,
+    nav.nextprev a {
+        color: $black;
+    }
+
+    .see p {
+        color: $text-transparent--black;
+    }
+
+    nav.lower,
+    footer {
+        background-color: rgba($bg-project-qara, 0.925);
+    }
+}
+
 .project-ie,
 .projects--ie-hover {
     background-color: $bg-project-ie;
