@@ -567,7 +567,7 @@ footer {
         font-size: calc(6rem + 2vw);
         margin: 1vw 11vw 2vw 0; } }
 
-.projects-hover .project-list li.qc a:hover, .projects-hover .project-list li.qc a:focus,
+.projects-hover .project-list li.qara a:hover, .projects-hover .project-list li.qara a:focus,
 .projects-hover .project-list li.batc a:hover,
 .projects-hover .project-list li.batc a:focus,
 .projects-hover .project-list li.vital a:hover,
@@ -912,11 +912,6 @@ footer {
 .project-qc,
 .projects--qc-hover {
   background-color: #4D93C8; }
-  .project-qc header.project-name,
-  .project-qc nav.nextprev a,
-  .projects--qc-hover header.project-name,
-  .projects--qc-hover nav.nextprev a {
-    color: #000; }
   .project-qc nav.lower,
   .project-qc footer,
   .projects--qc-hover nav.lower,

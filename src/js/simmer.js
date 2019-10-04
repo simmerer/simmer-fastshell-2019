@@ -44,12 +44,12 @@ function attachHoverListener(el) {
   el.addEventListener('mouseenter', function(ev){
     var projectClass = ev.target.parentNode.classList[0];
     addBodyClass('projects-hover');
-    addBodyClass('project-' + projectClass);
+    addBodyClass('projects--' + projectClass + '-hover');
   });
   el.addEventListener('mouseleave', function(ev){
     var projectClass = ev.target.parentNode.classList[0];
     removeBodyClass('projects-hover');
-    removeBodyClass('project-' + projectClass);
+    removeBodyClass('projects--' + projectClass + '-hover');
   });
 }
 

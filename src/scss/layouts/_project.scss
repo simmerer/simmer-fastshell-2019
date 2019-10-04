@@ -513,11 +513,6 @@
 .projects--qc-hover {
     background-color: $bg-project-qc;
 
-    header.project-name,
-    nav.nextprev a {
-        color: $black;
-    }
-
     nav.lower,
     footer {
         background-color: rgba($bg-project-qc, 0.925);
