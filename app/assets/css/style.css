@@ -1034,7 +1034,7 @@ footer {
 
 .me .about {
   color: #b4b7b6;
-  font-size: 6vw;
+  font-size: calc(2rem + 1vw);
   margin-bottom: 7vh;
   position: relative;
   z-index: 10; }
@@ -1055,17 +1055,6 @@ footer {
     display: block;
     height: 100%;
     width: auto; }
-  .me figure figcaption {
-    color: rgba(0, 0, 0, 0.3);
-    left: 5vw;
-    opacity: 0.5;
-    position: absolute;
-    top: -5vh;
-    -webkit-transition: all 350ms ease;
-    -o-transition: all 350ms ease;
-    transition: all 350ms ease; }
-    .me figure figcaption:hover {
-      opacity: 1; }
 
 .me footer {
   display: none; }
@@ -1079,24 +1068,30 @@ footer {
   .me .about {
     color: #ced0cf;
     float: right;
-    font-size: 3vw;
     width: 50vw; }
   .me figure {
     bottom: 0;
-    height: 65vh;
+    height: auto;
     left: 0;
     margin-bottom: 0;
     margin-left: 0;
-    position: fixed; }
-    .me figure figcaption {
-      bottom: 3vh;
-      left: 50vh;
-      position: absolute;
-      top: auto; } }
+    position: fixed;
+    width: 42vw; }
+    .me figure img {
+      display: block;
+      height: auto;
+      width: 100%; } }
 
 @media screen and (min-width: 1000px) {
   .me .about {
-    font-size: 3vw; } }
+    font-size: calc(2rem + 2vw); }
+  .me figure {
+    height: 65vh;
+    width: auto; }
+    .me figure img {
+      display: block;
+      height: 100%;
+      width: auto; } }
 
 .ooops h2 {
   color: rgba(0, 0, 0, 0.15);
