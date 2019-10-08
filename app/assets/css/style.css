@@ -862,6 +862,9 @@ footer {
 .project-ie,
 .projects--ie-hover {
   background-color: #b9cb41; }
+  .project-ie .see p,
+  .projects--ie-hover .see p {
+    color: rgba(0, 0, 0, 0.6); }
   .project-ie nav.lower,
   .project-ie footer,
   .projects--ie-hover nav.lower,

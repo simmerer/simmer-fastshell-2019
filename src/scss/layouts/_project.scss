@@ -458,6 +458,10 @@
 .projects--ie-hover {
     background-color: $bg-project-ie;
 
+    .see p {
+        color: $text-transparent--black;
+    }
+
     nav.lower,
     footer {
         background-color: rgba($bg-project-ie, 0.925);
