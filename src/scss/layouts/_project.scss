@@ -507,6 +507,19 @@
 .projects--raven-hover {
     background-color: $bg-project-raven;
 
+    .see p {
+        color: $text-transparent--black;
+
+        a {
+            color: $grey-darkest;
+
+            &:hover,
+            &:focus {
+                color: $black;
+            }
+        }
+    }
+
     nav.lower,
     footer {
         background-color: rgba($bg-project-raven, 0.925);
@@ -516,6 +529,10 @@
 .project-qc,
 .projects--qc-hover {
     background-color: $bg-project-qc;
+
+    .see p {
+        color: $text-transparent--black;
+    }
 
     nav.lower,
     footer {
