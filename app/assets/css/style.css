@@ -1033,12 +1033,12 @@ footer {
 
 .project-mp,
 .projects--mp-hover {
-  background-color: #9a989b; }
+  background-color: #878789; }
   .project-mp nav.lower,
   .project-mp footer,
   .projects--mp-hover nav.lower,
   .projects--mp-hover footer {
-    background-color: rgba(154, 152, 155, 0.925); }
+    background-color: rgba(135, 135, 137, 0.925); }
 
 .project-keva,
 .projects--keva-hover {
