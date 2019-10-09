@@ -608,20 +608,13 @@ footer {
   letter-spacing: -0.02em;
   text-align: right; }
   .project nav.nextprev.upper {
-    display: block;
-    left: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1000; }
-    .project nav.nextprev.upper span.preface {
-      display: block; }
+    display: none; }
   .project nav.nextprev.lower {
     margin-bottom: 4vw;
     position: relative; }
   .project nav.nextprev a {
     display: block;
-    padding: 3vw 5vw; }
+    padding: 5vh 5vw; }
   .project nav.nextprev span:first-child {
     opacity: 0.5; }
   .project nav.nextprev .amp {
@@ -739,6 +732,17 @@ footer {
     margin-left: -2.5%;
     margin-right: -2.5%;
     max-width: 105%; } }
+
+@media screen and (min-width: 700px) {
+  .project nav.nextprev.upper {
+    display: block;
+    left: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000; }
+    .project nav.nextprev.upper span.preface {
+      display: block; } }
 
 @media screen and (min-width: 1000px) {
   .project .site-header {
