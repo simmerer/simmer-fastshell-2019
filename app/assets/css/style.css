@@ -937,6 +937,16 @@ footer {
 .project-nb,
 .projects--nb-hover {
   background-color: #f5ae39; }
+  .project-nb .see p,
+  .projects--nb-hover .see p {
+    color: rgba(17, 17, 17, 0.6); }
+    .project-nb .see p a,
+    .projects--nb-hover .see p a {
+      color: #111; }
+      .project-nb .see p a:hover, .project-nb .see p a:focus,
+      .projects--nb-hover .see p a:hover,
+      .projects--nb-hover .see p a:focus {
+        color: #000; }
   .project-nb nav.lower,
   .project-nb footer,
   .projects--nb-hover nav.lower,

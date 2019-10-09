@@ -544,6 +544,19 @@
 .projects--nb-hover {
     background-color: $bg-project-nb;
 
+    .see p {
+        color: $text-transparent--black;
+
+        a {
+            color: $grey-darkest;
+
+            &:hover,
+            &:focus {
+                color: $black;
+            }
+        }
+    }
+
     nav.lower,
     footer {
         background-color: rgba($bg-project-nb, 0.925);
