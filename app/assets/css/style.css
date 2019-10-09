@@ -997,6 +997,16 @@ footer {
   .projects--vital-hover header.project-name,
   .projects--vital-hover nav.nextprev a {
     color: #000; }
+  .project-vital .see p,
+  .projects--vital-hover .see p {
+    color: rgba(17, 17, 17, 0.6); }
+    .project-vital .see p a,
+    .projects--vital-hover .see p a {
+      color: #111; }
+      .project-vital .see p a:hover, .project-vital .see p a:focus,
+      .projects--vital-hover .see p a:hover,
+      .projects--vital-hover .see p a:focus {
+        color: #000; }
   .project-vital nav.lower,
   .project-vital footer,
   .projects--vital-hover nav.lower,
