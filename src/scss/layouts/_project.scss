@@ -112,7 +112,7 @@
 
         p {
             color: $text-transparent--white;
-            font-size: calc(3rem + 1vw);
+            font-size: calc(2rem + 2vw);
             margin-bottom: 2em;
             text-align: left;
 
@@ -333,6 +333,10 @@
         .see {
             float: right;
             width: 50vw;
+
+            p {
+                font-size: calc(3rem + 1vw);
+            }
 
             figure {
                 &.b10 {

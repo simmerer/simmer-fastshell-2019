@@ -658,7 +658,7 @@ footer {
   text-align: center; }
   .project .see p {
     color: rgba(255, 255, 255, 0.6);
-    font-size: calc(3rem + 1vw);
+    font-size: calc(2rem + 2vw);
     margin-bottom: 2em;
     text-align: left; }
     .project .see p + figure {
@@ -779,6 +779,8 @@ footer {
   .project .see {
     float: right;
     width: 50vw; }
+    .project .see p {
+      font-size: calc(3rem + 1vw); }
     .project .see figure.b10 {
       margin-bottom: 10vw; }
     .project .see figure.b20 {
