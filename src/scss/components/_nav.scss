@@ -8,12 +8,6 @@
         transition: $transition-slow;
         top: -11vh;
 
-        &:hover {
-            a {
-                opacity: 0.5;
-            }
-        }
-
         li {
             display: inline-block;
         }
@@ -21,7 +15,7 @@
             color: $black;
             display: block;
             letter-spacing: -0.02em;
-            opacity: 0.25;
+            opacity: 0.5;
             padding: 1vh 1vw;
 
             &:hover,
@@ -32,6 +26,23 @@
 
             span {
                 display: none;
+            }
+        }
+
+        @media screen and (min-width: $large-min) {
+            &:hover {
+                a {
+                    opacity: 0.5;
+                }
+            }
+
+            a {
+                opacity: 0.25;
+
+                &:hover,
+                &:focus {
+                    opacity: 1;
+                }
             }
         }
     }

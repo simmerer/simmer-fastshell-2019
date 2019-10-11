@@ -303,21 +303,26 @@ ul li:nth-child(13) {
     -o-transition: all 500ms ease-out;
     transition: all 500ms ease-out;
     top: -11vh; }
-    .site-header nav:hover a {
-      opacity: 0.5; }
     .site-header nav li {
       display: inline-block; }
     .site-header nav a {
       color: #000;
       display: block;
       letter-spacing: -0.02em;
-      opacity: 0.25;
+      opacity: 0.5;
       padding: 1vh 1vw; }
       .site-header nav a:hover, .site-header nav a:focus {
         color: #000;
         opacity: 1; }
       .site-header nav a span {
         display: none; }
+    @media screen and (min-width: 1000px) {
+      .site-header nav:hover a {
+        opacity: 0.5; }
+      .site-header nav a {
+        opacity: 0.25; }
+        .site-header nav a:hover, .site-header nav a:focus {
+          opacity: 1; } }
 
 .projects .site-header li.projects a,
 .contact .site-header li.contact a,
