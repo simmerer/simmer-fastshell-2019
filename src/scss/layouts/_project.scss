@@ -115,6 +115,10 @@
             font-size: calc(3rem + 1vw);
             margin-bottom: 2em;
             text-align: left;
+
+            & + figure {
+                margin-top: 4vw;
+            }
         }
 
         aside {

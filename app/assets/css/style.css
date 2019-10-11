@@ -661,6 +661,8 @@ footer {
     font-size: calc(3rem + 1vw);
     margin-bottom: 2em;
     text-align: left; }
+    .project .see p + figure {
+      margin-top: 4vw; }
   .project .see aside {
     text-align: left; }
   .project .see figure {
