@@ -823,30 +823,30 @@ footer {
 
 .project-rinse,
 .projects--rinse-hover {
-  background-color: #776e64; }
+  background-color: #877e74; }
   .project-rinse nav.lower,
   .project-rinse footer,
   .projects--rinse-hover nav.lower,
   .projects--rinse-hover footer {
-    background-color: rgba(119, 110, 100, 0.925); }
+    background-color: rgba(135, 126, 116, 0.925); }
 
 .project-tecweigh,
 .projects--tecweigh-hover {
-  background-color: #6d7278; }
+  background-color: #7d8288; }
   .project-tecweigh nav.lower,
   .project-tecweigh footer,
   .projects--tecweigh-hover nav.lower,
   .projects--tecweigh-hover footer {
-    background-color: rgba(109, 114, 120, 0.925); }
+    background-color: rgba(125, 130, 136, 0.925); }
 
 .project-parade,
 .projects--parade-hover {
-  background-color: #41B8CB; }
+  background-color: #41B7CD; }
   .project-parade nav.lower,
   .project-parade footer,
   .projects--parade-hover nav.lower,
   .projects--parade-hover footer {
-    background-color: rgba(65, 184, 203, 0.925); }
+    background-color: rgba(65, 183, 205, 0.925); }
 
 .project-qara,
 .projects--qara-hover {
