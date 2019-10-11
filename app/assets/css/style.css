@@ -462,10 +462,13 @@ body {
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.015em;
   -webkit-transition: background-color 1s;
   -o-transition: background-color 1s;
   transition: background-color 1s; }
+  @media screen and (min-width: 1000px) {
+    body {
+      letter-spacing: -0.04em; } }
 
 .wrap {
   overflow: hidden; }
