@@ -4,7 +4,7 @@
  * https://simmer.ooo
  * @author David Simmer
  * @version 5.0.0
- * Copyright 2019. CC BY-NC-ND licensed.
+ * Copyright 2020. CC BY-NC-ND licensed.
  */
 /* jshint ignore:start */
 
@@ -401,7 +401,7 @@
  * https://simmer.ooo
  * @author David Simmer
  * @version 5.0.0
- * Copyright 2019. CC BY-NC-ND licensed.
+ * Copyright 2020. CC BY-NC-ND licensed.
  */
 /* jshint ignore:start */
 
@@ -707,7 +707,7 @@
  * https://simmer.ooo
  * @author David Simmer
  * @version 5.0.0
- * Copyright 2019. CC BY-NC-ND licensed.
+ * Copyright 2020. CC BY-NC-ND licensed.
  */
 /*global Barba*/
 /*global Rellax*/
