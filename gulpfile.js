@@ -24,7 +24,7 @@ var banner = [
 ].join('');
 
 gulp.task('css', function () {
-    return gulp.src('src/scss/style.scss')
+  return gulp.src('src/scss/style.scss')
     .pipe(sass({errLogToConsole: true}))
     .pipe(autoprefixer('last 4 version'))
     .pipe(gulp.dest('app/assets/css'))
@@ -35,7 +35,7 @@ gulp.task('css', function () {
     .pipe(browserSync.reload({stream:true}));
 });
 
-gulp.task('js',function(){
+gulp.task('js', function (done) {
   gulp.src('src/js/*.js')
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
@@ -47,21 +47,25 @@ gulp.task('js',function(){
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('app/assets/js'))
     .pipe(browserSync.reload({stream:true, once: true}));
+
+  done();
 });
 
-gulp.task('browser-sync', function() {
-    browserSync.init(null, {
-        server: {
-            baseDir: "app"
-        }
-    });
+gulp.task('browser-sync', function () {
+  browserSync.init(null, {
+    server: {
+      baseDir: "app"
+    }
+  });
 });
 gulp.task('bs-reload', function () {
-    browserSync.reload();
+  browserSync.reload();
 });
 
-gulp.task('default', ['css', 'js', 'browser-sync'], function () {
-    gulp.watch("src/scss/*/*.scss", ['css']);
-    gulp.watch("src/js/*.js", ['js']);
-    gulp.watch("app/*.html", ['bs-reload']);
+gulp.task('default', gulp.series(['css', 'js', 'browser-sync']), function (done) {
+  gulp.watch("src/scss/*/*.scss", ['css']);
+  gulp.watch("src/js/*.js", ['js']);
+  gulp.watch("app/*.html", ['bs-reload']);
+
+  done();
 });
